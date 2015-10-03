@@ -18,5 +18,6 @@ docker rm -f "uc-linux-${PACKAGE}-tmp" 2>/dev/null || true
 docker run --name "uc-linux-${PACKAGE}-tmp" "insideo/uc-linux-${PACKAGE}-build" /bin/sh
 docker cp "uc-linux-${PACKAGE}-tmp:/packages" ..
 docker rm -f "uc-linux-${PACKAGE}-tmp"
+docker rmi "insideo/uc-linux-${PACKAGE}-build"
 
 echo "Build of package ${PACKAGE} complete."

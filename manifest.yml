@@ -1,0 +1,12 @@
+# this file contains all the packages which need to be installed into bintray
+
+repos: 
+
+  uc-linux-main-buggy:
+
+    - name: 'oracle-server-jre-8'
+      desc: Oracle JRE 8 (Server)
+      website_url: http://java.oracle.com/
+      licenses: [ 'GPL-2.0+CE' ]
+      vcs_url: http://hg.openjdk.java.net/
+

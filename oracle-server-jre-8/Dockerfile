@@ -1,7 +1,7 @@
 FROM insideo/uc-linux:buggy
 MAINTAINER ccondit@randomcoder.com
 
-ADD control /control/server-jre-8
+ADD control /control/oracle-server-jre-8
 RUN \
 	SERVER_PATH=8u60-b27 && \
 	PACKAGE=server-jre-8u60-linux-x64.tar.gz && \
@@ -48,20 +48,20 @@ RUN \
 	rm -f jre/lib/security/*.jar && \
 	cp -a ../UnlimitedJCEPolicyJDK8/*.jar jre/lib/security/ && \
 	cd .. && \
-	pre-root /build/server-jre-8-root && \
-	mkdir -p /build/server-jre-8-root/usr/lib/jvm && \
-	mv ${PACKAGE_DIR} /build/server-jre-8-root/usr/lib/jvm/ && \
-	cd /build/server-jre-8-root/usr/bin && \
+	pre-root /build/oracle-server-jre-8-root && \
+	mkdir -p /build/oracle-server-jre-8-root/usr/lib/jvm && \
+	mv ${PACKAGE_DIR} /build/oracle-server-jre-8-root/usr/lib/jvm/ && \
+	cd /build/oracle-server-jre-8-root/usr/bin && \
 	for cmd in $(find ../lib/jvm/${PACKAGE_DIR}/bin -type f -exec basename "{}" \;) ; do \
 		ln -sfv ../lib/jvm/${PACKAGE_DIR}/bin/${cmd} ${cmd} ; done && \
 	for cmd in $(find ../lib/jvm/${PACKAGE_DIR}/jre/bin -type f -exec basename "{}" \;) ; do \
 		ln -sfv ../lib/jvm/${PACKAGE_DIR}/jre/bin/${cmd} ${cmd} ; done && \
-	post-root /build/server-jre-8-root && \
+	post-root /build/oracle-server-jre-8-root && \
 	make-deb \
-		/build/server-jre-8-deb \
-		/build/server-jre-8-root \
-		/control/server-jre-8 \
-		/packages/server-jre-8_${PACKAGE_VERSION}_amd64.deb && \
+		/build/oracle-server-jre-8-deb \
+		/build/oracle-server-jre-8-root \
+		/control/oracle-server-jre-8 \
+		/packages/oracle-server-jre-8_${PACKAGE_VERSION}_amd64.deb && \
 	cd / && \
 	rm -rf /build /control /download && \
 	opkg remove libgcc binutils && \
