@@ -1,0 +1,10 @@
+Package: server-jre-8
+Version: 8u60-0
+Source: java
+Priority: optional
+Section: non-free/devel
+Depends: libc, libgcc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Java 8 Server JRE + Unlimited Strength Crypto
+Architecture: amd64
+Section: devel
