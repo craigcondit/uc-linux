@@ -83,5 +83,5 @@ RUN \
 
 	cd / && \
 	rm -rf /build /control /download && \
-	opkg --autoremove remove gcc make file linux-devel && \
+	opkg --autoremove remove gcc make file linux-devel openssl libssl-devel && \
 	opkg clean
