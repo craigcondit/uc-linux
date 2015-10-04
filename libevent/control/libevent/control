@@ -1,0 +1,9 @@
+Package: libevent
+Version: 2.0.22-0
+Source: libevent
+Priority: standard
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Asynchronous event notification library
+Architecture: amd64
+Section: libs
