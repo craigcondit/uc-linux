@@ -7,6 +7,7 @@ cd "$(pwd -P)"
 for package in \
 	libevent \
 	libev \
+	autoconf \
 	oracle-server-jre-8 \
 ; do ./build-package.sh ${package} ; done
 
