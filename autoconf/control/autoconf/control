@@ -1,0 +1,9 @@
+Package: autoconf
+Version: 2.69-0
+Source: autoconf
+Priority: optional
+Depends: perl, m4
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: automatic configure script builder
+Architecture: amd64
+Section: devel

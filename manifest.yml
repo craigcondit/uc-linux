@@ -70,6 +70,12 @@ repos:
       licenses: [ BSD 3-Clause ]
       vcs_url: https://github.com/libevent/libevent
 
+    - name: autoconf
+      desc: automatic configure script builder
+      website_url: http://www.gnu.org/software/autoconf/
+      licenses: [ "GPL-2.0", "GPL-3.0" ]
+      vcs_url: git://git.sv.gnu.org/autoconf
+
     - name: 'oracle-server-jre-8'
       desc: Oracle JRE 8 (Server)
       website_url: http://java.oracle.com/
