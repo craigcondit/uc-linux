@@ -4,6 +4,18 @@ repos:
 
   uc-linux-main-buggy:
 
+    - name: libev
+      desc: high-performance event loop library modelled after libevent
+      website_url: http://software.schmorp.de/pkg/libev.html
+      licenses: [ BSD ]
+      vcs_url: http://cvs.schmorp.de/libev/
+
+    - name: libev-devel
+      desc: high-performance event loop library modelled after libevent (headers)
+      website_url: http://software.schmorp.de/pkg/libev.html
+      licenses: [ BSD ]
+      vcs_url: http://cvs.schmorp.de/libev/
+
     - name: 'oracle-server-jre-8'
       desc: Oracle JRE 8 (Server)
       website_url: http://java.oracle.com/

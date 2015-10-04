@@ -1,0 +1,9 @@
+Package: libev
+Version: 4.20-0
+Source: libev
+Priority: extra
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: high-performance event loop library modelled after libevent
+Architecture: amd64
+Section: libs
