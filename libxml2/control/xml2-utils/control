@@ -1,0 +1,9 @@
+Package: xml2-utils
+Version: 2.9.2-0
+Source: libxml2
+Priority: extra
+Depends: libc, libxml2 (>= 2.9.2-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: GNOME XML library (utilities)
+Architecture: amd64
+Section: utils

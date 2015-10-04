@@ -16,6 +16,24 @@ repos:
       licenses: [ BSD ]
       vcs_url: http://cvs.schmorp.de/libev/
 
+    - name: xml2-utils
+      desc: GNOME XML library (utilities)
+      website_url: http://www.xmlsoft.org/
+      licenses: [ MIT ]
+      vcs_url: git://git.gnome.org/libxml2
+
+    - name: libxml2
+      desc: GNOME XML library
+      website_url: http://www.xmlsoft.org/
+      licenses: [ MIT ]
+      vcs_url: git://git.gnome.org/libxml2
+
+    - name: libxml2-devel
+      desc: GNOME XML library (headers)
+      website_url: http://www.xmlsoft.org/
+      licenses: [ MIT ]
+      vcs_url: git://git.gnome.org/libxml2
+
     - name: 'oracle-server-jre-8'
       desc: Oracle JRE 8 (Server)
       website_url: http://java.oracle.com/

@@ -1,0 +1,9 @@
+Package: libxml2
+Version: 2.9.2-0
+Source: libxml2
+Priority: extra
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: GNOME XML library
+Architecture: amd64
+Section: libs

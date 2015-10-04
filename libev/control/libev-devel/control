@@ -6,4 +6,4 @@ Depends: libc-devel, libev (>= 4.20-0)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: high-performance event loop library modelled after libevent (headers)
 Architecture: amd64
-Section: libs
+Section: devel
