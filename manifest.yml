@@ -34,6 +34,42 @@ repos:
       licenses: [ MIT ]
       vcs_url: git://git.gnome.org/libxml2
 
+    - name: libevent
+      desc: Asynchronous event notification library
+      website_url: http://libevent.org/
+      licenses: [ BSD 3-Clause ]
+      vcs_url: https://github.com/libevent/libevent
+
+    - name: libevent-core
+      desc: Asynchronous event notification library (core)
+      website_url: http://libevent.org/
+      licenses: [ BSD 3-Clause ]
+      vcs_url: https://github.com/libevent/libevent
+
+    - name: libevent-extra
+      desc: Asynchronous event notification library (extra)
+      website_url: http://libevent.org/
+      licenses: [ BSD 3-Clause ]
+      vcs_url: https://github.com/libevent/libevent
+
+    - name: libevent-pthreads
+      desc: Asynchronous event notification library (pthreads)
+      website_url: http://libevent.org/
+      licenses: [ BSD 3-Clause ]
+      vcs_url: https://github.com/libevent/libevent
+
+    - name: libevent-openssl
+      desc: Asynchronous event notification library (openssl)
+      website_url: http://libevent.org/
+      licenses: [ BSD 3-Clause ]
+      vcs_url: https://github.com/libevent/libevent
+
+    - name: libevent-devel
+      desc: Asynchronous event notification library (development files)
+      website_url: http://libevent.org/
+      licenses: [ BSD 3-Clause ]
+      vcs_url: https://github.com/libevent/libevent
+
     - name: 'oracle-server-jre-8'
       desc: Oracle JRE 8 (Server)
       website_url: http://java.oracle.com/
