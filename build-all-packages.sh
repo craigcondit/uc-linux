@@ -8,6 +8,7 @@ for package in \
 	libevent \
 	libev \
 	autoconf \
+	automake \
 	oracle-server-jre-8 \
 ; do ./build-package.sh ${package} ; done
 

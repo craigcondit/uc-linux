@@ -76,6 +76,12 @@ repos:
       licenses: [ "GPL-2.0", "GPL-3.0" ]
       vcs_url: git://git.sv.gnu.org/autoconf
 
+    - name: automake
+      desc: Tool for generating GNU Standards-compliant Makefiles
+      website_url: http://www.gnu.org/software/automake/
+      licenses: [ GPL-2.0 ]
+      vcs_url: git://git.savannah.gnu.org/automake.git
+
     - name: 'oracle-server-jre-8'
       desc: Oracle JRE 8 (Server)
       website_url: http://java.oracle.com/

@@ -1,9 +1,9 @@
-Package: autoconf
-Version: 2.69-0
-Source: autoconf
+Package: automake
+Version: 1.15-0
+Source: automake
 Priority: optional
 Depends: perl, m4
 Maintainer: Craig Condit <ccondit@randomcoder.org>
-Description: automatic configure script builder
+Description: Tool for generating GNU Standards-compliant Makefiles
 Architecture: all
 Section: devel

@@ -22,7 +22,7 @@ RUN \
 		/build/autoconf-deb \
 		/build/autoconf-root \
 		/control/autoconf \
-		/packages/autoconf_2.69-0_amd64.deb && \
+		/packages/autoconf_2.69-0_all.deb && \
 	cd / && \
 	rm -rf /build /control /download && \
 	opkg --autoremove remove gcc make file linux-devel m4 perl && \
