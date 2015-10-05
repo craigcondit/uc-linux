@@ -2,7 +2,7 @@ Package: ruby
 Version: 2.2.3-0
 Source: ruby
 Priority: optional
-Depends: libc, libgmp
+Depends: libc, libgmp, libssl
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: Interpreter of object-oriented scripting language Ruby
 Architecture: amd64
