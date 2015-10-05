@@ -88,3 +88,15 @@ repos:
       licenses: [ 'GPL-2.0+CE' ]
       vcs_url: http://hg.openjdk.java.net/
 
+    - name: cunit
+      desc: Unit testing framework in C
+      website_url: http://cunit.sourceforge.net/
+      licenses: [ GPL-2.0 ]
+      vcs_url: http://svn.code.sf.net/p/cunit/code/
+
+    - name: libtool
+      desc: Generic library support script
+      website_url: http://www.gnu.org/software/libtool/
+      licenses: [ LGPL-2.1 ]
+      vcs_url: git://git.savannah.gnu.org/libtool.git
+
