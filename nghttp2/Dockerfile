@@ -7,13 +7,13 @@ RUN \
 	opkg update && \
 	opkg install gcc make file linux-devel pkg-config openssl libssl-devel \
 		libevent-devel libxml2-devel libev-devel libspdylay-devel \
-		libjansson-devel libjemalloc-devel && \
+		libjansson-devel libjemalloc-devel ruby && \
 	wget -O /download/nghttp2-1.3.4.tar.bz2 \
 		https://github.com/tatsuhiro-t/nghttp2/releases/download/v1.3.4/nghttp2-1.3.4.tar.bz2 && \
-	cd build && \
+	cd /build && \
 	tar xf /download/nghttp2-1.3.4.tar.bz2 && \
 	cd nghttp2-1.3.4 && \
-	./configure --prefix=/usr --build=$(gcc -dumpmachine) --disable-static && \
+	./configure --prefix=/usr --build=$(gcc -dumpmachine) --disable-static --with-mruby && \
 	MAKE="make -j4" make && \
 	pre-root /build/nghttp2-base-root && \
 	make DESTDIR=/build/nghttp2-base-root install-strip && \
@@ -53,7 +53,7 @@ RUN \
 	cd / && \
 	rm -rf /build /control /download && \
 	opkg --autoremove remove \
-		libjemalloc-devel libjansson-devel libspdylay-devel libev-devel \
+		ruby libjemalloc-devel libjansson-devel libspdylay-devel libev-devel \
 		libxml2-devel libevent-devel libssl-devel openssl pkg-config \
 		linux-devel file make gcc && \
 	opkg clean
