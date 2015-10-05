@@ -10,6 +10,8 @@ for package in \
 	autoconf \
 	automake \
 	libtool \
+	spdylay \
+	jemalloc \
 	oracle-server-jre-8 \
 ; do ./build-package.sh ${package} ; done
 
