@@ -1,0 +1,9 @@
+Package: libnghttp2
+Version: 1.3.4-0
+Source: nghttp2
+Priority: extra
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: HTTP/2 protocol implementation in C (libraries)
+Architecture: amd64
+Section: libs
