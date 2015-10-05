@@ -1,0 +1,9 @@
+Package: libjemalloc
+Version: 4.0.3-0
+Source: jemalloc
+Priority: extra
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: general purpose malloc(3) implementation
+Architecture: amd64
+Section: libs

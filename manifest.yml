@@ -94,3 +94,34 @@ repos:
       licenses: [ LGPL-2.1 ]
       vcs_url: git://git.savannah.gnu.org/libtool.git
 
+    - name: spdylay
+      desc: SPDY protocol implementation in C (programs)
+      website_url: http://tatsuhiro-t.github.io/spdylay/index.html
+      licenses: [ MIT ]
+      vcs_url: https://github.com/tatsuhiro-t/spdylay
+
+    - name: libspdylay
+      desc: SPDY protocol implementation in C (libraries)
+      website_url: http://tatsuhiro-t.github.io/spdylay/index.html
+      licenses: [ MIT ]
+      vcs_url: https://github.com/tatsuhiro-t/spdylay
+
+    - name: libspdylay-devel
+      desc: SPDY protocol implementation in C (development files)
+      website_url: http://tatsuhiro-t.github.io/spdylay/index.html
+      licenses: [ MIT ]
+      vcs_url: https://github.com/tatsuhiro-t/spdylay
+
+    - name: libjemalloc
+      desc: General-purpose malloc(3) implementation (libraries)
+      website_url: http://www.canonware.com/jemalloc/
+      licenses: [ BSD 2-Clause ]
+      vcs_url: https://github.com/jemalloc/jemalloc
+
+    - name: libjemalloc-devel
+      desc: General-purpose malloc(3) implementation (development files)
+      website_url: http://www.canonware.com/jemalloc/
+      licenses: [ BSD 2-Clause ]
+      vcs_url: https://github.com/jemalloc/jemalloc
+
+

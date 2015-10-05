@@ -1,0 +1,9 @@
+Package: libjemalloc-devel
+Version: 4.0.3-0
+Source: jemalloc
+Priority: extra
+Depends: libc-devel, libjemalloc (>= 4.0.3-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: general purpose malloc(3) implementation (development files)
+Architecture: amd64
+Section: devel
