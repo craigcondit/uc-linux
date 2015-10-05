@@ -124,4 +124,15 @@ repos:
       licenses: [ BSD 2-Clause ]
       vcs_url: https://github.com/jemalloc/jemalloc
 
+    - name: libjansson
+      desc: C library for encoding, decoding and manipulating JSON data
+      website_url: http://www.digip.org/jansson/
+      licenses: [ MIT ]
+      vcs_url: https://github.com/akheron/jansson
+
+    - name: libjansson-devel
+      desc: C library for encoding, decoding and manipulating JSON data (development files)
+      website_url: http://www.digip.org/jansson/
+      licenses: [ MIT ]
+      vcs_url: https://github.com/akheron/jansson
 

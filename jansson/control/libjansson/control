@@ -1,0 +1,9 @@
+Package: libjansson
+Version: 2.7-0
+Source: jansson
+Priority: optional
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: C library for encoding, decoding and manipulating JSON data
+Architecture: amd64
+Section: libs
