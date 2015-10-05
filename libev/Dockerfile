@@ -8,7 +8,7 @@ RUN \
 	opkg install gcc make file linux-devel && \
 	wget -O /download/libev-4.20.tar.gz \
 		http://dist.schmorp.de/libev/Attic/libev-4.20.tar.gz && \
-	cd build && \
+	cd /build && \
 	tar xf /download/libev-4.20.tar.gz && \
 	cd libev-4.20 && \
 	./configure --prefix=/usr --build=$(gcc -dumpmachine) --disable-static && \
@@ -18,6 +18,7 @@ RUN \
 	post-root /build/libev-base-root && \
 	cd /build/libev-base-root && \
 	rm -rf usr/share && \
+	rm -f usr/include/event.h && \
 
 	cp -a /build/libev-base-root /build/libev-root && \
 	cd /build/libev-root && \
