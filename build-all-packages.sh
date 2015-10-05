@@ -10,6 +10,7 @@ for package in \
 	autoconf \
 	automake \
 	libtool \
+	bison \
 	spdylay \
 	jemalloc \
 	oracle-server-jre-8 \

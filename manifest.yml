@@ -154,3 +154,9 @@ repos:
       licenses: [ MIT ]
       vcs_url: https://github.com/tatsuhiro-t/nghttp2
 
+    - name: bison
+      desc: YACC-compatible parser generator
+      website_url: http://www.gnu.org/software/bison/
+      licenses: [ GPL-3.0 ]
+      vcs_url: git://git.savannah.gnu.org/bison.git
+ 

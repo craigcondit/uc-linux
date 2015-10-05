@@ -1,0 +1,9 @@
+Package: bison
+Version: 3.0.4-0
+Source: bison
+Priority: optional
+Depends: libc, m4
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: YACC-compatible parser generator
+Architecture: amd64
+Section: devel
