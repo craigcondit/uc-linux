@@ -159,4 +159,10 @@ repos:
       website_url: http://www.gnu.org/software/bison/
       licenses: [ GPL-3.0 ]
       vcs_url: git://git.savannah.gnu.org/bison.git
- 
+
+    - name: ruby 
+      desc: Interpreter of object-oriented scripting language Ruby
+      website_url: https://www.ruby-lang.org/
+      licenses: [ BSD 2-Clause ]
+      vcs_url: http://svn.ruby-lang.org/repos/ruby
+

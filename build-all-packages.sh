@@ -11,6 +11,7 @@ for package in \
 	automake \
 	libtool \
 	bison \
+	ruby \
 	spdylay \
 	jemalloc \
 	oracle-server-jre-8 \
