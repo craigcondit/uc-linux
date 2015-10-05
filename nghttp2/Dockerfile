@@ -7,7 +7,7 @@ RUN \
 	opkg update && \
 	opkg install gcc make file linux-devel pkg-config openssl libssl-devel \
 		libevent-devel libxml2-devel libev-devel libspdylay-devel \
-		libjansson-devel libjemalloc-devel ruby && \
+		libjansson-devel libjemalloc-devel bison ruby && \
 	wget -O /download/nghttp2-1.3.4.tar.bz2 \
 		https://github.com/tatsuhiro-t/nghttp2/releases/download/v1.3.4/nghttp2-1.3.4.tar.bz2 && \
 	cd /build && \
@@ -53,7 +53,7 @@ RUN \
 	cd / && \
 	rm -rf /build /control /download && \
 	opkg --autoremove remove \
-		ruby libjemalloc-devel libjansson-devel libspdylay-devel libev-devel \
+		ruby bison libjemalloc-devel libjansson-devel libspdylay-devel libev-devel \
 		libxml2-devel libevent-devel libssl-devel openssl pkg-config \
 		linux-devel file make gcc && \
 	opkg clean
