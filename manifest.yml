@@ -136,3 +136,21 @@ repos:
       licenses: [ MIT ]
       vcs_url: https://github.com/akheron/jansson
 
+    - name: nghttp2
+      desc: HTTP/2 protocol implementation in C (programs)
+      website_url: https://nghttp2.org/
+      licenses: [ MIT ]
+      vcs_url: https://github.com/tatsuhiro-t/nghttp2
+
+    - name: libnghttp2
+      desc: HTTP/2 protocol implementation in C (libraries)
+      website_url: https://nghttp2.org/
+      licenses: [ MIT ]
+      vcs_url: https://github.com/tatsuhiro-t/nghttp2
+
+    - name: libnghttp2-devel
+      desc: HTTP/2 protocol implementation in C (development files)
+      website_url: https://nghttp2.org/
+      licenses: [ MIT ]
+      vcs_url: https://github.com/tatsuhiro-t/nghttp2
+
