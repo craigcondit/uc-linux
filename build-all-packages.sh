@@ -9,6 +9,7 @@ for package in \
 	libev \
 	autoconf \
 	automake \
+	libtool \
 	oracle-server-jre-8 \
 ; do ./build-package.sh ${package} ; done
 

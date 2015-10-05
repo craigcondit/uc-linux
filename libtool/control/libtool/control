@@ -2,7 +2,7 @@ Package: libtool
 Version: 2.69-0
 Source: libtool
 Priority: optional
-Depends: gcc, libc-dev, file, autoconf, automake
+Depends: gcc, libc-devel, file, autoconf, automake
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: Generic library support script
 Architecture: amd64
