@@ -1,0 +1,10 @@
+Package: python27
+Version: 2.7.10-0
+Source: python27
+Priority: standard
+Depends: libc
+Recommends: libz, libbz, libssl
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Interactive high-level object-oriented language (version 2.7)
+Architecture: amd64
+Section: python

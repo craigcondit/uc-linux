@@ -166,3 +166,16 @@ repos:
       licenses: [ BSD 2-Clause ]
       vcs_url: http://svn.ruby-lang.org/repos/ruby
 
+    - name: python27
+      desc: Interactive high-level object-oriented language (version 2.7)
+      website_url: https://www.python.org/
+      licenses: [ PythonSoftFoundation ]
+      vcs_url: https://hg.python.org/cpython
+
+    - name: python27-devel
+      desc: Interactive high-level object-oriented language (development files)
+      website_url: https://www.python.org/
+      licenses: [ PythonSoftFoundation ]
+      vcs_url: https://hg.python.org/cpython
+
+   

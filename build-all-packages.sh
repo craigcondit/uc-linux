@@ -12,6 +12,7 @@ for package in \
 	libtool \
 	bison \
 	ruby \
+	python27 \
 	spdylay \
 	jemalloc \
 	nghttp2 \
