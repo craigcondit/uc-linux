@@ -1,0 +1,9 @@
+Package: xcb-proto
+Version: 1.11-0
+Source: xcb-proto
+Priority: optional
+Depends: libc, python27
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 XCB protocol descriptions
+Architecture: amd64
+Section: devel

@@ -18,13 +18,14 @@ for package in \
 	alsalib \
 	cups \
 	libpng \
+	python27 \
 	freetype \
 	fontconfig \
 	x11-util-macros \
 	x11-proto-devel \
 	libx11-xau \
+	xcb-proto \
 	ruby \
-	python27 \
 	spdylay \
 	jemalloc \
 	nghttp2 \
