@@ -1,0 +1,9 @@
+Package: zip
+Version: 3.0-0
+Source: zip
+Priority: optional
+Depends: libc, libbz2
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Archiver for .zip files
+Architecture: amd64
+Section: utils
