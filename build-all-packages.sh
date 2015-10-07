@@ -16,6 +16,7 @@ for package in \
 	unzip \
 	giflib \
 	alsalib \
+	cups \
 	ruby \
 	python27 \
 	spdylay \

@@ -1,0 +1,9 @@
+Package: libcups-devel
+Version: 2.1.0-0
+Source: cups
+Priority: extra
+Depends: libc-devel, libz-devel, libcups (>= 2.1.0-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Common Unix Printing System (development files)
+Architecture: amd64
+Section: devel

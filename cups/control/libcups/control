@@ -1,0 +1,9 @@
+Package: libcups
+Version: 2.1.0-0
+Source: cups
+Priority: extra
+Depends: libc, libz
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Common Unix Printing System (libraries)
+Architecture: amd64
+Section: libs

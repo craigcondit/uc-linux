@@ -244,3 +244,21 @@ repos:
       vcs_url: git://git.alsa-project.org/alsa-lib.git
       licenses: [ 'LGPL-2.1' ]
 
+    - name: cups
+      desc: Common Unix Printing System (applications)
+      website_url: https://www.cups.org/index.php
+      vcs_url: http://www.cups.org/cups.git
+      licenses: [ 'LGPL-2.1', 'GPL-2.0' ]
+
+    - name: libcups
+      desc: Common Unix Printing System (libraries)
+      website_url: https://www.cups.org/index.php
+      vcs_url: http://www.cups.org/cups.git
+      licenses: [ 'LGPL-2.1', 'GPL-2.0' ]
+
+    - name: libcups-devel
+      desc: Common Unix Printing System (development files)
+      website_url: https://www.cups.org/index.php
+      vcs_url: http://www.cups.org/cups.git
+      licenses: [ 'LGPL-2.1', 'GPL-2.0' ]
+
