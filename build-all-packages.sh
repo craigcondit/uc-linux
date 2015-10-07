@@ -14,6 +14,7 @@ for package in \
 	bison \
 	zip \
 	unzip \
+	giflib \
 	ruby \
 	python27 \
 	spdylay \

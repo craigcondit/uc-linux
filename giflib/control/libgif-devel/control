@@ -1,0 +1,9 @@
+Package: libgif-devel
+Version: 5.1.1-0
+Source: giflib
+Priority: optional
+Depends: libc-devel, libgif (>= 5.1.1-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: library for GIF images (development files)
+Architecture: amd64
+Section: devel

@@ -208,3 +208,22 @@ repos:
       vcs_url: svn://gcc.gnu.org/svn/gcc/
       licenses: [ 'GPL-2.0', 'GPL-3.0' ]
 
+    - name: libgif
+      desc: library for GIF images (library)
+      website_url: http://giflib.sourceforge.net/
+      vcs_url: git://git.code.sf.net/p/giflib/code
+      licenses: [ MIT ]
+
+    - name: libgif-devel
+      desc: library for GIF images (development files)
+      website_url: http://giflib.sourceforge.net/
+      vcs_url: git://git.code.sf.net/p/giflib/code
+      licenses: [ MIT ]
+
+    - name: gif-utils
+      desc: library for GIF images (utilities)
+      website_url: http://giflib.sourceforge.net/
+      vcs_url: git://git.code.sf.net/p/giflib/code
+      licenses: [ MIT ]
+
+

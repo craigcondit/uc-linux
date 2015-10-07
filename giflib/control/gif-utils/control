@@ -1,0 +1,9 @@
+Package: gif-utils
+Version: 5.1.1-0
+Source: giflib
+Priority: optional
+Depends: libc, libgif (>= 5.1.1-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: library for GIF images (utilities)
+Architecture: amd64
+Section: utils
