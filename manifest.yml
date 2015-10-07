@@ -178,4 +178,16 @@ repos:
       licenses: [ PythonSoftFoundation ]
       vcs_url: https://hg.python.org/cpython
 
+    - name: libffi
+      desc: Foreign Function Interface library runtime
+      website_url: https://sourceware.org/libffi/
+      licenses: [ MIT ]
+      vcs_url: git://github.com/atgreen/libffi.git
+
+    - name: libffi-devel
+      desc: Foreign Function Interface library (development files)
+      website_url: https://sourceware.org/libffi/
+      licenses: [ MIT ]
+      vcs_url: git://github.com/atgreen/libffi.git
+
    

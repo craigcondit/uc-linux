@@ -5,6 +5,7 @@ cd "$(dirname $0)"
 cd "$(pwd -P)"
 
 for package in \
+	libffi \
 	libevent \
 	libev \
 	autoconf \

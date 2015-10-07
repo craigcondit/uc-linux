@@ -1,0 +1,9 @@
+Package: libffi
+Version: 3.2.1-0
+Source: libffi
+Priority: optional
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Foreign Function Interface library runtime
+Architecture: amd64
+Section: libs

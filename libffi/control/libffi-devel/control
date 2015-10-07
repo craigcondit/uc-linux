@@ -1,0 +1,9 @@
+Package: libffi-devel
+Version: 3.2.1-0
+Source: libffi
+Priority: optional
+Depends: libc-devel, libffi (>= 3.2.1-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Foreign Function Interface library (development files)
+Architecture: amd64
+Section: devel
