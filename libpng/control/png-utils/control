@@ -1,0 +1,9 @@
+Package: png-utils
+Version: 1.6.18-0
+Source: libpng
+Priority: optional
+Depends: libc, libpng (>= 1.6.18-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: PNG library (utilities)
+Architecture: amd64
+Section: utils

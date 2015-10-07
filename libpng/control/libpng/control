@@ -1,0 +1,9 @@
+Package: libpng
+Version: 1.6.18-0
+Source: libpng
+Priority: optional
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: PNG library (runtime)
+Architecture: amd64
+Section: libs

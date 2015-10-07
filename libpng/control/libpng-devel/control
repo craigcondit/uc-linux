@@ -1,0 +1,9 @@
+Package: libpng-devel
+Version: 1.6.18-0
+Source: libpng
+Priority: optional
+Depends: libc-devel, libpng (>= 1.6.18-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: PNG library (development files)
+Architecture: amd64
+Section: devel

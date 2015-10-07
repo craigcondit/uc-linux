@@ -262,3 +262,21 @@ repos:
       vcs_url: http://www.cups.org/cups.git
       licenses: [ 'LGPL-2.1', 'GPL-2.0' ]
 
+    - name: png-utils
+      desc: PNG library (utilities)
+      website_url: http://www.libpng.org/pub/png/libpng.html
+      vcs_url: git://git.code.sf.net/p/libpng/code 
+      licenses: [ 'BSD 3-Clause' ]
+
+    - name: libpng
+      desc: PNG library (runtime)
+      website_url: http://www.libpng.org/pub/png/libpng.html
+      vcs_url: git://git.code.sf.net/p/libpng/code 
+      licenses: [ 'BSD 3-Clause' ]
+
+    - name: libpng-devel
+      desc: PNG library (development files)
+      website_url: http://www.libpng.org/pub/png/libpng.html
+      vcs_url: git://git.code.sf.net/p/libpng/code 
+      licenses: [ 'BSD 3-Clause' ]
+

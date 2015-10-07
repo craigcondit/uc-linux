@@ -17,6 +17,7 @@ for package in \
 	giflib \
 	alsalib \
 	cups \
+	libpng \
 	ruby \
 	python27 \
 	spdylay \
