@@ -10,7 +10,7 @@ RUN \
 	export XORG_PREFIX=/usr && \
 	export XORG_CONFIG="--prefix=$XORG_PREFIX --sysconfdir=/etc --localstatedir=/var --disable-static --build=$(gcc -dumpmachine)" && \
 	wget -O /download/xcb-proto-1.11.tar.bz2 \
-		http://xcb.freedesktop.org/dist/xcb-proto-1.11.tar.bz2
+		http://xcb.freedesktop.org/dist/xcb-proto-1.11.tar.bz2 && \
 	cd /build && \
 	tar xf /download/xcb-proto-1.11.tar.bz2 && \
 	cd xcb-proto-1.11 && \
