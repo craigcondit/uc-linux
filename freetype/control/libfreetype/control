@@ -1,0 +1,9 @@
+Package: libfreetype
+Version: 2.6-0
+Source: freetype
+Priority: optional
+Depends: libc, libbz2, libpng
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: FreeType 2 font engine (runtime)
+Architecture: amd64
+Section: libs

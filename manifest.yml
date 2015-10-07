@@ -280,3 +280,15 @@ repos:
       vcs_url: git://git.code.sf.net/p/libpng/code 
       licenses: [ 'BSD 3-Clause' ]
 
+    - name: libfreetype-devel
+      desc: FreeType 2 font engine (development files)
+      website_url: http://www.freetype.org/
+      vcs_url: git://git.sv.nongnu.org/freetype/freetype2.git
+      licenses: [ 'BSD 3-Clause', 'GPL-2.0' ]
+
+    - name: libfreetype
+      desc: FreeType 2 font engine (runtime)
+      website_url: http://www.freetype.org/
+      vcs_url: git://git.sv.nongnu.org/freetype/freetype2.git
+      licenses: [ 'BSD 3-Clause', 'GPL-2.0' ]
+

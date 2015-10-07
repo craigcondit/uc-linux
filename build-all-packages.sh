@@ -18,6 +18,7 @@ for package in \
 	alsalib \
 	cups \
 	libpng \
+	freetype \
 	ruby \
 	python27 \
 	spdylay \
