@@ -1,0 +1,9 @@
+Package: libx11-xau
+Version: 1.0.8-0
+Source: libXau
+Priority: optional
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 authorization protocol (runtime)
+Architecture: amd64
+Section: libs

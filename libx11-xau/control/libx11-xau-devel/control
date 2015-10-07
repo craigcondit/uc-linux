@@ -1,0 +1,9 @@
+Package: libx11-xau-devel
+Version: 1.0.8-0
+Source: libXau
+Priority: optional
+Depends: libc-devel, libx11-xau (>= 1.0.8-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 authorization protocol (development files)
+Architecture: amd64
+Section: devel

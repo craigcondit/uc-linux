@@ -22,6 +22,7 @@ for package in \
 	fontconfig \
 	x11-util-macros \
 	x11-proto-devel \
+	libx11-xau \
 	ruby \
 	python27 \
 	spdylay \

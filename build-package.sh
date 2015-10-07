@@ -19,14 +19,15 @@ set -e
 cd "$(dirname $0)"
 cd "$(pwd -P)/${PACKAGE}"
 
-docker build -t "insideo/uc-linux-${PACKAGE}-build" --pull .
+IMG=$(echo "${PACKAGE}" | tr 'A-Z' 'a-z')
+docker build -t "insideo/uc-linux-${IMG}-build" --pull .
 
 if [ "${QUICK}" != "yes" ]; then
-  docker rm -f "uc-linux-${PACKAGE}-tmp" 2>/dev/null || true
-  docker run --name "uc-linux-${PACKAGE}-tmp" "insideo/uc-linux-${PACKAGE}-build" /bin/sh
-  docker cp "uc-linux-${PACKAGE}-tmp:/packages" ..
-  docker rm -f "uc-linux-${PACKAGE}-tmp"
-  docker rmi "insideo/uc-linux-${PACKAGE}-build"
+  docker rm -f "uc-linux-${IMG}-tmp" 2>/dev/null || true
+  docker run --name "uc-linux-${IMG}-tmp" "insideo/uc-linux-${IMG}-build" /bin/sh
+  docker cp "uc-linux-${IMG}-tmp:/packages" ..
+  docker rm -f "uc-linux-${IMG}-tmp"
+  docker rmi "insideo/uc-linux-${IMG}-build"
 else 
   echo "Quick build of package ${PACKAGE} complete."
   exit 0
