@@ -1,0 +1,9 @@
+Package: libfontconfig
+Version: 2.11.1-0
+Source: fontconfig
+Priority: optional
+Depends: libc, libfreetype, libxml2
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: generic font configuration library (runtime)
+Architecture: amd64
+Section: libs

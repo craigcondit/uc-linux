@@ -292,3 +292,21 @@ repos:
       vcs_url: git://git.sv.nongnu.org/freetype/freetype2.git
       licenses: [ 'BSD 3-Clause', 'GPL-2.0' ]
 
+    - name: fontconfig-utils
+      desc: generic font configuration library (utilities)
+      website_url: http://www.freedesktop.org/wiki/Software/fontconfig/
+      licenses: [ MIT ]
+      vcs_url: http://cgit.freedesktop.org/fontconfig/
+
+    - name: libfontconfig
+      desc: generic font configuration library (runtime)
+      website_url: http://www.freedesktop.org/wiki/Software/fontconfig/
+      licenses: [ MIT ]
+      vcs_url: http://cgit.freedesktop.org/fontconfig/
+
+    - name: libfontconfig-devel
+      desc: generic font configuration library (development files)
+      website_url: http://www.freedesktop.org/wiki/Software/fontconfig/
+      licenses: [ MIT ]
+      vcs_url: http://cgit.freedesktop.org/fontconfig/
+

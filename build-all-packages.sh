@@ -19,6 +19,7 @@ for package in \
 	cups \
 	libpng \
 	freetype \
+	fontconfig \
 	ruby \
 	python27 \
 	spdylay \
