@@ -1,0 +1,9 @@
+Package: x11-util-macros
+Version: 1.19.0-0
+Source: util-macros
+Priority: optional
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: M4 macros used by X.org build system
+Architecture: amd64
+Section: devel

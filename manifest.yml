@@ -310,3 +310,9 @@ repos:
       licenses: [ MIT ]
       vcs_url: http://cgit.freedesktop.org/fontconfig/
 
+    - name: x11-util-macros
+      desc: M4 macros used by X.org build system
+      website_url: http://freedesktop.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/util/macros/
+

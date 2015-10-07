@@ -20,6 +20,8 @@ for package in \
 	libpng \
 	freetype \
 	fontconfig \
+	x11-util-macros \
+	x11-proto-devel \
 	ruby \
 	python27 \
 	spdylay \
