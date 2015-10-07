@@ -1,0 +1,9 @@
+Package: libalsa-devel
+Version: 1.0.29-0
+Source: alsalib
+Priority: extra
+Depends: libc-devel, libalsa (>= 1.0.29-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: development files for ALSA applications
+Architecture: amd64
+Section: devel

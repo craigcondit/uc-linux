@@ -1,0 +1,9 @@
+Package: libalsa
+Version: 1.0.29-0
+Source: alsalib
+Priority: extra
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: shared library for ALSA applications
+Architecture: amd64
+Section: libs

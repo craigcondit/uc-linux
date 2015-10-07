@@ -226,4 +226,21 @@ repos:
       vcs_url: git://git.code.sf.net/p/giflib/code
       licenses: [ MIT ]
 
+    - name: alsa-utils
+      desc: utilities for ALSA applications
+      website_url: http://alsa-project.org/main/index.php/Main_Page
+      vcs_url: git://git.alsa-project.org/alsa-lib.git
+      licenses: [ 'LGPL-2.1' ]
+
+    - name: libalsa
+      desc: libraries for ALSA applications
+      website_url: http://alsa-project.org/main/index.php/Main_Page
+      vcs_url: git://git.alsa-project.org/alsa-lib.git
+      licenses: [ 'LGPL-2.1' ]
+
+    - name: libalsa-devel
+      desc: development files for ALSA applications
+      website_url: http://alsa-project.org/main/index.php/Main_Page
+      vcs_url: git://git.alsa-project.org/alsa-lib.git
+      licenses: [ 'LGPL-2.1' ]
 
