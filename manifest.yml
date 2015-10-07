@@ -196,6 +196,12 @@ repos:
       licenses: [ BSD ]
       vcs_url: http://www.info-zip.org/Zip.html
 
+    - name: unzip
+      desc: Unarchiver for .zip files
+      website_url: http://www.info-zip.org/UnZip.html
+      licenses: [ BSD ]
+      vcs_url: http://www.info-zip.org/UnZip.html
+
     - name: gcc-gcj
       desc: GCJ byte code and native compiler for Java(TM)
       website_url: https://gcc.gnu.org/

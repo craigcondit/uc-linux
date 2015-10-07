@@ -36,6 +36,7 @@ RUN \
 		usr/bin/c++ usr/bin/cpp usr/bin/g++ \
 		usr/bin/gcc usr/bin/gcc-ar usr/bin/gcc-nm \
 		usr/bin/gcc-ranlib usr/bin/x86_64-uc-linux-gnu-c++ \
+		usr/bin/gcov usr/bin/gcov-tool \
 		usr/bin/x86_64-uc-linux-gnu-* && \
 	ln -sf gcj usr/bin/x86_64-uc-linux-gnu-gcj && \
 	rm -f usr/lib/gcc/x86_64-uc-linux-gnu/5.2.0/*.o && \

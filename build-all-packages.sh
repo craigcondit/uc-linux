@@ -12,6 +12,8 @@ for package in \
 	automake \
 	libtool \
 	bison \
+	zip \
+	unzip \
 	ruby \
 	python27 \
 	spdylay \
