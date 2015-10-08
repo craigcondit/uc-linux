@@ -340,3 +340,15 @@ repos:
       licenses: [ BSD ]
       vcs_url: http://cgit.freedesktop.org/xorg/
 
+    - name: libx11-xcb
+      desc: X Window System XCB Protocol (runtime)
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: libx11-xcb-devel
+      desc: X Window System XCB Protocol (development files)
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+

@@ -1,0 +1,9 @@
+Package: libx11-xcb
+Version: 1.11.1-0
+Source: libxcb
+Priority: optional
+Depends: libc, libx11-xau
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X Window System XCB protocol (runtime)
+Architecture: amd64
+Section: libs
