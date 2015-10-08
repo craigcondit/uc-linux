@@ -2,7 +2,7 @@ Package: openjdk-jre8
 Version: 1.8.0.60-0
 Source: openjdk8
 Priority: standard
-Depends: libc, libbz2, libstdc++, libgcc, libpng, libgif, libz
+Depends: libc, libbz2, libstdcxx, libgcc, libpng, libgif, libz
 Recommends: libalsa, libfreetype, libx11, libx11-xau, libx11-xext, libx11-xi, libx11-xrender, libx11-xtst, libx11-xcb
 Provides: jre, jre8
 Maintainer: Craig Condit <ccondit@randomcoder.org>
