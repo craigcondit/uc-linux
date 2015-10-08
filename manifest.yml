@@ -817,7 +817,12 @@ repos:
     - name: libreadline-devel
       desc: GNU readline and history libraries (development files)
       website_url: http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
-      website_url: http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
       vcs_url: git://git.savannah.gnu.org/readline.git
       licenses: [ GPL-3.0 ]
+
+    - name: bash
+      desc: GNU Bourne Again SHell
+      website_url: https://www.gnu.org/software/bash/
+      licenses: [ GPL-3.0 ]
+      vcs_url: git://git.savannah.gnu.org/bash.git
 

@@ -1,0 +1,9 @@
+Package: bash
+Version: 3.0.4-0
+Source: bash
+Priority: optional
+Depends: libc, libncurses, libreadline
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: GNU Bourne Again SHell
+Architecture: amd64
+Section: shells

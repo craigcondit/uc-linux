@@ -18,6 +18,7 @@ for package in \
 	giflib \
 	ncurses \
 	readline \
+	bash \
 	alsalib \
 	cups \
 	libpng \
