@@ -32,6 +32,7 @@ for package in \
 	xcb-proto \
 	libx11-xcb \
 	xorg-libs \
+	openjdk8 \
 	ruby \
 	spdylay \
 	jemalloc \

@@ -82,6 +82,18 @@ repos:
       licenses: [ GPL-2.0 ]
       vcs_url: git://git.savannah.gnu.org/automake.git
 
+    - name: "openjdk-jdk8"
+      desc: "Open-source base for Oracle's Java(tm) JDK"
+      website_url: http://openjdk.java.net/projects/jdk8/
+      licenses: [ 'GPL-2.0+CE' ]
+      vcs_url: http://hg.openjdk.java.net/
+
+    - name: "openjdk-jre8"
+      desc: "Open-source base for Oracle's Java(tm) JRE"
+      website_url: http://openjdk.java.net/projects/jdk8/
+      licenses: [ 'GPL-2.0+CE' ]
+      vcs_url: http://hg.openjdk.java.net/
+
     - name: 'oracle-server-jre-8'
       desc: Oracle JRE 8 (Server)
       website_url: http://java.oracle.com/

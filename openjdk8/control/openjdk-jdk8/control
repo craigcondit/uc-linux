@@ -1,0 +1,11 @@
+Package: openjdk-jdk8
+Version: 1.8.0.60-0
+Source: openjdk8
+Priority: standard
+Depends: libc, libbz2, libstdc++, libgcc, libpng, libgif, libz
+Provides: jdk, jdk8, jre, jre8
+Recommends: libalsa, libfreetype, libx11, libx11-xau, libx11-xext, libx11-xi, libx11-xrender, libx11-xtst, libx11-xcb
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Open-source base for Oracle's Java(tm) JDK
+Architecture: amd64
+Section: java
