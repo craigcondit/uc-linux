@@ -3,7 +3,7 @@ Version: 2.7.10-0
 Source: python27
 Priority: standard
 Depends: libc
-Recommends: libz, libbz, libssl
+Recommends: libz, libbz2, libssl
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: Interactive high-level object-oriented language (version 2.7)
 Architecture: amd64

@@ -376,3 +376,399 @@ repos:
       licenses: [ GPL-3.0 ]
       vcs_url: git://git.savannah.gnu.org/gettext.git
 
+    - name: "libx11-xtst"
+      desc: "X11 Testing - Record extension library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xtst-devel"
+      desc: "X11 Testing - Record extension library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xvmc"
+      desc: "X11 Video extension library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xvmc-devel"
+      desc: "X11 Video extension library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-sm"
+      desc: "X11 Session Management library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-sm-devel"
+      desc: "X11 Session Management library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libpciaccess"
+      desc: "Generic PCI access library for X"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libpciaccess-devel"
+      desc: "Generic PCI access library for X (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xrender"
+      desc: "X Rendering Extension client library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xrender-devel"
+      desc: "X Rendering Extension client library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xkbfile"
+      desc: "X11 keyboard file manipulation library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xkbfile-devel"
+      desc: "X11 keyboard file manipulation library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xcomposite"
+      desc: "X11 Composite extension library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xcomposite-devel"
+      desc: "X11 Composite extension library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xt"
+      desc: "X11 toolkit intrinsics library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xt-devel"
+      desc: "X11 toolkit intrinsics library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xft"
+      desc: "FreeType-based font drawing library for X"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xft-devel"
+      desc: "FreeType-based font drawing library for X (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xmu"
+      desc: "X11 miscellaneous utility library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xmu-devel"
+      desc: "X11 miscellaneous utility library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xpm"
+      desc: "X11 pixmap library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xpm-devel"
+      desc: "X11 pixmap library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "xpm-utils"
+      desc: "X11 pixmap library (utilities)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xfixes-devel"
+      desc: "X11 miscellaneous fixes extension library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xfixes"
+      desc: "X11 miscellaneous fixes extension library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xaw-devel"
+      desc: "X11 Athena Widget library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xaw"
+      desc: "X11 Athena Widget library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xrandr"
+      desc: "X11 RandR extension library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xrandr-devel"
+      desc: "X11 RandR extension library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xfont"
+      desc: "X11 font rasterisation library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xfont-devel"
+      desc: "X11 font rasterisation library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-all-devel"
+      desc: "X11 Development Libraries (virtual package)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-all"
+      desc: "X11 Libraries (virtual package)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xxf86dga"
+      desc: "X11 Direct Graphics Access extension library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xxf86dga-devel"
+      desc: "X11 Direct Graphics Access extension library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xres"
+      desc: "X11 Resource extension library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xres-devel"
+      desc: "X11 Resource extension library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xtrans-devel"
+      desc: "X transport library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xshmfence-devel"
+      desc: "X shared memory fence library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xshmfence"
+      desc: "X shared memory fence library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xi-devel"
+      desc: "X11 Input extension library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xi"
+      desc: "X11 Input extension library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xxf86vm-devel"
+      desc: "X11 XFree86 video mode extension library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xxf86vm"
+      desc: "X11 XFree86 video mode extension library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xscreensaver"
+      desc: "X11 Screen Saver library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xscreensaver-devel"
+      desc: "X11 Screen Saver library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-fs-devel"
+      desc: "X11 Font Services library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-fs"
+      desc: "X11 Font Services library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-fontenc-devel"
+      desc: "X11 font encoding library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-fontenc"
+      desc: "X11 font encoding library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-ice-devel"
+      desc: "X11 Inter-Client Exchange library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-ice"
+      desc: "X11 Inter-Client Exchange library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-devel"
+      desc: "X11 client-side library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11"
+      desc: "X11 client-side library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xext-devel"
+      desc: "X11 miscellaneous extension library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xext"
+      desc: "X11 miscellaneous extension library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xcursor-devel"
+      desc: "X cursor management library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xcursor"
+      desc: "X cursor management library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xinerama-devel"
+      desc: "X11 Xinerama extension library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xinerama"
+      desc: "X11 Xinerama extension library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xv-devel"
+      desc: "X11 Video extension library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xv"
+      desc: "X11 Video extension library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-dmx-devel"
+      desc: "X11 Distributed Multihead extension library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-dmx"
+      desc: "X11 Distributed Multihead extension library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xdamage-devel"
+      desc: "X11 damaged region extension library (development files)"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+
+    - name: "libx11-xdamage"
+      desc: "X11 damaged region extension library"
+      website_url: http://www.x.org/
+      licenses: [ BSD ]
+      vcs_url: http://cgit.freedesktop.org/xorg/
+

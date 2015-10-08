@@ -1323,7 +1323,7 @@ RUN \
 ADD control/libx11-all /control/libx11-all
 RUN \
 	set +x && \
-	mkdir -p /build/libx11-all-root && \
+	mkdir -p /build/libx11-all-root /build/libx11-all-devel-root && \
 	make-deb \
 		/build/libx11-all-deb \
 		/build/libx11-all-root \
