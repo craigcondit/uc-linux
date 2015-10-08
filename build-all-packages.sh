@@ -37,6 +37,5 @@ for package in \
 	spdylay \
 	jemalloc \
 	nghttp2 \
-	oracle-server-jre-8 \
 ; do ./build-package.sh ${package} ; done
 

@@ -94,12 +94,6 @@ repos:
       licenses: [ 'GPL-2.0+CE' ]
       vcs_url: http://hg.openjdk.java.net/
 
-    - name: 'oracle-server-jre-8'
-      desc: Oracle JRE 8 (Server)
-      website_url: http://java.oracle.com/
-      licenses: [ 'GPL-2.0+CE' ]
-      vcs_url: http://hg.openjdk.java.net/
-
     - name: libtool
       desc: Generic library support script
       website_url: http://www.gnu.org/software/libtool/
