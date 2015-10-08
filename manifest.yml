@@ -352,3 +352,27 @@ repos:
       licenses: [ BSD ]
       vcs_url: http://cgit.freedesktop.org/xorg/
 
+    - name: gettext-common
+      desc: GNU Internationalization (common)
+      website_url: http://www.gnu.org/software/gettext/
+      licenses: [ GPL-3.0 ]
+      vcs_url: git://git.savannah.gnu.org/gettext.git
+
+    - name: gettext-utils
+      desc: GNU Internationalization (utilities)
+      website_url: http://www.gnu.org/software/gettext/
+      licenses: [ GPL-3.0 ]
+      vcs_url: git://git.savannah.gnu.org/gettext.git
+
+    - name: libgettext
+      desc: GNU Internationalization (libraries)
+      website_url: http://www.gnu.org/software/gettext/
+      licenses: [ GPL-3.0 ]
+      vcs_url: git://git.savannah.gnu.org/gettext.git
+
+    - name: libgettext-devel
+      desc: GNU Internationalization (development files)
+      website_url: http://www.gnu.org/software/gettext/
+      licenses: [ GPL-3.0 ]
+      vcs_url: git://git.savannah.gnu.org/gettext.git
+

@@ -1,0 +1,9 @@
+Package: gettext-common
+Version: 0.19.5.1-0
+Source: gettext
+Priority: standard
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: GNU Internationalization (common)
+Architecture: amd64
+Section: utils

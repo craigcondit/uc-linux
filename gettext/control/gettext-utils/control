@@ -1,0 +1,9 @@
+Package: gettext-utils
+Version: 0.19.5.1-0
+Source: gettext
+Priority: standard
+Depends: libc, gettext-common (>= 0.19.5.1-0), libgettext (>= 0.19.5.1-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: GNU Internationalization (utilities)
+Architecture: amd64
+Section: utils

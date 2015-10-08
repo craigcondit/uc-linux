@@ -18,6 +18,7 @@ for package in \
 	alsalib \
 	cups \
 	libpng \
+	gettext \
 	python27 \
 	freetype \
 	fontconfig \

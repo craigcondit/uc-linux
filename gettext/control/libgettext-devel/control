@@ -1,0 +1,9 @@
+Package: libgettext-devel
+Version: 0.19.5.1-0
+Source: gettext
+Priority: standard
+Depends: libc-devel, libgettext (>= 0.19.5.1-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: GNU Internationalization (development files)
+Architecture: amd64
+Section: devel
