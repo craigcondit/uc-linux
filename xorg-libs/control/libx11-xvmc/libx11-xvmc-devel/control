@@ -1,0 +1,9 @@
+Package: libx11-xvmc-devel
+Version: 1.0.9-0
+Source: libXvMC
+Priority: optional
+Depends: libc-devel, libx11-xv-devel, libx11-xext-devel, libx11-devel, libx11-xcb-devel, libx11-xau-devel, libx11-xvmc (>= 1.0.9-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 Video extension library (development files)
+Architecture: amd64
+Section: devel

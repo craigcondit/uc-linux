@@ -1,0 +1,9 @@
+Package: libx11-all
+Version: 7.7-0
+Source: libx11-all
+Priority: optional
+Depends: libc, libpng, libfreetype, libfontconfig, libpciaccess, libx11-xau, libx11-xcb, libx11-dmx, libx11-fontenc, libx11-fs, libx11-ice, libx11-sm, libx11-xaw, libx11-xcomposite, libx11-xcursor, libx11-xdamage, libx11-xext, libx11-xfixes, libx11-xfont, libx11-xft, libx11-xi, libx11-xinerama, libx11-xkbfile, libx11-xmu, libx11-xpm, libx11-xrandr, libx11-xres, libx11-xscreensaver, libx11-xshmfence, libx11-xt, libx11-xtst, libx11-xv, libx11-xvmc, libx11-xxf86dga, libx11
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 Libraries (virtual package)
+Architecture: all
+Section: libs

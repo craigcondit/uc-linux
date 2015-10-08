@@ -1,0 +1,9 @@
+Package: libx11-devel
+Version: 1.6.3-0
+Source: libX11
+Priority: optional
+Depends: libc-devel, libx11-xcb-devel, libx11-xau-devel, libx11 (>= 1.6.3-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 client-side library (development files)
+Architecture: amd64
+Section: libs

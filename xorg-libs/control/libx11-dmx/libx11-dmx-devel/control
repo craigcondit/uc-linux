@@ -1,0 +1,9 @@
+Package: libx11-dmx-devel
+Version: 1.1.3-0
+Source: libdmx
+Priority: optional
+Depends: libc-devel, libx11-xext-devel, libx11-devel, libx11-xcb-devel, libx11-xau-devel, libx11-dmx (>= 1.1.3-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 Distributed Multihead extension library (development files)
+Architecture: amd64
+Section: devel

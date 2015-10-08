@@ -1,0 +1,9 @@
+Package: xpm-utils
+Version: 3.5.11-0
+Source: libXpm
+Priority: optional
+Depends: libc, libx11, libx11-xcb, libx11-xau, libx11-xpm (>= 3.5.11-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 pixmap library (utilities)
+Architecture: amd64
+Section: utils

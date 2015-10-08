@@ -1,0 +1,9 @@
+Package: libpciaccess-devel
+Version: 0.13.4-0
+Source: libpciaccess
+Priority: optional
+Depends: libc-devel
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Generic PCI access library for X (development files)
+Architecture: amd64
+Section: devel

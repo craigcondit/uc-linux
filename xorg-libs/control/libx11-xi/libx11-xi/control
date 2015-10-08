@@ -1,0 +1,9 @@
+Package: libx11-xi
+Version: 1.7.4-0
+Source: libXi
+Priority: optional
+Depends: libc, libx11-xext, libx11, libx11-xcb, libx11-xau
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 Input extension library
+Architecture: amd64
+Section: libs

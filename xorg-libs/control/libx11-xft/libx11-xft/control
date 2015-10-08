@@ -1,0 +1,9 @@
+Package: libx11-xft
+Version: 2.3.2-0
+Source: libXft
+Priority: optional
+Depends: libc, libfontconfig, libxml2, libfreetype, libbz2, libpng, libx11-xrender, libx11, libx11-xcb, libx11-xau
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: FreeType-based font drawing library for X
+Architecture: amd64
+Section: libs

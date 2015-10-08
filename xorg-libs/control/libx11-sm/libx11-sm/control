@@ -1,0 +1,9 @@
+Package: libx11-sm
+Version: 1.2.2-0
+Source: libSM
+Priority: optional
+Depends: libc, libx11-ice
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 Session Management library
+Architecture: amd64
+Section: libs

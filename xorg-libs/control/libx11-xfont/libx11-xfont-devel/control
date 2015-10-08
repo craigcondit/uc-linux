@@ -1,0 +1,9 @@
+Package: libx11-xfont-devel
+Version: 1.5.1-0
+Source: libXfont
+Priority: optional
+Depends: libc-devel, libfreetype-devel, libbz2-devel, libpng-devel, libx11-fontenc-devel, libx11-xfont (>= 1.5.1-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 font rasterisation library (development files)
+Architecture: amd64
+Section: devel

@@ -1,0 +1,9 @@
+Package: libx11-xt
+Version: 1.1.5-0
+Source: libXt
+Priority: optional
+Depends: libc, libx11-sm, libx11-ice, libx11, libx11-xcb, libx11-xau
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 toolkit intrinsics library
+Architecture: amd64
+Section: libs

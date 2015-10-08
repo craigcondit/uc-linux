@@ -1,0 +1,9 @@
+Package: libx11-xrender
+Version: 0.9.9-0
+Source: libXrender
+Priority: optional
+Depends: libc, libx11, libx11-xcb, libx11-xau
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X Rendering Extension client library
+Architecture: amd64
+Section: libs

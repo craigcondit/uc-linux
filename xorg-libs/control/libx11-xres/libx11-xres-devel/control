@@ -1,0 +1,9 @@
+Package: libx11-xres-devel
+Version: 1.0.7-0
+Source: libXres
+Priority: optional
+Depends: libc-devel, libx11-xext-devel, libx11-devel, libx11-xcb-devel, libx11-xau-devel, libx11-xres (>= 1.0.7-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 Resource extension library (development files)
+Architecture: amd64
+Section: devel

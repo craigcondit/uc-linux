@@ -1,0 +1,9 @@
+Package: libx11-xcomposite
+Version: 0.4.4-0
+Source: libXcomposite
+Priority: optional
+Depends: libc, libx11, libx11-xcb, libx11-xau
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 Composite extension library
+Architecture: amd64
+Section: libs

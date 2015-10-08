@@ -1,0 +1,9 @@
+Package: libx11-ice
+Version: 1.0.9-0
+Source: libICE
+Priority: optional
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 Inter-Client Exchange library
+Architecture: amd64
+Section: libs

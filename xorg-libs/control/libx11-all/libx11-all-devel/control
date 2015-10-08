@@ -1,0 +1,9 @@
+Package: libx11-all-devel
+Version: 7.7-0
+Source: libx11-all
+Priority: optional
+Depends: libc-devel, libpng-devel, libfreetype-devel, fontconfig-utils, libfontconfig-devel, gettext-utils, libgettext-devel, libpciaccess-devel, x11-util-macros, x11-proto-devel, xcb-proto, libx11-xau-devel, libx11-xcb-devel, libx11-devel, libx11-dmx-devel, libx11-fontenc-devel, libx11-fs-devel, libx11-ice-devel, libx11-sm-devel, libx11-xaw-devel, libx11-xcomposite-devel, libx11-xcursor-devel, libx11-xdamage-devel, libx11-xext-devel, libx11-xfixes-devel, libx11-xfont-devel, libx11-xft-devel, libx11-xi-devel, libx11-xinerama-devel, libx11-xkbfile-devel, libx11-xmu-devel, libx11-xpm-devel, libx11-xrandr-devel, libx11-xrender-devel, libx11-xres-devel, libx11-xscreensaver-devel, libx11-xshmfence-devel, libx11-xt-devel, libx11-xtrans-devel, libx11-xtst-devel, libx11-xv-devel, libx11-xvmc-devel, libx11-xxf86dga-devel
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 Development Libraries (virtual package)
+Architecture: all
+Section: devel

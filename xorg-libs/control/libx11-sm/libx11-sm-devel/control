@@ -1,0 +1,9 @@
+Package: libx11-sm-devel
+Version: 1.2.2-0
+Source: libSM
+Priority: optional
+Depends: libc-devel, libx11-ice-devel, libx11-sm (>= 1.2.2-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 Session Management library (development files)
+Architecture: amd64
+Section: devel

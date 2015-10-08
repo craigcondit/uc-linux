@@ -1,0 +1,9 @@
+Package: libx11-fontenc
+Version: 1.1.3-0
+Source: libfontenc
+Priority: optional
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 font encoding library
+Architecture: amd64
+Section: libs

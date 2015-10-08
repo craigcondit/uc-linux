@@ -1,0 +1,9 @@
+Package: libpciaccess
+Version: 0.13.4-0
+Source: libpciaccess
+Priority: optional
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Generic PCI access library for X
+Architecture: amd64
+Section: libs

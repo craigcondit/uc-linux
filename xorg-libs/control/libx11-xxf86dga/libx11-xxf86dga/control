@@ -1,0 +1,9 @@
+Package: libx11-xxf86dga
+Version: 1.1.4-0
+Source: libXxf86dga
+Priority: optional
+Depends: libc, libx11-xext, libx11, libx11-xcb, libx11-xau
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 Direct Graphics Access extension library
+Architecture: amd64
+Section: libs

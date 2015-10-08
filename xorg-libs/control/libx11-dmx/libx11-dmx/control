@@ -1,0 +1,9 @@
+Package: libx11-dmx
+Version: 1.1.3-0
+Source: libdmx
+Priority: optional
+Depends: libc, libx11-xext, libx11, libx11-xcb, libx11-xau
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 Distributed Multihead extension library
+Architecture: amd64
+Section: libs

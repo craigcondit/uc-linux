@@ -1,0 +1,9 @@
+Package: libx11-xpm-devel
+Version: 3.5.11-0
+Source: libXpm
+Priority: optional
+Depends: libc-devel, libx11-devel, libx11-xcb-devel, libx11-xau-devel, libx11-xpm (>= 3.5.11-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 pixmap library (development files)
+Architecture: amd64
+Section: devel

@@ -1,0 +1,9 @@
+Package: libx11-xfont
+Version: 1.5.1-0
+Source: libXfont
+Priority: optional
+Depends: libc, libfreetype, libbz2, libpng, libx11-fontenc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 font rasterisation library
+Architecture: amd64
+Section: libs

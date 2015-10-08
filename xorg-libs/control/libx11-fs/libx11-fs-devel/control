@@ -1,0 +1,9 @@
+Package: libx11-fs-devel
+Version: 1.0.7-0
+Source: libFS
+Priority: optional
+Depends: libc-devel, libx11-fs (>= 1.0.7-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 Font Services library (development files)
+Architecture: amd64
+Section: devel

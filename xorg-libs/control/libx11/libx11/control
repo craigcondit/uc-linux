@@ -1,0 +1,9 @@
+Package: libx11
+Version: 1.6.3-0
+Source: libX11
+Priority: optional
+Depends: libc, libx11-xcb, libx11-xau
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 client-side library
+Architecture: amd64
+Section: libs

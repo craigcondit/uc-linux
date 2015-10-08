@@ -1,0 +1,9 @@
+Package: libx11-xshmfence-devel
+Version: 1.2-0
+Source: libxshmfence
+Priority: optional
+Depends: libc-devel
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X shared memory fence library (development files)
+Architecture: amd64
+Section: devel

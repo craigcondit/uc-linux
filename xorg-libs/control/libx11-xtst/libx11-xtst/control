@@ -1,0 +1,9 @@
+Package: libx11-xtst
+Version: 1.2.2-0
+Source: libXtst
+Priority: optional
+Depends: libc, libx11-xi, libx11-xext, libx11, libx11-xcb, libx11-xau
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 Testing - Record extension library
+Architecture: amd64
+Section: libs

@@ -1,0 +1,9 @@
+Package: libx11-xv
+Version: 1.0.10-0
+Source: libXv
+Priority: optional
+Depends: libc, libx11-xext, libx11, libx11-xcb, libx11-xau
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 Video extension library
+Architecture: amd64
+Section: libs

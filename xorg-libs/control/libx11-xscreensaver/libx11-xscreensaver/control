@@ -1,0 +1,9 @@
+Package: libx11-xscreensaver
+Version: 1.2.2-0
+Source: libXScrnSaver
+Priority: optional
+Depends: libc, libx11-xext, libx11, libx11-xcb, libx11-xau
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 Screen Saver library
+Architecture: amd64
+Section: libs

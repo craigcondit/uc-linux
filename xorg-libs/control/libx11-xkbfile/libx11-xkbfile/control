@@ -1,0 +1,9 @@
+Package: libx11-xkbfile
+Version: 1.0.9-0
+Source: libxkbfile
+Priority: optional
+Depends: libc, libx11, libx11-xcb, libx11-xau
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: X11 keyboard file manipulation library
+Architecture: amd64
+Section: libs

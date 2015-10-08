@@ -20,7 +20,13 @@ cd "$(dirname $0)"
 cd "$(pwd -P)/${PACKAGE}"
 
 IMG=$(echo "${PACKAGE}" | tr 'A-Z' 'a-z')
-docker build -t "insideo/uc-linux-${IMG}-build" --pull .
+
+BUILD_ARGS=
+if [ "${QUICK}" != "yes" ]; then
+  ARGS="${ARGS} --pull"
+fi
+
+docker build -t "insideo/uc-linux-${IMG}-build" ${ARGS} .
 
 if [ "${QUICK}" != "yes" ]; then
   docker rm -f "uc-linux-${IMG}-tmp" 2>/dev/null || true
