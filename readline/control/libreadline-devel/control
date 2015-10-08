@@ -1,0 +1,9 @@
+Package: libreadline-devel
+Version: 6.3-0
+Source: readline
+Priority: important
+Depends: libc-devel, libncurses-devel, libreadline (>= 6.3-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: GNU readline and history libraries (development files)
+Architecture: amd64
+Section: devel

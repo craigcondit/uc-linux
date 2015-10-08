@@ -808,4 +808,16 @@ repos:
       licenses: [ 'BSD 2-Clause' ]
       vcs_url: git://git.code.sf.net/p/flex/flex
 
+    - name: libreadline
+      desc: GNU readline and history libraries
+      website_url: http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
+      vcs_url: git://git.savannah.gnu.org/readline.git
+      licenses: [ GPL-3.0 ]
+
+    - name: libreadline-devel
+      desc: GNU readline and history libraries (development files)
+      website_url: http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
+      website_url: http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
+      vcs_url: git://git.savannah.gnu.org/readline.git
+      licenses: [ GPL-3.0 ]
 

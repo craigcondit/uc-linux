@@ -17,6 +17,7 @@ for package in \
 	unzip \
 	giflib \
 	ncurses \
+	readline \
 	alsalib \
 	cups \
 	libpng \

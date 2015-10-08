@@ -1,0 +1,9 @@
+Package: libreadline
+Version: 6.3-0
+Source: readline
+Priority: important
+Depends: libc, libncurses
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: GNU readline and history libraries
+Architecture: amd64
+Section: libs
