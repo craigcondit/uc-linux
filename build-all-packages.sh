@@ -11,6 +11,7 @@ for package in \
 	autoconf \
 	automake \
 	libtool \
+	flex \
 	bison \
 	zip \
 	unzip \

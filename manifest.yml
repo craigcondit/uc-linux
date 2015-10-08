@@ -802,3 +802,10 @@ repos:
       licenses: [ MIT ]
       vcs_url: http://web.cvs.savannah.gnu.org/viewvc/?root=ncurses
 
+    - name: flex
+      desc: fast lexical analyzer generator
+      website_url: http://flex.sourceforge.net/
+      licenses: [ 'BSD 2-Clause' ]
+      vcs_url: git://git.code.sf.net/p/flex/flex
+
+
