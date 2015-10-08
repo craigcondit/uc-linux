@@ -27,6 +27,7 @@ for package in \
 	libx11-xau \
 	xcb-proto \
 	libx11-xcb \
+	xorg-libs \
 	ruby \
 	spdylay \
 	jemalloc \
