@@ -1,0 +1,8 @@
+Package: ncurses-term
+Version: 6.0-0
+Source: ncurses
+Priority: required
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: extended terminal type definitions
+Architecture: all
+Section: misc

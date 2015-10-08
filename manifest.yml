@@ -772,3 +772,33 @@ repos:
       licenses: [ BSD ]
       vcs_url: http://cgit.freedesktop.org/xorg/
 
+    - name: ncurses-base
+      desc: basic terminal type definitions
+      website_url: https://www.gnu.org/software/ncurses/
+      licenses: [ MIT ]
+      vcs_url: http://web.cvs.savannah.gnu.org/viewvc/?root=ncurses
+
+    - name: ncurses-term
+      desc: extended terminal type definitions
+      website_url: https://www.gnu.org/software/ncurses/
+      licenses: [ MIT ]
+      vcs_url: http://web.cvs.savannah.gnu.org/viewvc/?root=ncurses
+
+    - name: ncurses-utils
+      desc: terminal-related programs
+      website_url: https://www.gnu.org/software/ncurses/
+      licenses: [ MIT ]
+      vcs_url: http://web.cvs.savannah.gnu.org/viewvc/?root=ncurses
+
+    - name: libncurses
+      desc: shared libraries for terminal handling
+      website_url: https://www.gnu.org/software/ncurses/
+      licenses: [ MIT ]
+      vcs_url: http://web.cvs.savannah.gnu.org/viewvc/?root=ncurses
+
+    - name: libncurses-devel
+      desc: basic terminal type definitions (development files)
+      website_url: https://www.gnu.org/software/ncurses/
+      licenses: [ MIT ]
+      vcs_url: http://web.cvs.savannah.gnu.org/viewvc/?root=ncurses
+
