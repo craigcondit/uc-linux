@@ -6,6 +6,7 @@ images should be able to have reproducible builds.
 
 ### Base Packages ###
     - base-files - 0.0.1-0
+    - update-alternatives - 1.18.3-0
     - busybox - 1.23.2-0
     - libarchive - 3.1.2-0
     - libassuan - 2.3.0-0
@@ -28,10 +29,14 @@ a functional userland with minimal overhead. OpenSSL is present to allow
 busybox's wget implementation to download from https sites. UC Docker
 supports simple package management using opkg.
 
+### Other packages ###
+
+The current repository for uc-linux (codename buggy) is hosted on [Bintray](https://bintray.com/insideo/uc-linux-main-buggy).
+
+### Source code ###
+
+Source code of UC Linux is available on [GitHub](https://github.com/insideo/uc-linux).
+
 ### Credits ###
 
-Obviously the source packages...
-
-Many of the initial build scripts (and a few patches) were taken from
-[Linux From Scratch](http://linuxfromscratch.org/).
-
+Many of the initial build scripts and patches were taken from [LinuxFromScratch](http://www.linuxfromscratch.org/).
