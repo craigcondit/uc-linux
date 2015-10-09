@@ -31,7 +31,7 @@ supports simple package management using opkg.
 
 ### Other packages ###
 
-The current repository for uc-linux (codename buggy) is hosted on [Bintray](https://bintray.com/insideo/uc-linux-main-buggy).
+The current repository for uc-linux version 0 (codename buggy) is hosted on [Bintray](https://bintray.com/insideo/uc-linux-main-buggy).
 
 ### Source code ###
 
