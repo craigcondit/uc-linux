@@ -2,7 +2,7 @@ Package: bash
 Version: 3.0.4-0
 Source: bash
 Priority: optional
-Depends: libc, libncurses, libreadline
+Depends: libc, libncurses, libreadline, update-alternatives
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: GNU Bourne Again SHell
 Architecture: amd64

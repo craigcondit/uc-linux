@@ -24,7 +24,6 @@ RUN \
 	post-root /build/bash-root && \
 	cd /build/bash-root && \
 	rm -rf usr/share && \
-	ln -sf bash usr/bin/sh && \
 	make-deb \
 		/build/bash-deb \
 		/build/bash-root \

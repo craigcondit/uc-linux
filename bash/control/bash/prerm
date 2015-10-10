@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+
+update-alternatives --quiet --remove sh /usr/bin/bash

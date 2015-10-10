@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+
+update-alternatives --quiet --install /usr/bin/sh sh /usr/bin/bash 100
