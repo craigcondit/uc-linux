@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+update-alternatives --quiet --install /usr/bin/unzip unzip /usr/bin/unzip.unzip 100
+update-alternatives --quiet --install /usr/bin/unzipsfx unzipsfx /usr/bin/unzipsfx.unzip 100
+update-alternatives --quiet --install /usr/bin/zipgrep zipgrep /usr/bin/zipgrep.unzip 100
+update-alternatives --quiet --install /usr/bin/zipinfo zipinfo /usr/bin/unzip.unzip 100
+update-alternatives --quiet --install /usr/bin/funzip funzip /usr/bin/funzip.unzip 100

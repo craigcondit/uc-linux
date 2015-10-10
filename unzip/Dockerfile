@@ -18,6 +18,11 @@ RUN \
 	cd /build/unzip-root && \
 	rm -rf usr/man && \
 	(strip --strip-unneeded usr/bin/* || true) && \
+	mv usr/bin/unzipsfx usr/bin/unzipsfx.unzip && \
+	mv usr/bin/unzip usr/bin/unzip.unzip && \
+	mv usr/bin/zipgrep usr/bin/zipgrep.unzip && \
+	mv usr/bin/funzip usr/bin/funzip.unzip && \
+	rm usr/bin/zipinfo && \
 	make-deb \
 		/build/unzip-deb \
 		/build/unzip-root \

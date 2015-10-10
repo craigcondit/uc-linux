@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+update-alternatives --quiet --remove unzip /usr/bin/unzip.unzip
+update-alternatives --quiet --remove unzipsfx /usr/bin/unzipsfx.unzip
+update-alternatives --quiet --remove zipgrep /usr/bin/zipgrep.unzip
+update-alternatives --quiet --remove zipinfo /usr/bin/unzip.unzip
+update-alternatives --quiet --remove funzip /usr/bin/funzip.unzip

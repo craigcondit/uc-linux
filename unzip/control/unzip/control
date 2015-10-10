@@ -2,7 +2,7 @@ Package: unzip
 Version: 6.0-0
 Source: unzip
 Priority: optional
-Depends: libc
+Depends: libc, update-alternatives
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: Unarchiver for .zip files
 Architecture: amd64

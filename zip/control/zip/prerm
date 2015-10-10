@@ -1,4 +1,7 @@
 #!/bin/sh
 set -e
 
-update-alternatives --quiet --remove shasum /usr/bin/shasum.perl
+update-alternatives --quiet --remove zip /usr/bin/zip.zip
+update-alternatives --quiet --remove zipcloak /usr/bin/zipcloak.zip
+update-alternatives --quiet --remove zipnote /usr/bin/zipnote.zip
+update-alternatives --quiet --remove zipsplit /usr/bin/zipsplit.zip
