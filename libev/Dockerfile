@@ -37,9 +37,4 @@ RUN \
 		/build/libev-devel-deb \
 		/build/libev-devel-root \
 		/control/libev-devel \
-		/packages/libev-devel_4.20-0_amd64.deb && \
-
-	cd / && \
-	rm -rf /build /control /download && \
-	opkg --autoremove remove gcc make file linux-devel && \
-	opkg clean
+		/packages/libev-devel_4.20-0_amd64.deb

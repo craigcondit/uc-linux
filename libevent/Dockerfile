@@ -79,9 +79,4 @@ RUN \
 		/build/libevent-devel-deb \
 		/build/libevent-devel-root \
 		/control/libevent-devel \
-		/packages/libevent-devel_2.0.22-0_amd64.deb && \
-
-	cd / && \
-	rm -rf /build /control /download && \
-	opkg --autoremove remove gcc make file linux-devel openssl libssl-devel && \
-	opkg clean
+		/packages/libevent-devel_2.0.22-0_amd64.deb
