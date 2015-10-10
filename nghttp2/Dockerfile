@@ -23,7 +23,7 @@ RUN \
 
 	cp -a /build/nghttp2-base-root /build/nghttp2-root && \
 	cd /build/nghttp2-root && \
-	rm -rf usr/ilb usr/include && \
+	rm -rf usr/lib usr/include && \
 	make-deb \
 		/build/nghttp2-deb \
 		/build/nghttp2-root \
