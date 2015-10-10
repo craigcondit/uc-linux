@@ -38,7 +38,7 @@ RUN \
 	cd /build/python27-devel-root && \
 	rm -rf usr/lib/python2.7 && \
 	rm -f usr/bin/2to3 usr/bin/idle usr/bin/pydoc usr/bin/python usr/bin/python2 && \
-	rm -f usr/bin/python2.7 usr/bin/smtpd.py && \
+	rm -f usr/lib/*.so* usr/bin/python2.7 usr/bin/smtpd.py && \
 	make-deb \
 		/build/python27-devel-deb \
 		/build/python27-devel-root \

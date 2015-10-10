@@ -46,10 +46,5 @@ RUN \
 		/build/libspdylay-devel-deb \
 		/build/libspdylay-devel-root \
 		/control/libspdylay-devel \
-		/packages/libspdylay-devel_1.3.2-0_amd64.deb && \
+		/packages/libspdylay-devel_1.3.2-0_amd64.deb
 
-	cd / && \
-	rm -rf /build /control /download && \
-	opkg --autoremove remove \
-		 libxml2-devel libevent-devel libssl-devel openssl pkg-config linux-devel file make gcc && \
-	opkg clean
