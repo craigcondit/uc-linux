@@ -28,11 +28,12 @@ fi
 
 docker build -t "insideo/uc-linux-${IMG}-build" ${ARGS} .
 
+docker rm -f "uc-linux-${IMG}-tmp" 2>/dev/null || true
+docker run --name "uc-linux-${IMG}-tmp" "insideo/uc-linux-${IMG}-build" /bin/sh
+docker cp "uc-linux-${IMG}-tmp:/packages" ..
+docker rm -f "uc-linux-${IMG}-tmp"
+
 if [ "${QUICK}" != "yes" ]; then
-  docker rm -f "uc-linux-${IMG}-tmp" 2>/dev/null || true
-  docker run --name "uc-linux-${IMG}-tmp" "insideo/uc-linux-${IMG}-build" /bin/sh
-  docker cp "uc-linux-${IMG}-tmp:/packages" ..
-  docker rm -f "uc-linux-${IMG}-tmp"
   docker rmi "insideo/uc-linux-${IMG}-build"
 else 
   echo "Quick build of package ${PACKAGE} complete."
