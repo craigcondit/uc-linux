@@ -19,6 +19,7 @@ for package in \
 	ncurses \
 	readline \
 	bash \
+	gcc-gcj \
 	alsalib \
 	cups \
 	libpng \
