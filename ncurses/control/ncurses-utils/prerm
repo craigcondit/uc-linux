@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+
+update-alternatives --quiet --remove clear /usr/bin/clear.ncurses
+update-alternatives --quiet --remove reset /usr/bin/reset.ncurses

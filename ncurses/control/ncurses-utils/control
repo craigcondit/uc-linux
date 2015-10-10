@@ -2,7 +2,7 @@ Package: ncurses-utils
 Version: 6.0-0
 Source: ncurses
 Priority: required
-Depends: libc, ncurses-base (>= 6.0-0), libncurses (>= 6.0-0)
+Depends: libc, ncurses-base (>= 6.0-0), libncurses (>= 6.0-0), update-alternatives
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: terminal-related programs
 Architecture: amd64

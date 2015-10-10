@@ -34,6 +34,8 @@ RUN \
 	cd /build/ncurses-utils-root && \
 	rm -rf usr/lib usr/share usr/include && \
 	rm -f usr/bin/ncursesw6-config && \
+	mv usr/bin/clear usr/bin/clear.ncurses && \
+	mv usr/bin/reset usr/bin/reset.ncurses && \
 	make-deb \
 		/build/ncurses-utils-deb \
 		/build/ncurses-utils-root \
@@ -56,7 +58,7 @@ RUN \
 		s/screen-256color-bce s/sun v/vt100 v/vt102 v/vt220 \
 		v/vt52 w/wsvt25 w/wsvt25m x/xterm x/xterm-256color \
 		x/xterm-color x/xterm-r5 x/xterm-r6 x/xterm-vt220 x/xterm-xfree86 ; do \
-			cp -a usr/share/terminfo/${term} usr/share/terminfo2/${term} ; done && \
+			cp -H usr/share/terminfo/${term} usr/share/terminfo2/${term} ; done && \
 	rm -rf usr/share/terminfo && \
 	mv -f usr/share/terminfo2 usr/share/terminfo && \
 	make-deb \
@@ -76,7 +78,7 @@ RUN \
 		s/screen-256color-bce s/sun v/vt100 v/vt102 v/vt220 \
 		v/vt52 w/wsvt25 w/wsvt25m x/xterm x/xterm-256color \
 		x/xterm-color x/xterm-r5 x/xterm-r6 x/xterm-vt220 x/xterm-xfree86 ; do \
-			rm -f usr/share/terminf/${term} ; done && \
+			rm -f usr/share/terminfo/${term} ; done && \
 	(find usr/share/terminfo -mindepth 1 -type d -delete 2>/dev/null || true) && \
 	make-deb \
 		/build/ncurses-term-deb \
