@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+
+update-alternatives --quiet --install /usr/bin/zip zip /usr/bin/zip.zip 100
+update-alternatives --quiet --install /usr/bin/zipcloak zipcloak /usr/bin/zipcloak.zip 100
+update-alternatives --quiet --install /usr/bin/zipnote zipnote /usr/bin/zipnote.zip 100
+update-alternatives --quiet --install /usr/bin/zipsplit zipsplit /usr/bin/zipsplit.zip 100

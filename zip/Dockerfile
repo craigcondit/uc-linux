@@ -18,6 +18,10 @@ RUN \
 	cd /build/zip-root && \
 	rm -rf usr/man && \
 	(strip --strip-unneeded usr/bin/* || true) && \
+	mv usr/bin/zip usr/bin/zip.zip && \
+	mv usr/bin/zipcloak usr/bin/zipcloak.zip && \
+	mv usr/bin/zipnote usr/bin/zipnote.zip && \
+	mv usr/bin/zipsplit usr/bin/zipsplit.zip && \
 	make-deb \
 		/build/zip-deb \
 		/build/zip-root \
