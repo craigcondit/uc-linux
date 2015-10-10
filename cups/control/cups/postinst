@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+
+update-alternatives --quiet --install /usr/bin/lp lp /usr/bin/lp.cups 100
+update-alternatives --quiet --install /usr/bin/lpq lpq /usr/bin/lpq.cups 100
+update-alternatives --quiet --install /usr/bin/lpr lpr /usr/bin/lpr.cups 100
+update-alternatives --quiet --install /usr/bin/lprm lprm /usr/bin/lprm.cups 100

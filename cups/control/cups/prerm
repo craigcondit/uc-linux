@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+
+update-alternatives --quiet --remove lp /usr/bin/lp.cups
+update-alternatives --quiet --remove lpq /usr/bin/lpq.cups
+update-alternatives --quiet --remove lpr /usr/bin/lpr.cups
+update-alternatives --quiet --remove lprm /usr/bin/lprm.cups
