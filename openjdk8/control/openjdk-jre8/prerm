@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+JRE_HOME=/usr/lib/jvm/jdk-8-openjdk-amd64/jre
+
+update-alternatives --quiet --remove java ${JRE_HOME}/java
+update-alternatives --quiet --remove jre ${JRE_HOME}
+update-alternatives --quiet --remove jre-8 ${JRE_HOME}
+update-alternatives --quiet --remove jre-8u60 ${JRE_HOME}

@@ -92,34 +92,12 @@ RUN \
 	cd /build/jdk-root && \
 	mkdir -p usr/lib/jvm && \
 	mv /build/java-base-root/usr/lib/jvm/jdk-8-openjdk-amd64 usr/lib/jvm/ && \
-	ln -sfv jdk-8-openjdk-amd64 usr/lib/jvm/default-jdk && \
-	ln -sfv jdk-8-openjdk-amd64/jre usr/lib/jvm/default-jre && \
-	ln -sfv jdk-8-openjdk-amd64 usr/lib/jvm/jdk8u60 && \
-	ln -sfv jdk-8-openjdk-amd64 usr/lib/jvm/jdk8 && \
-	ln -sfv jdk-8-openjdk-amd64/jre usr/lib/jvm/jre8u60 && \
-	ln -sfv jdk-8-openjdk-amd64/jre usr/lib/jvm/jre8 && \
-	for cmd in java jjs keytool orbd pack200 policytool rmid rmiregistry servertool tnameserv unpack200 ; do ( \
-		ln -sfv /usr/lib/jvm/default-jre/bin/${cmd} usr/bin/${cmd} \
-	) ; done && \
-	for cmd in \
-		appletviewer extcheck idlj jar jarsigner java-rmi.cgi javac javadoc \
-		javah javap jcmd jconsole jdb jdeps jhat jinfo jmap jps jrunscript \
-		jsadebugd jstack jstat jstatd native2ascii rmic schemagen serialver \
-		wsgen wsimport xjc ; do ( \
-			ln -sfv /usr/lib/jvm/default-jdk/bin/${cmd} usr/bin/${cmd} \
-	) ; done && \
 	post-root /build/jdk-root && \
 
 	pre-root /build/jre-root && \
 	cd /build/jre-root && \
 	mkdir -p usr/lib/jvm && \
 	mv /build/java-base-root/usr/lib/jvm/jre-8-openjdk-amd64 usr/lib/jvm/ && \
-	ln -sfv jre-8-openjdk-amd64 usr/lib/jvm/default-jre && \
-	ln -sfv jre-8-openjdk-amd64 usr/lib/jvm/jre8u60 && \
-	ln -sfv jre-8-openjdk-amd64 usr/lib/jvm/jre8 && \
-	for cmd in java jjs keytool orbd pack200 policytool rmid rmiregistry servertool tnameserv unpack200 ; do ( \
-		ln -sfv /usr/lib/jvm/default-jre/bin/${cmd} usr/bin/${cmd} \
-	) ; done && \
 	post-root /build/jre-root
 	
 # add control files
