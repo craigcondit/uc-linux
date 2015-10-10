@@ -48,12 +48,4 @@ RUN \
 		/build/libnghttp2-devel-deb \
 		/build/libnghttp2-devel-root \
 		/control/libnghttp2-devel \
-		/packages/libnghttp2-devel_1.3.4-0_amd64.deb && \
-
-	cd / && \
-	rm -rf /build /control /download && \
-	opkg --autoremove remove \
-		ruby bison libjemalloc-devel libjansson-devel libspdylay-devel libev-devel \
-		libxml2-devel libevent-devel libssl-devel openssl pkg-config \
-		linux-devel file make gcc && \
-	opkg clean
+		/packages/libnghttp2-devel_1.3.4-0_amd64.deb
