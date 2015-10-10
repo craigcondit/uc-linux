@@ -5,7 +5,7 @@ JDK_HOME=/usr/lib/jvm/jdk-8-openjdk-amd64
 JRE_HOME=/usr/lib/jvm/jdk-8-openjdk-amd64/jre
 
 update-alternatives --quiet --remove javac ${JDK_HOME}/bin/javac
-update-alternatives --quiet --remove java ${JRE_HOME}/java
+update-alternatives --quiet --remove java ${JRE_HOME}/bin/java
 update-alternatives --quiet --remove jdk ${JDK_HOME}
 update-alternatives --quiet --remove jdk-8 ${JDK_HOME}
 update-alternatives --quiet --remove jdk-8u60 ${JDK_HOME}
