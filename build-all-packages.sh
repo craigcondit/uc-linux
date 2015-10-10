@@ -23,6 +23,7 @@ for package in \
 	alsalib \
 	cups \
 	libpng \
+	libxml2 \
 	gettext \
 	python27 \
 	freetype \
@@ -34,6 +35,7 @@ for package in \
 	libx11-xcb \
 	xorg-libs \
 	openjdk8 \
+	jansson \
 	ruby \
 	spdylay \
 	jemalloc \
