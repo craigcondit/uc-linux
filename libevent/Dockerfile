@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux-bootstrap:buggy
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control

@@ -1,0 +1,11 @@
+flex
+bison
+jansson
+libev
+libevent
+libxml2
+spdylay
+jemalloc
+ruby
+nghttp2
+curl
