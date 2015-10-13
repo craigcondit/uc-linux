@@ -1,12 +1,11 @@
 # uc-linux
 
-Micro-container for Docker which is designed to be small (~ 13 MB),
+Micro-container for Docker which is designed to be small (~ 15 MB),
 extensible (support for Debian .deb packages), and functional. Further,
 images should be able to have reproducible builds.
 
 ### Base Packages ###
     - base-files - 0.0.1-0
-    - update-alternatives - 1.18.3-0
     - busybox - 1.23.2-0
     - libarchive - 3.1.2-0
     - libassuan - 2.3.0-0
@@ -16,10 +15,13 @@ images should be able to have reproducible builds.
     - libgpg-error - 1.20-0
     - libgpgme - 1.6.0-0
     - liblzma - 5.2.1-0
+    - libnghttp2 - 1.3.4-0
     - libopkg - 0.3.0-0
     - libssl - 1.0.2d-0
     - libz - 1.2.8-1
+    - openssl - 1.0.2d-0
     - opkg - 0.3.0-0
+    - update-alternatives - 1.18.3-0
 
 This small base gives us wide compatibility with a large range of existing
 software as well as the ability to build and deploy simple .deb packages.
