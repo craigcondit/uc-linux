@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+
+# create user/group for www-data
+/usr/share/busybox/libexec/busybox addgroup -S www-data 2>/dev/null || true
+/usr/share/busybox/libexec/busybox adduser -h /var/lib/www-data -g '' -s /bin/false -D -S -H -G www-data www-data 2>/dev/null || true

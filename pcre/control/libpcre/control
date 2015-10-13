@@ -1,0 +1,9 @@
+Package: libpcre
+Version: 8.37-0
+Source: pcre
+Priority: required
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Perl 5 Compatible Regular Expression Library - runtime files
+Architecture: amd64
+Section: libs

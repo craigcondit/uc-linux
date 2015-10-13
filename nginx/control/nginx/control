@@ -1,0 +1,9 @@
+Package: nginx
+Version: 1.9.5-0
+Source: nginx
+Priority: optional
+Depends: libc, libssl, libz, libpcre, busybox
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: small, powerful, scalable web/proxy server
+Architecture: amd64
+Section: httpd

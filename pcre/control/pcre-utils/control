@@ -1,0 +1,9 @@
+Package: pcre-utils
+Version: 8.37-0
+Source: pcre
+Priority: optional
+Depends: libc, libpcre (>= 8.37-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Perl 5 Compatible Regular Expression Library - utilities
+Architecture: amd64
+Section: utils

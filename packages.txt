@@ -23,3 +23,5 @@ xcb-proto
 libx11-xcb
 xorg-libs
 openjdk8
+pcre
+nginx

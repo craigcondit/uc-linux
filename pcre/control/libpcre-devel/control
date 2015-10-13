@@ -1,0 +1,9 @@
+Package: libpcre-devel
+Version: 8.37-0
+Source: pcre
+Priority: required
+Depends: libc-devel, libpcre (>= 8.37-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Perl 5 Compatible Regular Expression Library - development files
+Architecture: amd64
+Section: devel

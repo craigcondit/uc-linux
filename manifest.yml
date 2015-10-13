@@ -850,3 +850,27 @@ repos:
       licenses: [ GPL-3.0 ]
       vcs_url: git://git.savannah.gnu.org/bash.git
 
+    - name: pcre-utils
+      desc: 'Perl 5 Compatible Regular Expression Library - utilities'
+      website_url: http://www.pcre.org/
+      vcs_url: svn://vcs.exim.org/pcre/code
+      licenses: [ BSD 3-Clause ]
+
+    - name: libpcre
+      desc: 'Perl 5 Compatible Regular Expression Library - runtime files'
+      website_url: http://www.pcre.org/
+      vcs_url: svn://vcs.exim.org/pcre/code
+      licenses: [ BSD 3-Clause ]
+
+    - name: libpcre-devel
+      desc: 'Perl 5 Compatible Regular Expression Library - development files'
+      website_url: http://www.pcre.org/
+      vcs_url: svn://vcs.exim.org/pcre/code
+      licenses: [ BSD 3-Clause ]
+
+    - name: nginx
+      desc: "small, powerful, scalable web/proxy server"
+      website_url: http://nginx.org/
+      licenses: [ BSD 2-Clause ]
+      vcs_url: http://hg.nginx.org/nginx
+
