@@ -1,0 +1,11 @@
+Package: libcurl
+Source: curl
+Version: 7.44.0-0
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Replaces: libcurl-bootstrap
+Depends: libc, libz, libssl, libnghttp2
+Description: library for transferring data with URL syntax
+Homepage: http://curl.haxx.se
+Section: libs
+Priority: optional

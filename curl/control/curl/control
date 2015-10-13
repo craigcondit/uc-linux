@@ -1,0 +1,11 @@
+Package: curl
+Source: curl
+Version: 7.44.0-0
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Replaces: curl-bootstrap
+Depends: libc, libcurl (>= 7.44.0-0), libz, libnghttp2
+Description: command line tool for transferring data with URL syntax
+Homepage: http://curl.haxx.se
+Section: web
+Priority: optional

@@ -40,5 +40,6 @@ for package in \
 	spdylay \
 	jemalloc \
 	nghttp2 \
+	curl \
 ; do ./build-package.sh ${package} ; done
 
