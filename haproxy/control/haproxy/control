@@ -1,0 +1,9 @@
+Package: haproxy
+Version: 1.6.0-0
+Source: haproxy
+Priority: optional
+Depends: libc, libz, libpcre, libssl
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: fast and reliable load balancing reverse proxy
+Architecture: amd64
+Section: net

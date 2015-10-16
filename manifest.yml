@@ -874,3 +874,8 @@ repos:
       licenses: [ BSD 2-Clause ]
       vcs_url: http://hg.nginx.org/nginx
 
+    - name: haproxy
+      desc: "fast and reliable load balancing reverse proxy"
+      website_url: http://www.haproxy.org/
+      vcs_url: http://git.haproxy.org/git/haproxy.git/
+      licenses: [ 'LGPL-2.1', 'GPL-2.0' ]

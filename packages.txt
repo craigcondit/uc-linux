@@ -25,3 +25,4 @@ xorg-libs
 openjdk8
 pcre
 nginx
+haproxy
