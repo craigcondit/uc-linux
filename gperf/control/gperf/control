@@ -1,0 +1,9 @@
+Package: gperf
+Version: 3.0.4-0
+Source: gperf
+Priority: optional
+Depends: libc, libgcc, libstdcxx
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Perfect hash function generator
+Architecture: amd64
+Section: devel

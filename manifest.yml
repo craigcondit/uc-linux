@@ -916,3 +916,8 @@ repos:
       licenses: [ GPL-3.0 ]
       vcs_url: git://git.sv.gnu.org/coreutils
 
+    - name: gperf
+      desc: Perfect hash function generator
+      website_url: http://www.gnu.org/software/gperf/
+      licenses: [ GPL-3.0 ]
+      vcs_url: git://git.savannah.gnu.org/gperf.git

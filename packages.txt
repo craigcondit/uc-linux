@@ -30,3 +30,4 @@ expat
 libxml-parser-perl
 intltool
 coreutils
+gperf
