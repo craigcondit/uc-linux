@@ -2,7 +2,7 @@ Package: libfdisk
 Version: 2.27-0
 Source: util-linux
 Priority: required
-Depends: libc
+Depends: libc, libblkid, libuuid
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: fdisk library
 Architecture: amd64

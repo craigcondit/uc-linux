@@ -982,7 +982,7 @@ repos:
       licenses: [ GPL-2.0 ]
       vcs_url: git://git.kernel.org/pub/scm/utils/util-linux/util-linux.git
 
-    - name: libfisk-devel
+    - name: libfdisk-devel
       desc: fdisk library (development files)
       website_url: http://freecode.com/projects/util-linux
       licenses: [ GPL-2.0 ]
@@ -1000,13 +1000,13 @@ repos:
       licenses: [ GPL-2.0 ]
       vcs_url: git://git.kernel.org/pub/scm/utils/util-linux/util-linux.git
 
-    - name: libsmartcol
+    - name: libsmartcols
       desc: smart column output alignment library
       website_url: http://freecode.com/projects/util-linux
       licenses: [ GPL-2.0 ]
       vcs_url: git://git.kernel.org/pub/scm/utils/util-linux/util-linux.git
 
-    - name: libsmartcol-devel
+    - name: libsmartcols-devel
       desc: smart column output alignment library (development files)
       website_url: http://freecode.com/projects/util-linux
       licenses: [ GPL-2.0 ]

@@ -2,7 +2,7 @@ Package: libfdisk-devel
 Version: 2.27-0
 Source: util-linux
 Priority: optional
-Depends: libc-devel, libfdisk (>= 2.27-0)
+Depends: libc-devel, libblkid-devel, libuuid-devel, libfdisk (>= 2.27-0)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: fdisk library (development files)
 Architecture: amd64

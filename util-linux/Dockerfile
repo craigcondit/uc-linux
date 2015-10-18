@@ -27,6 +27,7 @@ RUN \
 	cp -a /build/util-linux-base-root /build/util-linux-root && \
 	cd /build/util-linux-root && \
 	rm -rf usr/include && \
+	rm -rf usr/lib && \
 	for cmd in \
 		i386 lastb linux32 linux64 uname26 x86_64 ; do \
 		rm "usr/bin/${cmd}" ; done && \
