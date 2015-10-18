@@ -28,3 +28,4 @@ nginx
 haproxy
 expat
 libxml-parser-perl
+intltool

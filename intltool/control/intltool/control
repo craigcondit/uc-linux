@@ -1,0 +1,9 @@
+Package: intltool
+Version: 0.51.0-0
+Source: intltool
+Priority: optional
+Depends: libc, file, perl, libxml-parser-perl
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Utility scripts for internationalizing XML
+Architecture: all
+Section: dvel
