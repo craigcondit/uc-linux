@@ -1,0 +1,9 @@
+Package: libnss-systemd
+Version: 224-0
+Source: systemd
+Priority: optional
+Depends: libc, libcap, libattr
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Additional NSS libraries from systemd
+Architecture: amd64
+Section: libs

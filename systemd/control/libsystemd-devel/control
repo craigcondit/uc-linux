@@ -1,0 +1,9 @@
+Package: libsystemd-devel
+Version: 224-0
+Source: systemd
+Priority: optional
+Depends: libc-devel, libcap-devel, libattr-devel, libsystemd (>= 224-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: systemd utility library (development files)
+Architecture: amd64
+Section: devel

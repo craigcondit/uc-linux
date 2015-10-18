@@ -1,0 +1,9 @@
+Package: udev
+Version: 224-0
+Source: systemd
+Priority: important
+Depends: libc, libblkid, libuuid, libudev (>= 224-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: /dev/ and hotplug management daemon
+Architecture: amd64
+Section: admin

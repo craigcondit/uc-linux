@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+
+if [ ! -e /etc/machine-id ]; then
+  systemd-machine-id-setup
+fi
+
+update-alternatives --quiet --install /usr/sbin/runlevel runlevel /usr/bin/systemctl 100
+update-alternatives --quiet --install /usr/sbin/reboot reboot /usr/bin/systemctl 100
+update-alternatives --quiet --install /usr/sbin/shutdown shutdown /usr/bin/systemctl 100
+update-alternatives --quiet --install /usr/sbin/poweroff poweroff /usr/bin/systemctl 100
+update-alternatives --quiet --install /usr/sbin/halt halt /usr/bin/systemctl 100
+update-alternatives --quiet --install /usr/sbin/telinit telinit /usr/bin/systemctl 100
+update-alternatives --quiet --install /usr/sbin/init init /usr/lib/systemd/systemd 100
