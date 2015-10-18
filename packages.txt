@@ -33,3 +33,4 @@ coreutils
 gperf
 attr
 libcap
+util-linux
