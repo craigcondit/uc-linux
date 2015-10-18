@@ -921,3 +921,22 @@ repos:
       website_url: http://www.gnu.org/software/gperf/
       licenses: [ GPL-3.0 ]
       vcs_url: git://git.savannah.gnu.org/gperf.git
+
+    - name: attr
+      desc: Utilities for manipulating filesystem extended attributes
+      website_url: http://savannah.nongnu.org/projects/attr
+      licenses: [ GPL-2.0 ]
+      vcs_url: git://git.savannah.nongnu.org/attr.git
+
+    - name: libattr
+      desc: Extended attribute shared library
+      website_url: http://savannah.nongnu.org/projects/attr
+      licenses: [ GPL-2.0 ]
+      vcs_url: git://git.savannah.nongnu.org/attr.git
+
+    - name: libattr-devel
+      desc: Extended attribute library (development files)
+      website_url: http://savannah.nongnu.org/projects/attr
+      licenses: [ GPL-2.0 ]
+      vcs_url: git://git.savannah.nongnu.org/attr.git
+

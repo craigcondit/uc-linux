@@ -1,0 +1,9 @@
+Package: libattr-devel
+Version: 2.4.47-0
+Source: attr
+Priority: optional
+Depends: libc-devel, libattr (>= 2.4.47-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Extended attribute library (development files)
+Architecture: amd64
+Section: devel
