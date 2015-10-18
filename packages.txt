@@ -32,3 +32,4 @@ intltool
 coreutils
 gperf
 attr
+libcap

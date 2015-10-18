@@ -940,3 +940,21 @@ repos:
       licenses: [ GPL-2.0 ]
       vcs_url: git://git.savannah.nongnu.org/attr.git
 
+    - name: cap-utils
+      desc: POSIX 1003.1e capabilities (utilities)
+      website_url: https://sites.google.com/site/fullycapable/
+      licenses: [ GPL-2.0 ]
+      vcs_url: http://git.kernel.org/?p=linux/kernel/git/morgan/libcap.git;a=summary
+ 
+    - name: libcap
+      desc: POSIX 1003.1e capabilities (library)
+      website_url: https://sites.google.com/site/fullycapable/
+      licenses: [ GPL-2.0 ]
+      vcs_url: http://git.kernel.org/?p=linux/kernel/git/morgan/libcap.git;a=summary
+ 
+    - name: libcap-devel
+      desc: POSIX 1003.1e capabilities (development files)
+      website_url: https://sites.google.com/site/fullycapable/
+      licenses: [ GPL-2.0 ]
+      vcs_url: http://git.kernel.org/?p=linux/kernel/git/morgan/libcap.git;a=summary
+

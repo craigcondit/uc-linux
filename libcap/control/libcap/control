@@ -1,0 +1,9 @@
+Package: libcap
+Version: 2.24-0
+Source: libcap
+Priority: standard 
+Depends: libc, libattr
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: POSIX 1003.1e capabilities (library)
+Architecture: amd64
+Section: libs
