@@ -958,3 +958,69 @@ repos:
       licenses: [ GPL-2.0 ]
       vcs_url: http://git.kernel.org/?p=linux/kernel/git/morgan/libcap.git;a=summary
 
+    - name: util-linux
+      desc: Miscellaneous system utilities
+      website_url: http://freecode.com/projects/util-linux
+      licenses: [ GPL-2.0 ]
+      vcs_url: git://git.kernel.org/pub/scm/utils/util-linux/util-linux.git
+
+    - name: libblkid
+      desc: block device id library
+      website_url: http://freecode.com/projects/util-linux
+      licenses: [ GPL-2.0 ]
+      vcs_url: git://git.kernel.org/pub/scm/utils/util-linux/util-linux.git
+
+    - name: libblkid-devel
+      desc: block device id library (development files)
+      website_url: http://freecode.com/projects/util-linux
+      licenses: [ GPL-2.0 ]
+      vcs_url: git://git.kernel.org/pub/scm/utils/util-linux/util-linux.git
+
+    - name: libfdisk
+      desc: fdisk library
+      website_url: http://freecode.com/projects/util-linux
+      licenses: [ GPL-2.0 ]
+      vcs_url: git://git.kernel.org/pub/scm/utils/util-linux/util-linux.git
+
+    - name: libfisk-devel
+      desc: fdisk library (development files)
+      website_url: http://freecode.com/projects/util-linux
+      licenses: [ GPL-2.0 ]
+      vcs_url: git://git.kernel.org/pub/scm/utils/util-linux/util-linux.git
+
+    - name: libmount
+      desc: device mounting library
+      website_url: http://freecode.com/projects/util-linux
+      licenses: [ GPL-2.0 ]
+      vcs_url: git://git.kernel.org/pub/scm/utils/util-linux/util-linux.git
+
+    - name: libmount-devel
+      desc: device mounting library (development files)
+      website_url: http://freecode.com/projects/util-linux
+      licenses: [ GPL-2.0 ]
+      vcs_url: git://git.kernel.org/pub/scm/utils/util-linux/util-linux.git
+
+    - name: libsmartcol
+      desc: smart column output alignment library
+      website_url: http://freecode.com/projects/util-linux
+      licenses: [ GPL-2.0 ]
+      vcs_url: git://git.kernel.org/pub/scm/utils/util-linux/util-linux.git
+
+    - name: libsmartcol-devel
+      desc: smart column output alignment library (development files)
+      website_url: http://freecode.com/projects/util-linux
+      licenses: [ GPL-2.0 ]
+      vcs_url: git://git.kernel.org/pub/scm/utils/util-linux/util-linux.git
+
+    - name: libuuid
+      desc: Universally Unique ID library
+      website_url: http://freecode.com/projects/util-linux
+      licenses: [ GPL-2.0 ]
+      vcs_url: git://git.kernel.org/pub/scm/utils/util-linux/util-linux.git
+
+    - name: libuuid-devel
+      desc: Universally Unique ID library (development files)
+      website_url: http://freecode.com/projects/util-linux
+      licenses: [ GPL-2.0 ]
+      vcs_url: git://git.kernel.org/pub/scm/utils/util-linux/util-linux.git
+

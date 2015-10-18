@@ -1,0 +1,9 @@
+Package: libsmartcols
+Version: 2.27-0
+Source: util-linux
+Priority: required
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: smart column output alignment library
+Architecture: amd64
+Section: libs

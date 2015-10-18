@@ -1,0 +1,9 @@
+Package: libblkid
+Version: 2.27-0
+Source: util-linux
+Priority: required
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: block device id library
+Architecture: amd64
+Section: libs

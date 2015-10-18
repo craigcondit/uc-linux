@@ -1,0 +1,9 @@
+Package: libuuid-devel
+Version: 2.27-0
+Source: util-linux
+Priority: optional
+Depends: libc-devel, libuuid (>= 2.27-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Universally Unique ID library (development files)
+Architecture: amd64
+Section: devel
