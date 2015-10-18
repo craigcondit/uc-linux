@@ -1,0 +1,9 @@
+Package: coreutils
+Version: 2.5.39-0
+Source: coreutils
+Priority: optional
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: GNU core utilities
+Architecture: amd64
+Section: utils

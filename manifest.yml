@@ -909,3 +909,10 @@ repos:
       website_url: http://freedesktop.org/wiki/Software/intltool/
       licenses: [ GPL-2.0 ]
       vcs_url: https://code.launchpad.net/intltool
+
+    - name: coreutils
+      desc: GNU core utilities
+      website_url: http://www.gnu.org/software/coreutils/coreutils.html
+      licenses: [ GPL-3.0 ]
+      vcs_url: git://git.sv.gnu.org/coreutils
+
