@@ -1066,3 +1066,9 @@ repos:
       licenses: [ LGPL-2.1 ]
       vcs_url: git@github.com:systemd/systemd.git
 
+    - name: maven
+      desc: Java software project management and comprehension tool
+      website_url: https://maven.apache.org/
+      vcs_url: https://git-wip-us.apache.org/repos/asf/maven.git
+      licenses: [ Apache-2.0 ]
+

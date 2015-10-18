@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+
+update-alternatives --quiet --install /usr/bin/mvn mvn /usr/share/maven/bin/mvn 100 \
+	--slave /usr/bin/mvnDebug mvnDebug /usr/share/maven/bin/mvnDebug
+

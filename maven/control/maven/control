@@ -1,0 +1,9 @@
+Package: maven
+Version: 3.3.3-0
+Source: maven
+Priority: optional
+Depends: libc, jdk
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Java software project management and comprehension tool
+Architecture: all
+Section: devel

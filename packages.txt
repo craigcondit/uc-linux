@@ -35,3 +35,4 @@ attr
 libcap
 util-linux
 systemd
+maven
