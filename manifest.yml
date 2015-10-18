@@ -898,3 +898,8 @@ repos:
       licenses: [ BSD ]
       vcs_url: http://expat.cvs.sourceforge.net/
 
+    - name: libxml-parser-perl
+      desc: "Perl module for parsing XML files"
+      website_url: https://github.com/chorny/XML-Parser
+      licenses: [ BSD ] 
+      vcs_url: https://github.com/chorny/XML-Parser

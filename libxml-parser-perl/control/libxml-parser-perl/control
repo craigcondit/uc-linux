@@ -1,0 +1,9 @@
+Package: libxml-parser-perl
+Version: 2.44-0
+Source: xml-parser
+Priority: optional
+Depends: libc, perl, libexpat
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Perl module for parsing XML files
+Architecture: amd64
+Section: perl

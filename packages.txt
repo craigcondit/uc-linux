@@ -27,3 +27,4 @@ pcre
 nginx
 haproxy
 expat
+libxml-parser-perl
