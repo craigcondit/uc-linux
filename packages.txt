@@ -31,3 +31,4 @@ libxml-parser-perl
 intltool
 coreutils
 gperf
+attr
