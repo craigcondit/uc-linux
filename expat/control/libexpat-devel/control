@@ -1,0 +1,9 @@
+Package: libexpat-devel
+Version: 2.1.0-0
+Source: expat
+Priority: optional
+Depends: libc-devel, libexpat (>= 2.1.0-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: XML parsing C library - development files
+Architecture: amd64
+Section: devel

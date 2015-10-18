@@ -879,3 +879,22 @@ repos:
       website_url: http://www.haproxy.org/
       vcs_url: http://git.haproxy.org/git/haproxy.git/
       licenses: [ 'LGPL-2.1', 'GPL-2.0' ]
+
+    - name: expat
+      desc: "XML parsing C library - example application"
+      website_url: http://expat.sourceforge.net/
+      licenses: [ BSD ]
+      vcs_url: http://expat.cvs.sourceforge.net/
+ 
+    - name: libexpat
+      desc: "XML parsing C library - runtime library"
+      website_url: http://expat.sourceforge.net/
+      licenses: [ BSD ]
+      vcs_url: http://expat.cvs.sourceforge.net/
+ 
+    - name: libexpat-devel
+      desc: "XML parsing C library - development files"
+      website_url: http://expat.sourceforge.net/
+      licenses: [ BSD ]
+      vcs_url: http://expat.cvs.sourceforge.net/
+

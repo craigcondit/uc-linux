@@ -1,0 +1,9 @@
+Package: libexpat
+Version: 2.1.0-0
+Source: expat
+Priority: optional
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: XML parsing C library - runtime library
+Architecture: amd64
+Section: libs
