@@ -82,6 +82,6 @@ RUN \
 		/build/gcc-go-devel-deb \
 		/build/gcc-go-devel-root \
 		/control/gcc-go-devel \
-		/packages/gcc-go-devel_5.2.0-0_amd64.deb && \
+		/packages/gcc-go-devel_5.2.0-0_amd64.deb
 
 
