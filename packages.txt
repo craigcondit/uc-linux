@@ -39,3 +39,4 @@ maven
 postgresql
 git
 gcc-go
+runas

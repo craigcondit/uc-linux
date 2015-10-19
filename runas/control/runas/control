@@ -1,0 +1,9 @@
+Package: runas
+Version: 1.0.0-0
+Source: runas
+Priority: optional
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Simple alternative to su
+Architecture: amd64
+Section: utils

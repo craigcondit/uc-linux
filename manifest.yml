@@ -1126,3 +1126,9 @@ repos:
       vcs_url: https://github.com/git/git
       licenses: [ 'GPL-2.0' ]
 
+    - name: runas
+      desc: Simple alternative to su
+      website_url: https://github.com/insideo/uc-linux
+      vcs_url: https://github.com/insideo/uc-linux
+      licenses: [ 'Public Domain' ]
+
