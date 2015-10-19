@@ -37,4 +37,5 @@ util-linux
 systemd
 maven
 postgresql
+git
 gcc-go

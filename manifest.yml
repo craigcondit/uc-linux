@@ -1120,3 +1120,9 @@ repos:
       vcs_url: svn://gcc.gnu.org/svn/gcc/
       licenses: [ 'GPL-2.0', 'GPL-3.0' ]
 
+    - name: git
+      desc: 'fast, scalable, distributed revision control system'
+      website_url: https://git-scm.com/
+      vcs_url: https://github.com/git/git
+      licenses: [ 'GPL-2.0' ]
+

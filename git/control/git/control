@@ -1,0 +1,9 @@
+Package: git
+Version: 2.6.0-0
+Source: git
+Priority: optional
+Depends: libc, libssl, libz, libcurl, libpcre, libexpat
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: fast, scalable, distributed revision control system
+Architecture: amd64
+Section: vcs
