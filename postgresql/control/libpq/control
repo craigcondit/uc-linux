@@ -1,0 +1,9 @@
+Package: libpq
+Version: 9.4.5-0
+Source: postgresql
+Priority: optional
+Depends: libc, libssl
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: object-relational SQL database (libpq library)
+Architecture: amd64
+Section: libs

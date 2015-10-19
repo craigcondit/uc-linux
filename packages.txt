@@ -36,3 +36,4 @@ libcap
 util-linux
 systemd
 maven
+postgresql

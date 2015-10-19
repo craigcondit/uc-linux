@@ -1,0 +1,9 @@
+Package: libpgtypes
+Version: 9.4.5-0
+Source: postgresql
+Priority: optional
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: object-relational SQL database (libpgtypes library)
+Architecture: amd64
+Section: libs

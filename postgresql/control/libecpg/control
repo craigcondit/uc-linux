@@ -1,0 +1,9 @@
+Package: libecpg
+Version: 9.4.5-0
+Source: postgresql
+Priority: optional
+Depends: libc, libpq (>= 9.4.5-0), libpgtypes (>= 9.4.5-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: object-relational SQL database (libecpg library)
+Architecture: amd64
+Section: libs
