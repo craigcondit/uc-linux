@@ -1,0 +1,9 @@
+Package: gcc-go-devel
+Version: 5.2.0-0
+Source: gcc
+Priority: optional
+Depends: libc-devel, gcc-go-runtime (>= 5.2.0-0)
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Go Language implementation (GCC-based compiler and development files)
+Architecture: amd64
+Section: go

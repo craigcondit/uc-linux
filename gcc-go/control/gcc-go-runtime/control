@@ -1,0 +1,9 @@
+Package: gcc-go-runtime
+Version: 5.2.0-0
+Source: gcc
+Priority: optional
+Depends: libc, libgcc, libmpc, libmpfr, libgmp
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Go Language implementation (GCC runtime)
+Architecture: amd64
+Section: go
