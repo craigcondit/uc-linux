@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+
+update-alternatives --quiet --remove go /usr/bin/go.gcc-go
+update-alternatives --quiet --remove gofmt /usr/bin/gofmt.gcc-go

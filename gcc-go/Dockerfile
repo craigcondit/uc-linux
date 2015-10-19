@@ -11,8 +11,6 @@ RUN \
 		libgmp-devel libmpfr-devel libmpc-devel libffi-devel zip && \
 	wget -O /download/gcc-5.2.0.tar.bz2 \
 		http://ftp.gnu.org/gnu/gcc/gcc-5.2.0/gcc-5.2.0.tar.bz2 && \
-	wget -O /download/ecj-4.9.jar \
-		ftp://sourceware.org/pub/java/ecj-4.9.jar && \
 	cd /build && \
 	tar xf /download/gcc-5.2.0.tar.bz2 && \
 	mkdir gcc-build && \
