@@ -87,7 +87,7 @@ if [ "$1" = 'postgres' ]; then
 		for f in /docker-entrypoint-initdb.d/* ; do
 			case "$f" in
 				*.sh)	echo "$0: running $f" ; . "$f" ;;
-				*.sql) echo "$0: running $f" ; postgres psql --username "${POSTGRES_USER}" --dbname "${POSTGRES_DB}" < "$f" && echo ;;
+				*.sql) echo "$0: running $f" ; runas postgres psql --username "${POSTGRES_USER}" --dbname "${POSTGRES_DB}" < "$f" && echo ;;
 				*)		 echo "$0: ignoring $f" ;;
 			esac
 			echo
