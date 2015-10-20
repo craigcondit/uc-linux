@@ -58,19 +58,25 @@ if [ "$1" = 'postgres' ]; then
 	: ${POSTGRES_USER:=postgres}
 	: ${POSTGRES_DB:=$POSTGRES_USER}
 
-	if [ "${POSTGRES_DB}" != "postgres" ]; then
-		runas postgres psql --username postgres <<-EOSQL
-			CREATE DATABASE "${POSTGRES_DB}" ;
-		EOSQL
-		echo
+	if [ "${firstrun}" == "YES" ]; then
+		if [ "${POSTGRES_DB}" != "postgres" ]; then
+			runas postgres psql --username postgres <<-EOSQL
+				CREATE DATABASE "${POSTGRES_DB}" ;
+			EOSQL
+			echo
+		fi
+	fi
+
+	if [ "${firstrun}" == "YES" ]; then
+		op='CREATE'
+	else
+		op='ALTER'
 	fi
 
 	if [ "${POSTGRES_USER}" = 'postgres' ]; then
 		op='ALTER'
-	else
-		op='CREATE'
 	fi
-
+	
 	runas postgres psql --username postgres <<-EOSQL
 		$op USER "${POSTGRES_USER}" WITH SUPERUSER $pass ;
 	EOSQL
@@ -81,7 +87,7 @@ if [ "$1" = 'postgres' ]; then
 		for f in /docker-entrypoint-initdb.d/* ; do
 			case "$f" in
 				*.sh)	echo "$0: running $f" ; . "$f" ;;
-				*.sql) echo "$0: running $f" ; psql --username "${POSTGRES_USER}" --dbname "${POSTGRES_DB}" < "$f" && echo ;;
+				*.sql) echo "$0: running $f" ; runas postgres psql --username "${POSTGRES_USER}" --dbname "${POSTGRES_DB}" < "$f" && echo ;;
 				*)		 echo "$0: ignoring $f" ;;
 			esac
 			echo
