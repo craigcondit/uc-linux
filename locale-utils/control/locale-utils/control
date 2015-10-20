@@ -1,0 +1,9 @@
+Package: locale-utils
+Version: 2.22-0
+Source: libc
+Priority: important
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: GNU locale utils
+Architecture: amd64
+Section: utils

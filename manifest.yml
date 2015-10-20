@@ -1132,3 +1132,14 @@ repos:
       vcs_url: https://github.com/insideo/uc-linux
       licenses: [ 'Public Domain' ]
 
+    - name: locale-utils
+      desc: GNU locale utils
+      website_url: https://www.gnu.org/software/libc/
+      licenses: [ LGPL-2.1 ]
+      vcs_url: git://sourceware.org/git/glibc.git
+
+    - name: locale-data
+      desc: GNU locale data
+      website_url: https://www.gnu.org/software/libc/
+      licenses: [ LGPL-2.1 ]
+      vcs_url: git://sourceware.org/git/glibc.git

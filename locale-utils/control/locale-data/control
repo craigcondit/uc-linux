@@ -1,0 +1,9 @@
+Package: locale-data
+Version: 2.22-0
+Source: libc
+Priority: important
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: GNU locale data
+Architecture: all
+Section: libs

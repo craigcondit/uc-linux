@@ -40,3 +40,4 @@ postgresql
 git
 gcc-go
 runas
+locale-utils
