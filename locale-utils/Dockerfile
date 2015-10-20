@@ -32,23 +32,25 @@ RUN \
 	post-root /build/glibc-root
 
 ADD support /support
+ADD control /control
 RUN \
 
 	pre-root /build/locale-utils-root && \
 	cd /build/locale-utils-root && \
 	cp -a /build/glibc-root/usr/bin/locale usr/bin/ && \
 	cp -a /build/glibc-root/usr/bin/localedef usr/bin/ && \
+	mkdir -p usr/share/locale && \
 	cat /build/glibc-2.22/localedata/SUPPORTED | grep -v ^# \
-		| grep -v ^SUPPORTED | sed 's/ \\//' | sed 's/^/# /' \
+		| grep -v ^SUPPORTED | sed 's/ \\//' | sed 's@/@ @' \
 		> usr/share/locale/SUPPORTED && \
 	cat /build/glibc-2.22/localedata/SUPPORTED | grep -v ^# \
-		| grep -v ^SUPPORTED | sed 's/ \\//' | sed 's/^/# /' \
+		| grep -v ^SUPPORTED | sed 's/ \\//' | sed 's/^/# /' | sed 's@/@ @' \
 		> etc/locale.gen && \
 	cp /support/locale-gen usr/sbin && \
 	chmod 755 usr/sbin/locale-gen && \
 	(strip --strip-unneeded usr/bin/* || true) && \
-	mkdir -p usr/share && \
-	cp -a /build/glibc-root/usr/share/locale usr/share/locale && \
+	mkdir -p usr/share/locale && \
+	cp -a /build/glibc-root/usr/share/locale/* usr/share/locale && \
 	cp -a /build/glibc-root/usr/share/i18n usr/share/i18n && \	
 	post-root /build/locale-utils-root && \
 
@@ -60,7 +62,7 @@ RUN \
 		/build/locale-utils-deb \
 		/build/locale-utils-root \
 		/control/locale-utils \
-		/packages/locale-utils_2.22-0_amd64.deb
+		/packages/locale-utils_2.22-0_amd64.deb && \
 
 	cd /build/locale-data-root && \
 	rm -rf usr/bin usr/sbin etc && \

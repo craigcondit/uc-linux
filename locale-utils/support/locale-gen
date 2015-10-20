@@ -9,6 +9,7 @@ if [ -n "$POSIXLY_CORRECT" ]; then
   unset POSIXLY_CORRECT
 fi
 
+mkdir -p /usr/lib/locale
 
 [ -f $LOCALEGEN ] || exit 0;
 [ -s $LOCALEGEN ] || exit 0;
