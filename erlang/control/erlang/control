@@ -1,0 +1,9 @@
+Package: erlang
+Version: 18.1-0
+Source: erlang
+Priority: optional
+Depends: libc, libz, libssl
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Concurrent, real-time, distributed functional language
+Architecture: amd64
+Section: interpreters
