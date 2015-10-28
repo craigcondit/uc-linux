@@ -1143,3 +1143,10 @@ repos:
       website_url: https://www.gnu.org/software/libc/
       licenses: [ LGPL-2.1 ]
       vcs_url: git://sourceware.org/git/glibc.git
+
+    - name: erlang
+      desc: Concurrent, real-time, distributed functional language
+      website_url: http://www.erlang.org/
+      licenses: [ Apache-2.0 ]
+      vcs_url: https://github.com/erlang/otp/
+
