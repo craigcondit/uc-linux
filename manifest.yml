@@ -1156,3 +1156,9 @@ repos:
       licenses: [ GPL-2.0 ]
       vcs_url: https://git.fedorahosted.org/git/sgml-common.git
 
+    - name: docbook-xml
+      desc: standard XML documentation system for software and systems
+      website_url: http://docbook.org/
+      licenses: [ 'Public Domain' ]
+      vcs_url: http://docbook.org/xml/4.5/
+
