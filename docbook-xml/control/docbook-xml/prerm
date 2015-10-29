@@ -1,0 +1,36 @@
+#!/bin/sh
+set -e
+
+if [ ! -e /etc/xml/docbook ]; then
+  xmlcatalog --noout --create /etc/xml/docbook
+fi
+
+if [ ! -e /etc/xml/catalog ]; then
+  xmlcatalog --noout --create /etc/xml/catalog
+fi
+
+for DTDVERSION in 4.1.2 4.2 4.3 4.4 ; do
+  xmlcatalog --noout --del "-//OASIS//DTD DocBook XML V$DTDVERSION//EN" /etc/xml/docbook
+  xmlcatalog --noout --del "http://www.oasis-open.org/docbook/xml/$DTDVERSION" /etc/xml/docbook
+  xmlcatalog --noout --del "http://www.oasis-open.org/docbook/xml/$DTDVERSION" /etc/xml/docbook
+  xmlcatalog --noout --del "http://www.oasis-open.org/docbook/xml/$DTDVERSION/" /etc/xml/catalog
+  xmlcatalog --noout --del "http://www.oasis-open.org/docbook/xml/$DTDVERSION/" /etc/xml/catalog
+done
+
+xmlcatalog --noout --del "http://www.oasis-open.org/docbook/" /etc/xml/catalog
+xmlcatalog --noout --del "http://www.oasis-open.org/docbook/" /etc/xml/catalog
+xmlcatalog --noout --del "-//OASIS//DTD DocBook XML" /etc/xml/catalog
+xmlcatalog --noout --del "-//OASIS//ENTITIES DocBook XML" /etc/xml/catalog
+
+xmlcatalog --noout --del "http://www.oasis-open.org/docbook/xml/4.5" /etc/xml/docbook
+xmlcatalog --noout --del "http://www.oasis-open.org/docbook/xml/4.5" /etc/xml/docbook
+xmlcatalog --noout --del "-//OASIS//ENTITIES DocBook XML Additional General Entities V4.5//EN" /etc/xml/docbook
+xmlcatalog --noout --del "-//OASIS//ENTITIES DocBook XML Character Entities V4.5//EN" /etc/xml/docbook
+xmlcatalog --noout --del "-//OASIS//ENTITIES DocBook XML Notations V4.5//EN" /etc/xml/docbook
+xmlcatalog --noout --del "-//OASIS//ELEMENTS DocBook XML HTML Tables V4.5//EN" /etc/xml/docbook
+xmlcatalog --noout --del "-//OASIS//ELEMENTS DocBook XML Document Hierarchy V4.5//EN" /etc/xml/docbook
+xmlcatalog --noout --del "-//OASIS//ELEMENTS DocBook XML Information Pool V4.5//EN" /etc/xml/docbook
+xmlcatalog --noout --del "-//OASIS//DTD XML Exchange Table Model 19990315//EN" /etc/xml/docbook
+xmlcatalog --noout --del "-//OASIS//DTD DocBook XML CALS Table Model V4.5//EN" /etc/xml/docbook
+xmlcatalog --noout --del "-//OASIS//DTD DocBook XML V4.5//EN" /etc/xml/docbook
+
