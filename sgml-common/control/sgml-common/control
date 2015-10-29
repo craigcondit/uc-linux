@@ -1,0 +1,9 @@
+Package: sgml-common
+Version: 0.6.3-0
+Source: sgml-common
+Priority: optional
+Depends: libc
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Base ISO character entities and utilities for SGML
+Architecture: all
+Section: text

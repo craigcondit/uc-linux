@@ -1150,3 +1150,9 @@ repos:
       licenses: [ Apache-2.0 ]
       vcs_url: https://github.com/erlang/otp/
 
+    - name: sgml-common
+      desc: Base ISO character entities and utilities for SGML
+      website_url: http://www.iso.ch/cate/3524030.html
+      licenses: [ GPL-2.0 ]
+      vcs_url: https://git.fedorahosted.org/git/sgml-common.git
+

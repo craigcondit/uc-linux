@@ -42,3 +42,4 @@ gcc-go
 runas
 locale-utils
 erlang
+sgml-common
