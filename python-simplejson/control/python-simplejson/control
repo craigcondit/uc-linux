@@ -1,0 +1,10 @@
+Package: python-simplejson
+Version: 3.8.1-0
+Source: python-simplejson
+Priority: optional
+Depends: libc, python27
+Provides: python27-simplejson
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: simple, fast, extensible JSON encoder/decoder for Python
+Architecture: amd64
+Section: python

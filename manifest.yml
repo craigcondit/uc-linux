@@ -1186,3 +1186,9 @@ repos:
       licenses: [ BSD ]
       vcs_url: https://git.gnome.org/browse/libxslt/
 
+    - name: python-simplejson
+      desc: 'simple, fast, extensible JSON encoder/decoder for Python'
+      website_url: https://pypi.python.org/pypi/simplejson/
+      licenses: [ 'MIT' ]
+      vcs_url: https://github.com/simplejson/simplejson
+
