@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+
+if [ ! -d /etc/xml ]; then
+  install -m755 -d /etc/xml
+fi
+
+if [ ! -e /etc/xml/catalog ]; then
+  xmlcatalog --noout --create /etc/xml/catalog
+fi
+
+xmlcatalog --noout --del "http://docbook.sourceforge.net/release/xsl/current" /etc/xml/catalog
+xmlcatalog --noout --del "http://docbook.sourceforge.net/release/xsl/current" /etc/xml/catalog
+xmlcatalog --noout --del "http://docbook.sourceforge.net/release/xsl/1.78.1" /etc/xml/catalog
+xmlcatalog --noout --del "http://docbook.sourceforge.net/release/xsl/1.78.1" /etc/xml/catalog
+

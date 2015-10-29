@@ -44,3 +44,4 @@ locale-utils
 erlang
 sgml-common
 docbook-xml
+docbook-xsl

@@ -1162,3 +1162,9 @@ repos:
       licenses: [ 'Public Domain' ]
       vcs_url: http://docbook.org/xml/4.5/
 
+    - name: docbook-xsl
+      desc: stylesheets for processing DocBook XML to various output formats
+      website_url: http://sourceforge.net/projects/docbook/files/docbook-xsl/
+      licenses: [ 'Public Domain' ]
+      vcs_url: http://svn.code.sf.net/p/docbook/code/trunk docbook-code
+

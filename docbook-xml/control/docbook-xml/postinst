@@ -1,8 +1,16 @@
 #!/bin/sh
 set -e
 
+if [ ! -d /etc/xml ]; then
+  install -m755 -d /etc/xml
+fi
+
 if [ ! -e /etc/xml/docbook ]; then
   xmlcatalog --noout --create /etc/xml/docbook
+fi
+
+if [ ! -e /etc/xml/catalog ]; then
+  xmlcatalog --noout --create /etc/xml/catalog
 fi
 
 xmlcatalog --noout --add "public" "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" /etc/xml/docbook
@@ -16,10 +24,6 @@ xmlcatalog --noout --add "public" "-//OASIS//ENTITIES DocBook XML Character Enti
 xmlcatalog --noout --add "public" "-//OASIS//ENTITIES DocBook XML Additional General Entities V4.5//EN" "file:///usr/share/xml/docbook/xml-dtd-4.5/dbgenent.mod" /etc/xml/docbook
 xmlcatalog --noout --add "rewriteSystem" "http://www.oasis-open.org/docbook/xml/4.5" "file:///usr/share/xml/docbook/xml-dtd-4.5" /etc/xml/docbook
 xmlcatalog --noout --add "rewriteURI" "http://www.oasis-open.org/docbook/xml/4.5" "file:///usr/share/xml/docbook/xml-dtd-4.5" /etc/xml/docbook
-
-if [ ! -e /etc/xml/catalog ]; then
-  xmlcatalog --noout --create /etc/xml/catalog
-fi
 
 xmlcatalog --noout --add "delegatePublic" "-//OASIS//ENTITIES DocBook XML" "file:///etc/xml/docbook" /etc/xml/catalog
 xmlcatalog --noout --add "delegatePublic" "-//OASIS//DTD DocBook XML" "file:///etc/xml/docbook" /etc/xml/catalog
