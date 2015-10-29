@@ -1,0 +1,9 @@
+Package: libxslt
+Version: 1.1.28-0
+Source: libxslt
+Priority: optional
+Depends: libc, libxml2
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: XSLT 1.0 processing library - runtime library
+Architecture: amd64
+Section: libs

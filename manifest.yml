@@ -1168,3 +1168,21 @@ repos:
       licenses: [ 'Public Domain' ]
       vcs_url: http://svn.code.sf.net/p/docbook/code/trunk docbook-code
 
+    - name: libxslt
+      desc: 'XSLT 1.0 processing library - runtime library'
+      website_url: http://xmlsoft.org/
+      licenses: [ BSD ]
+      vcs_url: https://git.gnome.org/browse/libxslt/
+
+    - name: libxslt-devel
+      desc: 'XSLT 1.0 processing library - development files'
+      website_url: http://xmlsoft.org/
+      licenses: [ BSD ]
+      vcs_url: https://git.gnome.org/browse/libxslt/
+
+    - name: xslt-utils
+      desc: 'XSLT 1.0 processing utilities'
+      website_url: http://xmlsoft.org/
+      licenses: [ BSD ]
+      vcs_url: https://git.gnome.org/browse/libxslt/
+

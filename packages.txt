@@ -45,3 +45,4 @@ erlang
 sgml-common
 docbook-xml
 docbook-xsl
+libxslt
