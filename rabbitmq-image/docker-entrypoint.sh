@@ -52,4 +52,5 @@ if [ "$1" = 'rabbitmq-server' ]; then
 	fi
 fi
 
+export RABBITMQ_NODE_IP_ADDRESS=0.0.0.0
 exec "$@"
