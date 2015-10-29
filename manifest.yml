@@ -1192,3 +1192,9 @@ repos:
       licenses: [ 'MIT' ]
       vcs_url: https://github.com/simplejson/simplejson
 
+    - name: rabbitmq-server
+      desc: AMQP server written in Erlang
+      website_url: https://www.rabbitmq.com/
+      licenses: [ 'Mozilla-1.1' ]
+      vcs_url: https://github.com/rabbitmq/rabbitmq-server
+

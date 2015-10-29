@@ -47,3 +47,4 @@ docbook-xml
 docbook-xsl
 libxslt
 python-simplejson
+rabbitmq-server
