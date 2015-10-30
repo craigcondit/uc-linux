@@ -13,9 +13,11 @@ RUN \
 
 COPY docker-entrypoint.sh /
 
-ENV ZOOKEEPER_DATA_DIR=/data ZOOKEEPER_LOG_DIR=/logs
+ENV ZOOKEEPER_DATA_DIR /data
+ENV ZOOKEEPER_LOG_DIR /logs
 
-VOLUME [ '/data', '/logs' ]
+VOLUME /data
+VOLUME /logs
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 

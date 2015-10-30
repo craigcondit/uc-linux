@@ -16,9 +16,11 @@ RUN \
 
 COPY docker-entrypoint.sh /
 	
-ENV RABBITMQ_LOG_BASE=/data/log RABBITMQ_MNESIA_BASE=/data/mnesia
+ENV RABBITMQ_LOG_BASE /data/log
+ENV RABBITMQ_MNESIA_BASE /data/mnesia
 
-VOLUME [ "/data/log", "/data/mnesia" ]
+VOLUME /data/log
+VOLUME /data/mnesia
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
