@@ -20,8 +20,8 @@ RUN \
 	mkdir -p /build/zookeeper-root/etc/zookeeper && \
 	cp -a conf/log4j.properties /build/zookeeper-root/etc/zookeeper/ && \
 	cp -a conf/zoo_sample.cfg /build/zookeeper-root/etc/zookeeper/zoo.cfg && \
-	echo 'JVMFLAGS="-Xmx256m"' >> /build/zookeeper-root/etc/zookeeper/zookeeper-env.sh && \
-	echo "ZOO_LOG_DIR=/var/log/zookeeper" >> /build/zookeeper-root/etc/zookeeper/java.env && \
+	echo 'JVMFLAGS="-Xmx256m"' >> /build/zookeeper-root/etc/zookeeper/java.env && \
+	echo "ZOO_LOG_DIR=/var/log/zookeeper" >> /build/zookeeper-root/etc/zookeeper/zookeeper-env.sh && \
 	ln -sf ../../../etc/zookeeper /build/zookeeper-root/usr/share/zookeeper/conf && \
 	mkdir -p /build/zookeeper-root/var/log/zookeeper && \
 	ln -sf ../../../var/log/zookeeper /build/zookeeper-root/usr/share/zookeeper/logs && \
