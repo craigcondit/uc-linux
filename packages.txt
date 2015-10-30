@@ -48,3 +48,4 @@ docbook-xsl
 libxslt
 python-simplejson
 rabbitmq-server
+zookeeper

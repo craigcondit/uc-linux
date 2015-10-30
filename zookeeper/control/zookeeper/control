@@ -1,0 +1,9 @@
+Package: zookeeper
+Version: 3.4.6-0
+Source: zookeeper
+Priority: optional
+Depends: libc, jre8
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: High-performance coordination service for distributed applications
+Architecture: all
+Section: java

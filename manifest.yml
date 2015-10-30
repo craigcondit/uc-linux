@@ -1198,3 +1198,9 @@ repos:
       licenses: [ 'Mozilla-1.1' ]
       vcs_url: https://github.com/rabbitmq/rabbitmq-server
 
+    - name: zookeeper
+      desc: High-performance coordination service for distributed applications
+      website_url: https://zookeeper.apache.org/
+      licenses: [ 'Apache-2.0' ]
+      vcs_url: http://svn.apache.org/repos/asf/zookeeper/
+
