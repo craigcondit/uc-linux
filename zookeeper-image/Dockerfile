@@ -19,6 +19,6 @@ VOLUME [ '/data', '/logs' ]
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
-EXPOSE 1281
+EXPOSE 2181
 
 CMD [ "/usr/share/zookeeper/bin/zkServer.sh", "start-foreground" ]
