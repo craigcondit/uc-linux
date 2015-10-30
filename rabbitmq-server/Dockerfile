@@ -21,6 +21,8 @@ RUN \
 		BIN_DIR=/build/rabbitmq-server-root/usr/bin \
 		SBIN_DIR=/build/rabbitmq-server-root/usr/sbin \
 		install_bin && \
+	cp -a plugins-src/rabbitmq-management/bin/rabbitmqadmin \
+		/build/rabbitmq-server-root/usr/sbin/ && \
 	post-root /build/rabbitmq-server-root && \
 	cd /build/rabbitmq-server-root && \
 	rm -rf usr/share/man && \

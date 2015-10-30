@@ -11,7 +11,6 @@ RUN \
 	chown -R rabbitmq:rabbitmq /var/lib/rabbitmq && \
 	mkdir -p /etc/rabbitmq && \
 	echo "NODENAME=rabbit@localhost" > /etc/rabbitmq/rabbitmq-env.conf && \
-	echo "[{rabbit, [{loopback_users, []}]}]." > /etc/rabbitmq/rabbitmq.config && \
 	rabbitmq-plugins enable --offline rabbitmq_management && \
 	mkdir -p /docker-entrypoint-init.d
 
