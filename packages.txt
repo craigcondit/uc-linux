@@ -49,3 +49,4 @@ libxslt
 python-simplejson
 rabbitmq-server
 zookeeper
+kafka

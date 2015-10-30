@@ -1204,3 +1204,9 @@ repos:
       licenses: [ 'Apache-2.0' ]
       vcs_url: http://svn.apache.org/repos/asf/zookeeper/
 
+    - name: kafka
+      desc: High-performance distributed log broker
+      website_url: https://kafka.apache.org/
+      licenses: [ 'Apache-2.0' ]
+      vcs_url: https://git-wip-us.apache.org/repos/asf/kafka.git
+

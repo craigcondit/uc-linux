@@ -1,0 +1,9 @@
+Package: kafka
+Version: 3.4.6-0
+Source: 0.8.2.2
+Priority: optional
+Depends: libc, jre8, bash
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: High-performance distributed log broker
+Architecture: all
+Section: java
