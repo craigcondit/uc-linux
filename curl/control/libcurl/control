@@ -1,6 +1,6 @@
 Package: libcurl
 Source: curl
-Version: 7.47.0-0
+Version: 7.47.0-1
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Architecture: amd64
 Replaces: libcurl-bootstrap

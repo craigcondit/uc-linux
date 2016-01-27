@@ -30,7 +30,7 @@ RUN \
 		/build/curl-deb \
 		/build/curl-root \
 		/control/curl \
-		/packages/curl_7.47.0-0_amd64.deb && \
+		/packages/curl_7.47.0-1_amd64.deb && \
 
 	cp -a /build/curl-base-root /build/libcurl-root && \
 	cd /build/libcurl-root && \
@@ -40,7 +40,7 @@ RUN \
 		/build/libcurl-deb \
 		/build/libcurl-root \
 		/control/libcurl \
-		/packages/libcurl_7.47.0-0_amd64.deb && \
+		/packages/libcurl_7.47.0-1_amd64.deb && \
 
 	cp -a /build/curl-base-root /build/libcurl-devel-root && \
 	cd /build/libcurl-devel-root && \
@@ -50,5 +50,5 @@ RUN \
 		/build/libcurl-devel-deb \
 		/build/libcurl-devel-root \
 		/control/libcurl-devel \
-		/packages/libcurl-devel_7.47.0-0_amd64.deb
+		/packages/libcurl-devel_7.47.0-1_amd64.deb
 
