@@ -6,7 +6,7 @@ images should be able to have reproducible builds.
 
 ### Base Packages ###
     - base-files - 0.0.1-0
-    - busybox - 1.23.2-0
+    - busybox - 1.24.1-0
     - libarchive - 3.1.2-0
     - libassuan - 2.3.0-0
     - libbz2 - 1.0.6-0
