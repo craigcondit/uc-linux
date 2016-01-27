@@ -1,0 +1,9 @@
+Package: openssl
+Source: openssl
+Version: 1.0.2e-0
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Depends: libssl (>= 1.0.2e-0)
+Description: Secure Sockets Layer toolkit - binaries
+Section: apps
+Priority: optional

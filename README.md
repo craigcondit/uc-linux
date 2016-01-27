@@ -17,9 +17,9 @@ images should be able to have reproducible builds.
     - liblzma - 5.2.2-0
     - libnghttp2 - 1.7.0-0
     - libopkg - 0.3.0-0
-    - libssl - 1.0.2d-0
+    - libssl - 1.0.2e-0
     - libz - 1.2.8-1
-    - openssl - 1.0.2d-0
+    - openssl - 1.0.2e-0
     - opkg - 0.3.0-0
     - update-alternatives - 1.18.3-0
 
