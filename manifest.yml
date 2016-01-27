@@ -1210,3 +1210,9 @@ repos:
       licenses: [ 'Apache-2.0' ]
       vcs_url: https://git-wip-us.apache.org/repos/asf/kafka.git
 
+    - name: grep
+      desc: GNU grep, egrep and fgrep
+      website_url: http://www.gnu.org/software/grep/
+      licenses: [ 'GPL-2.0', 'GPL-3.0' ]
+      vcs_url: git://git.savannah.gnu.org/grep.git
+

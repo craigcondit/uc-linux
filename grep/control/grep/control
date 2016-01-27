@@ -1,0 +1,9 @@
+Package: grep
+Version: 2.22-0
+Source: grep
+Priority: optional
+Depends: libc, libpcre, update-alternatives
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: GNU grep, egrep and fgrep
+Architecture: amd64
+Section: utils
