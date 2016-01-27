@@ -6,7 +6,7 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg upgrade && \
-	opkg install gcc make file linux-devel pkg-config openssl libssl-devel \
+	opkg install gcc make file linux-devel pkg-config openssl libssl-devel perl \
 		libevent-devel libxml2-devel libev-devel libspdylay-devel \
 		libjansson-devel libjemalloc-devel bison ruby libnghttp2-devel && \
 	opkg clean && \

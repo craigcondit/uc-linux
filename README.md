@@ -11,7 +11,7 @@ images should be able to have reproducible builds.
     - libassuan - 2.4.2-0
     - libbz2 - 1.0.6-0
     - libc - 2.22-0
-    - libcurl - 7.44.0-0
+    - libcurl - 7.47.0-0
     - libgpg-error - 1.20-0
     - libgpgme - 1.6.0-0
     - liblzma - 5.2.1-0
