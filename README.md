@@ -8,7 +8,7 @@ images should be able to have reproducible builds.
     - base-files - 0.0.1-0
     - busybox - 1.24.1-0
     - libarchive - 3.1.2-0
-    - libassuan - 2.3.0-0
+    - libassuan - 2.4.2-0
     - libbz2 - 1.0.6-0
     - libc - 2.22-0
     - libcurl - 7.44.0-0
