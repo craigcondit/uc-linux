@@ -1,0 +1,10 @@
+Package: libassuan
+Source: libassuan
+Version: 2.4.2-0
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Depends: libc, libgpg-error
+Description: IPC library for the GnuPG components
+Homepage: http://www.gnupg.org/(en)/related_software/libassuan/index.html
+Section: libs
+Priority: optional
