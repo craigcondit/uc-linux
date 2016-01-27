@@ -11,7 +11,7 @@ RUN \
 		libjansson-devel libjemalloc-devel bison ruby libnghttp2-devel && \
 	opkg clean && \
 	wget -O /download/curl-7.47.0.tar.bz2 \
-		https://github.com/bagder/curl/releases/download/curl-7.47_0/curl-7.47.0.tar.bz2 && \
+		https://github.com/bagder/curl/releases/download/curl-7_47_0/curl-7.47.0.tar.bz2 && \
 	cd /build && \
 	tar xf /download/curl-7.47.0.tar.bz2 && \
 	cd curl-7.47.0 && \
