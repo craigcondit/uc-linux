@@ -109,11 +109,11 @@ RUN \
 		/build/openjdk-jdk8-deb \
 		/build/jdk-root \
 		/control/openjdk-jdk8 \
-		/packages/openjdk-jdk8_1.8.0.72-0_amd64.deb && \
+		/packages/openjdk-jdk8_1.8.0.72-1_amd64.deb && \
 
 	make-deb \
 		/build/openjdk-jre8-deb \
 		/build/jre-root \
 		/control/openjdk-jre8 \
-		/packages/openjdk-jre8_1.8.0.72-0_amd64.deb
+		/packages/openjdk-jre8_1.8.0.72-1_amd64.deb
 

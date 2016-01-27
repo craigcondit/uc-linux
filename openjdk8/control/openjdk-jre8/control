@@ -1,5 +1,5 @@
 Package: openjdk-jre8
-Version: 1.8.0.72-0
+Version: 1.8.0.72-1
 Source: openjdk8
 Priority: standard
 Depends: libc, libbz2, libstdcxx, libgcc, libpng, libgif, libz, update-alternatives
