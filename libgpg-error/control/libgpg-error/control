@@ -1,0 +1,10 @@
+Package: libgpg-error
+Source: libgpg-error
+Version: 1.21-0
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Depends: libc
+Description: library for common error values and messages in GnuPG components
+Homepage: http://www.gnupg.org/related_software/libgpg-error/
+Section: libs
+Priority: standard

@@ -12,7 +12,7 @@ images should be able to have reproducible builds.
     - libbz2 - 1.0.6-0
     - libc - 2.22-0
     - libcurl - 7.47.0-0
-    - libgpg-error - 1.20-0
+    - libgpg-error - 1.21-0
     - libgpgme - 1.6.0-0
     - liblzma - 5.2.1-0
     - libnghttp2 - 1.3.4-0

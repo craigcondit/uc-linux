@@ -1,5 +1,6 @@
 busybox
 libassuan
+libgpg-error
 libffi
 autoconf
 automake
