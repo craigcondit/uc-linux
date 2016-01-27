@@ -1,4 +1,4 @@
-FROM insideo/jre8
+FROM insideo/jre8:8u72
 MAINTAINER ccondit@randomcoder.com
 
 RUN \
