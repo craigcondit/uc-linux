@@ -6,6 +6,7 @@ ENV PATH /usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin
 
 RUN \
 	opkg update && \
+	opkg upgrade && \
 	opkg install libcurl && \
 	opkg remove libcurl-bootstrap && \
 	opkg clean
