@@ -7,11 +7,11 @@ RUN \
 	opkg update && \
 	opkg install gcc make file linux-devel openssl libssl-devel sed m4 \
 		libncurses-devel ncurses-utils openjdk-jdk8 flex libz-devel perl && \
-	wget -O /download/otp_src_18.1.tar.gz \
-		http://www.erlang.org/download/otp_src_18.1.tar.gz && \
+	wget -O /download/otp_src_18.2.1.tar.gz \
+		http://www.erlang.org/download/otp_src_18.2.1.tar.gz && \
 	cd /build && \
-	tar xf /download/otp_src_18.1.tar.gz && \
-	cd otp_src_18.1 && \
+	tar xf /download/otp_src_18.2.1.tar.gz && \
+	cd otp_src_18.2.1 && \
 	./configure \
 		--prefix=/usr --build=$(gcc -dumpmachine) --disable-static \
 		--with-termcap --with-javac --enable-dynamic-ssl-lib \
@@ -38,9 +38,8 @@ RUN \
 	for file in *.a ; do \
 		ln -sf erlang/usr/lib/${file} ../../../${file} ; done && \
 	cd ../../../../.. && \
-	rm -rf $(find . -name src -type d | grep -v 'orber.*priv') && \
 	make-deb \
 		/build/erlang-deb \
 		/build/erlang-root \
 		/control/erlang \
-		/packages/erlang_18.1-0_amd64.deb
+		/packages/erlang_18.2.1-0_amd64.deb
