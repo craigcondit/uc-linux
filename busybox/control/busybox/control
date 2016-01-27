@@ -1,0 +1,8 @@
+Package: busybox
+Version: 1.24.1-0
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Description: Tiny utilities for small and embedded systems
+Depends: libc, update-alternatives
+Section: utils
+Priority: required
