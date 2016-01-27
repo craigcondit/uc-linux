@@ -5,24 +5,23 @@ ADD control /control
 RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
-	opkg install gcc make file linux-devel openssl libssl-devel \
-		coreutils python27 erlang xslt-utils zip unzip python-simplejson && \
-	wget -O /download/rabbitmq-server-3.5.6.tar.gz \
-		https://www.rabbitmq.com/releases/rabbitmq-server/v3.5.6/rabbitmq-server-3.5.6.tar.gz && \
+	opkg upgrade && \
+	opkg install gcc make file linux-devel openssl libssl-devel gawk sed bash ncurses-base \
+		coreutils python27 erlang xslt-utils zip unzip python-simplejson rsync grep && \
+	opkg clean
+
+RUN \
+	wget -O /download/rabbitmq-server-3.6.0.tar.xz \
+		https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.0/rabbitmq-server-3.6.0.tar.xz && \
 	cd /build && \
-	tar xf /download/rabbitmq-server-3.5.6.tar.gz && \
-	cd rabbitmq-server-3.5.6 && \
-	sed -i 's/nc -z/nc/' plugins-src/rabbitmq-auth-backend-ldap/package.mk && \
-	MAKE="make -j4" make && \
+	tar xf /download/rabbitmq-server-3.6.0.tar.xz && \
+	cd rabbitmq-server-3.6.0 && \
+	MAKE="make -j4" make PREFIX=/usr && \
 	pre-root /build/rabbitmq-server-root && \
-	make \
-		TARGET_DIR=/build/rabbitmq-server-root/usr/share/rabbitmq \
-		MAN_DIR=/build/rabbitmq-server-root/usr/share/man \
-		BIN_DIR=/build/rabbitmq-server-root/usr/bin \
-		SBIN_DIR=/build/rabbitmq-server-root/usr/sbin \
-		install_bin && \
-	cp -a plugins-src/rabbitmq-management/bin/rabbitmqadmin \
+	make DESTDIR=/build/rabbitmq-server-root PREFIX=/usr install && \
+	cp deps/rabbitmq_management/bin/rabbitmqadmin \
 		/build/rabbitmq-server-root/usr/sbin/ && \
+	chmod 755 /build/rabbitmq-server-root/usr/sbin/rabbitmqadmin && \
 	post-root /build/rabbitmq-server-root && \
 	cd /build/rabbitmq-server-root && \
 	rm -rf usr/share/man && \
@@ -30,4 +29,4 @@ RUN \
 		/build/rabbitmq-server-deb \
 		/build/rabbitmq-server-root \
 		/control/rabbitmq-server \
-		/packages/rabbitmq-server_3.5.6-0_amd64.deb
+		/packages/rabbitmq-server_3.6.0-0_amd64.deb
