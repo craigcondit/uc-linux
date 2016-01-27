@@ -1,0 +1,10 @@
+Package: libopkg
+Source: opkg
+Version: 0.3.1-0
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Depends: libc, libarchive, liblzma, libbz2, libcurl, libgpgme, libassuan, libgpg-error, libssl
+Description: lightweight package management system (libraries)
+Homepage: https://code.google.com/p/opkg/
+Section: libs
+Priority: required

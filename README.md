@@ -16,11 +16,11 @@ images should be able to have reproducible builds.
     - libgpgme - 1.6.0-0
     - liblzma - 5.2.2-0
     - libnghttp2 - 1.7.0-0
-    - libopkg - 0.3.0-0
+    - libopkg - 0.3.1-0
     - libssl - 1.0.2e-0
     - libz - 1.2.8-1
     - openssl - 1.0.2e-0
-    - opkg - 0.3.0-0
+    - opkg - 0.3.1-0
     - update-alternatives - 1.18.3-0
 
 This small base gives us wide compatibility with a large range of existing
