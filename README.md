@@ -14,7 +14,7 @@ images should be able to have reproducible builds.
     - libcurl - 7.47.0-0
     - libgpg-error - 1.21-0
     - libgpgme - 1.6.0-0
-    - liblzma - 5.2.1-0
+    - liblzma - 5.2.2-0
     - libnghttp2 - 1.3.4-0
     - libopkg - 0.3.0-0
     - libssl - 1.0.2d-0

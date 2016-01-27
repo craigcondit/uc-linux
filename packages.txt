@@ -1,4 +1,5 @@
 busybox
+xz
 libassuan
 libgpg-error
 libffi

@@ -1,0 +1,10 @@
+Package: liblzma
+Source: xz
+Version: 5.2.2-0
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Depends: libc
+Description: XZ-format shared libraries
+Homepage: http://tukaani.org/xz/
+Section: libs
+Priority: standard

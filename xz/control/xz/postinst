@@ -1,0 +1,26 @@
+#!/bin/sh
+set -e
+
+update-alternatives --quiet --install /usr/bin/lzcat lzcat /usr/bin/xz.xz 100
+update-alternatives --quiet --install /usr/bin/lzcmp lzcmp /usr/bin/xzdiff.xz 100
+update-alternatives --quiet --install /usr/bin/lzdiff lzdiff /usr/bin/xzdiff.xz 100
+update-alternatives --quiet --install /usr/bin/lzegrep lzegrep /usr/bin/xzgrep.xz 100
+update-alternatives --quiet --install /usr/bin/lzfgrep lzfgrep /usr/bin/xzgrep.xz 100
+update-alternatives --quiet --install /usr/bin/lzgrep lzgrep /usr/bin/xzgrep.xz 100
+update-alternatives --quiet --install /usr/bin/lzless lzless /usr/bin/xzless.xz 100
+update-alternatives --quiet --install /usr/bin/lzmadec lzmadec /usr/bin/lzmadec.xz 100
+update-alternatives --quiet --install /usr/bin/lzmainfo lzmainfo /usr/bin/lzmainfo.xz 100
+update-alternatives --quiet --install /usr/bin/lzma lzma /usr/bin/xz.xz 100
+update-alternatives --quiet --install /usr/bin/lzmore lzmore /usr/bin/xzmore.xz 100
+update-alternatives --quiet --install /usr/bin/unlzma unlzma /usr/bin/xz.xz 100
+update-alternatives --quiet --install /usr/bin/unxz unxz /usr/bin/xz.xz 100
+update-alternatives --quiet --install /usr/bin/xz xz /usr/bin/xz.xz 100
+update-alternatives --quiet --install /usr/bin/xzcat xzcat /usr/bin/xz.xz 100
+update-alternatives --quiet --install /usr/bin/xzcmp xzcmp /usr/bin/xzdiff.xz 100
+update-alternatives --quiet --install /usr/bin/xzdec xzdec /usr/bin/xzdec.xz 100
+update-alternatives --quiet --install /usr/bin/xzdiff xzdiff /usr/bin/xzdiff.xz 100
+update-alternatives --quiet --install /usr/bin/xzegrep xzegrep /usr/bin/xzgrep.xz 100
+update-alternatives --quiet --install /usr/bin/xzfgrep xzfgrep /usr/bin/xzgrep.xz 100
+update-alternatives --quiet --install /usr/bin/xzgrep xzgrep /usr/bin/xzgrep.xz 100
+update-alternatives --quiet --install /usr/bin/xzless xzless /usr/bin/xzless.xz 100
+update-alternatives --quiet --install /usr/bin/xzmore xzmore /usr/bin/xzmore.xz 100
