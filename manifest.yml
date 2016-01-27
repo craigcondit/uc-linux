@@ -1216,3 +1216,9 @@ repos:
       licenses: [ 'GPL-2.0', 'GPL-3.0' ]
       vcs_url: git://git.savannah.gnu.org/grep.git
 
+    - name: rsync
+      desc: 'fast, versatile, remote (and local) file-copying tool'
+      website_url: https://rsync.samba.org/
+      licenses: [ 'GPL-2.0' ]
+      vcs_url: git://git.samba.org/rsync.git
+

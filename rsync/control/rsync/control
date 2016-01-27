@@ -1,0 +1,9 @@
+Package: rsync
+Version: 3.1.2-0
+Source: rsync
+Priority: optional
+Depends: libc, libattr
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: fast, versatile, remote (and local) file-copying tool
+Architecture: amd64
+Section: net
