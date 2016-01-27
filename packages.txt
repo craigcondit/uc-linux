@@ -1,3 +1,5 @@
+busybox
+libassuan
 libffi
 autoconf
 automake
