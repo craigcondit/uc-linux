@@ -3,13 +3,17 @@ set -e
 
 export LOG_DIR="${KAFKA_LOG_DIR}"
 
+if [ -z "${KAFKA_PORT}" ]; then
+	export KAFKA_PORT=9092
+fi
+
 if [ -z "${KAFKA_ADVERTISED_HOST}" ]; then
 	export KAFKA_ADVERTISED_HOST="$(hostname -i)"
 fi
 
 if [ "$1" = '/usr/share/kafka/bin/kafka-server-start.sh' ]; then
 	if [ -z "${ZOOKEEPER_PORT}" ]; then
-		echo "Please link a Docker zookeeper container with this one under the name ZOOKEEPER." >&2
+		echo "Please link a Docker zookeeper container with this one under the name 'zookeeper'." >&2
 		exit 1
 	fi
 
@@ -19,12 +23,15 @@ if [ "$1" = '/usr/share/kafka/bin/kafka-server-start.sh' ]; then
 	mkdir -p "${KAFKA_DATA_DIR}" "${KAFKA_LOG_DIR}"
 	chown -R kafka:kafka "${KAFKA_DATA_DIR}" "${KAFKA_LOG_DIR}"
 
+	sed -i 's/port=.*//' /etc/kafka/server.properties
 	sed -i 's/host.name.*//' /etc/kafka/server.properties
 	sed -i 's/advertised.host.name=.*//' /etc/kafka/server.properties
 	sed -i 's/advertised.port=.*//' /etc/kafka/server.properties
 	sed -i 's/log.dirs=.*//' /etc/kafka/server.properties
 	sed -i 's/.*zookeeper.connect=.*//' /etc/kafka/server.properties
+	sed -i 's/.*zookeeper.connect=.*//' /etc/kafka/server.properties
 	echo "host.name=0.0.0.0" >> /etc/kafka/server.properties
+	echo "port=${KAFKA_PORT}" >> /etc/kafka/server.properties
 	echo "advertised.host.name=${KAFKA_ADVERTISED_HOST}" >> /etc/kafka/server.properties
 	echo "advertised.port=${KAFKA_ADVERTISED_PORT}" >> /etc/kafka/server.properties
 	echo "log.dirs=${KAFKA_DATA_DIR}" >> /etc/kafka/server.properties
