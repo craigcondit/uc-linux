@@ -23,6 +23,7 @@ if [ "$1" = '/usr/share/kafka/bin/kafka-server-start.sh' ]; then
 	mkdir -p "${KAFKA_DATA_DIR}" "${KAFKA_LOG_DIR}"
 	chown -R kafka:kafka "${KAFKA_DATA_DIR}" "${KAFKA_LOG_DIR}"
 
+	sed -i 's/listeners=.*//' /etc/kafka/server.properties
 	sed -i 's/port=.*//' /etc/kafka/server.properties
 	sed -i 's/host.name.*//' /etc/kafka/server.properties
 	sed -i 's/advertised.host.name=.*//' /etc/kafka/server.properties
@@ -32,6 +33,7 @@ if [ "$1" = '/usr/share/kafka/bin/kafka-server-start.sh' ]; then
 	sed -i 's/.*zookeeper.connect=.*//' /etc/kafka/server.properties
 	echo "host.name=0.0.0.0" >> /etc/kafka/server.properties
 	echo "port=${KAFKA_PORT}" >> /etc/kafka/server.properties
+        echo "listeners=PLAINTEXT://:${KAFKA_PORT}" >> /etc/kafka/server.properties
 	echo "advertised.host.name=${KAFKA_ADVERTISED_HOST}" >> /etc/kafka/server.properties
 	echo "advertised.port=${KAFKA_ADVERTISED_PORT}" >> /etc/kafka/server.properties
 	echo "log.dirs=${KAFKA_DATA_DIR}" >> /etc/kafka/server.properties
