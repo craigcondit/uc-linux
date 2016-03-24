@@ -2,6 +2,7 @@ FROM insideo/uc-linux:buggy
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
+
 ADD scripts /scripts
 
 RUN \
@@ -23,7 +24,7 @@ RUN \
 	install -d /build/cacerts-root/etc/ssl/certs && \
 	cp -v certs/*.pem /build/cacerts-root/etc/ssl/certs && \
 	c_rehash && \
-	install ca-bundle.crt /build/cacerts-root/etc/ssl/ca-bundle.crt && \
+	install -m 0644 ca-bundle.crt /build/cacerts-root/etc/ssl/ca-bundle.crt && \
 	ln -sfv ../ca-bundle.crt /build/cacerts-root/etc/ssl/certs/ca-certificates.crt && \
 	post-root /build/cacerts-root && \
 	make-deb \

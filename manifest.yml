@@ -1222,3 +1222,9 @@ repos:
       licenses: [ 'GPL-2.0' ]
       vcs_url: git://git.samba.org/rsync.git
 
+    - name: cacerts
+      desc: CA certificates
+      website_url: https://hg.mozilla.org/releases/mozilla-release/file/default/security/nss/lib/ckfw/builtins/certdata.txt
+      licenses: [ 'MPL-2.0' ]
+      vcs_url: https://hg.mozilla.org/releases/mozilla-release/file/default/security/nss/lib/ckfw/builtins/certdata.txt
+

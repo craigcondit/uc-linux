@@ -26,6 +26,7 @@ libx11-xau
 xcb-proto
 libx11-xcb
 xorg-libs
+cacerts
 openjdk8
 pcre
 nginx
