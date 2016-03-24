@@ -54,4 +54,5 @@ libxslt
 python-simplejson
 rabbitmq-server
 zookeeper
+hbase
 kafka

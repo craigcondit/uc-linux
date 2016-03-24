@@ -1204,6 +1204,12 @@ repos:
       licenses: [ 'Apache-2.0' ]
       vcs_url: http://svn.apache.org/repos/asf/zookeeper/
 
+    - name: hbase
+      desc: Distributed, scalable, big data store
+      website_url: https://hbase.apache.org/
+      licenses: [ 'Apache-2.0' ]
+      vcs_url: https://git.apache.org/repos/asf/hbase.git
+
     - name: kafka
       desc: High-performance distributed log broker
       website_url: https://kafka.apache.org/
