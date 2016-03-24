@@ -1,0 +1,9 @@
+Package: hbase
+Version: 1.0.3-0
+Source: hbase
+Priority: optional
+Depends: libc, jre8, bash
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Distributed, scalable, big data store
+Architecture: all
+Section: java
