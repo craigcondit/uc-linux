@@ -1,0 +1,8 @@
+Package: cacerts
+Version: 20160324-0
+Source: cacerts
+Priority: optional
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: CA Certificates
+Architecture: all
+Section: utils
