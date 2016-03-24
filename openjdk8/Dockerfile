@@ -3,14 +3,14 @@ MAINTAINER ccondit@randomcoder.com
 
 # setup required build environment
 RUN \
-	mkdir -p /build /control /download /packages && \
+	mkdir -p /build /control /download /packages /scripts && \
 	opkg update && \
 	opkg install \
 		libz-devel libbz2-devel libssl-devel gcc make linux-devel \
 		unzip zip libgif-devel libalsa-devel libcups-devel libfreetype-devel \
-		libx11-all-devel curl file gawk sed bash ncurses-base pkg-config patch
+		libx11-all-devel curl file gawk sed bash ncurses-base pkg-config patch openssl cacerts
 
-# this break here is important; causes us tom come up with bash as the new shell
+# this break here is important; causes us to come up with bash as the new shell
 
 # download and unpack sources and bootstrap JDK
 RUN \
@@ -31,9 +31,17 @@ RUN \
 		mv ${subproject}-* ${subproject} ; done
 
 # build package
+ADD scripts /scripts
 ADD patches /patches
 RUN \
+	cp -f /scripts/mkcacerts /download/mkcacerts && \
+	chmod 755 /download/mkcacerts && \
 	export PATH=/build/openjdk-bootstrap/bin:$PATH && \
+	/download/mkcacerts \
+		-d "/etc/ssl/certs" \
+		-k /build/openjdk-bootstrap/bin/keytool \
+		-s /usr/bin/openssl \
+		-o /build/cacerts && \
 	cd /build/jdk8u-jdk8u74-b02 && \
 	patch -p0 < /patches/unpack200-zlib-fix.patch && \
 	unset JAVA_HOME && \
@@ -45,6 +53,7 @@ RUN \
 		--with-zlib=system \
 		--with-giflib=system \
 		--with-stdc++lib=dynamic \
+		--with-cacerts-file=/build/cacerts \
 		--build="$(gcc -dumpmachine)" && \
 	make DEBUG_BINARIES=false all
 
@@ -109,11 +118,11 @@ RUN \
 		/build/openjdk-jdk8-deb \
 		/build/jdk-root \
 		/control/openjdk-jdk8 \
-		/packages/openjdk-jdk8_1.8.0.74-1_amd64.deb && \
+		/packages/openjdk-jdk8_1.8.0.74-2_amd64.deb && \
 
 	make-deb \
 		/build/openjdk-jre8-deb \
 		/build/jre-root \
 		/control/openjdk-jre8 \
-		/packages/openjdk-jre8_1.8.0.74-1_amd64.deb
+		/packages/openjdk-jre8_1.8.0.74-2_amd64.deb
 
