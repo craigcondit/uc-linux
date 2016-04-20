@@ -1,8 +1,8 @@
 Package: libnghttp2-devel
-Version: 1.7.0-0
+Version: 1.9.2-0
 Source: nghttp2
 Priority: extra
-Depends: gcc, libc-devel, libjansson-devel, libssl-devel, libev-devel, libxml2-devel, libspdylay-devel, libjemalloc-devel, libnghttp2 (>= 1.7.0-0)
+Depends: gcc, libc-devel, libjansson-devel, libssl-devel, libev-devel, libxml2-devel, libspdylay-devel, libjemalloc-devel, libnghttp2 (>= 1.9.2-0)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: HTTP/2 protocol implementation in C (development files)
 Architecture: amd64

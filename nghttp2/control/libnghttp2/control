@@ -1,5 +1,5 @@
 Package: libnghttp2
-Version: 1.7.0-0
+Version: 1.9.2-0
 Source: nghttp2
 Priority: extra
 Depends: libc
