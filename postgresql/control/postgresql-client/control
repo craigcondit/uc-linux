@@ -1,8 +1,8 @@
 Package: postgresql-client
-Version: 9.5.3-0
+Version: 9.5.3-2
 Source: postgresql
 Priority: optional
-Depends: libpq (>= 9.5.3-0), libpgtypes (>= 9.5.3-0), libecpg (>= 9.5.3-0), libc, libssl, libreadline, libncurses
+Depends: libpq (>= 9.5.3-2), libpgtypes (>= 9.5.3-2), libecpg (>= 9.5.3-2), libc, libssl, libreadline, libncurses
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: object-relational SQL database (client utilities)
 Architecture: amd64

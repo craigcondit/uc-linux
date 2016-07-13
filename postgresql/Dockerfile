@@ -30,6 +30,7 @@ RUN \
 	cp -a /build/postgresql-orig-root /build/postgresql-server-root && \
 	cd /build/postgresql-server-root && \
 	rm -rf usr/include usr/lib/pkgconfig usr/lib/postgresql/pgxs && \
+	rm -f usr/lib/libecpg*.so* usr/lib/libecpg_compat.so* usr/lib/libpgtypes.so* usr/lib/libpq.so* && \
 	for cmd in \
 		initdb pg_controldata pg_ctl pg_resetxlog postgres postmaster \
 		; do mv -f usr/bin/${cmd} usr/ ; done && \
@@ -42,7 +43,7 @@ RUN \
 		/build/postgresql-server-deb \
 		/build/postgresql-server-root \
 		/control/postgresql-server \
-		/packages/postgresql-server_9.5.3-0_amd64.deb && \
+		/packages/postgresql-server_9.5.3-2_amd64.deb && \
 
 	cp -a /build/postgresql-orig-root /build/postgresql-client-root && \
 	cd /build/postgresql-client-root && \
@@ -54,7 +55,7 @@ RUN \
 		/build/postgresql-client-deb \
 		/build/postgresql-client-root \
 		/control/postgresql-client \
-		/packages/postgresql-client_9.5.3-0_amd64.deb && \
+		/packages/postgresql-client_9.5.3-2_amd64.deb && \
 
 	cp -a /build/postgresql-orig-root /build/libpq-root && \
 	cd /build/libpq-root && \
@@ -65,7 +66,7 @@ RUN \
 		/build/libpq-deb \
 		/build/libpq-root \
 		/control/libpq \
-		/packages/libpq_9.5.3-0_amd64.deb && \
+		/packages/libpq_9.5.3-2_amd64.deb && \
 
 	cp -a /build/postgresql-orig-root /build/libpgtypes-root && \
 	cd /build/libpgtypes-root && \
@@ -76,7 +77,7 @@ RUN \
 		/build/libpgtypes-deb \
 		/build/libpgtypes-root \
 		/control/libpgtypes \
-		/packages/libpgtypes_9.5.3-0_amd64.deb && \
+		/packages/libpgtypes_9.5.3-2_amd64.deb && \
 
 	cp -a /build/postgresql-orig-root /build/libecpg-root && \
 	cd /build/libecpg-root && \
@@ -87,7 +88,7 @@ RUN \
 		/build/libecpg-deb \
 		/build/libecpg-root \
 		/control/libecpg \
-		/packages/libecpg_9.5.3-0_amd64.deb && \
+		/packages/libecpg_9.5.3-2_amd64.deb && \
 
 	cp -a /build/postgresql-orig-root /build/postgresql-devel-root && \
 	cd /build/postgresql-devel-root && \
@@ -102,5 +103,5 @@ RUN \
 		/build/postgresql-devel-deb \
 		/build/postgresql-devel-root \
 		/control/postgresql-devel \
-		/packages/postgresql-devel_9.5.3-0_amd64.deb
+		/packages/postgresql-devel_9.5.3-2_amd64.deb
 

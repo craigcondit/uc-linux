@@ -1,8 +1,8 @@
 Package: postgresql-server
-Version: 9.5.3-0
+Version: 9.5.3-2
 Source: postgresql
 Priority: optional
-Depends: postgresql-client (>= 9.5.3-0), libpq (>= 9.5.3-0), libpgtypes (>= 9.5.3-0), libecpg (>= 9.5.3-0), libxml2
+Depends: postgresql-client (>= 9.5.3-2), libpq (>= 9.5.3-2), libpgtypes (>= 9.5.3-2), libecpg (>= 9.5.3-2), libxml2
 Suggests: perl, python27
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: object-relational SQL database
