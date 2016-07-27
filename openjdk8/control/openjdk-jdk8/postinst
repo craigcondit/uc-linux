@@ -5,7 +5,7 @@ JDK_HOME=/usr/lib/jvm/jdk-8-openjdk-amd64
 JRE_HOME=/usr/lib/jvm/jdk-8-openjdk-amd64/jre
 
 # javac
-update-alternatives --quiet --install /usr/bin/javac javac ${JDK_HOME}/bin/javac 18092 \
+update-alternatives --quiet --install /usr/bin/javac javac ${JDK_HOME}/bin/javac 18102 \
 	--slave /usr/bin/appletviewer appletviewer ${JDK_HOME}/bin/appletviewer \
 	--slave /usr/bin/extcheck extcheck ${JDK_HOME}/bin/extcheck \
 	--slave /usr/bin/idlj idlj ${JDK_HOME}/bin/idlj \
@@ -37,7 +37,7 @@ update-alternatives --quiet --install /usr/bin/javac javac ${JDK_HOME}/bin/javac
 	--slave /usr/bin/xjc xjc ${JDK_HOME}/bin/xjc
 
 # java
-update-alternatives --quiet --install /usr/bin/java java ${JRE_HOME}/bin/java 118092 \
+update-alternatives --quiet --install /usr/bin/java java ${JRE_HOME}/bin/java 118102 \
 	--slave /usr/bin/jjs jjs ${JRE_HOME}/bin/jjs \
 	--slave /usr/bin/keytool keytool ${JRE_HOME}/bin/keytool \
 	--slave /usr/bin/orbd orbd ${JRE_HOME}/bin/orbd \
@@ -49,10 +49,10 @@ update-alternatives --quiet --install /usr/bin/java java ${JRE_HOME}/bin/java 11
 	--slave /usr/bin/tnameserv tnameserv ${JRE_HOME}/bin/tnameserv \
 	--slave /usr/bin/unpack200 unpack200 ${JRE_HOME}/bin/unpack200
 
-update-alternatives --quiet --install /usr/lib/jvm/jdk jdk ${JDK_HOME} 18092
-update-alternatives --quiet --install /usr/lib/jvm/jdk-8 jdk-8 ${JDK_HOME} 18092
-update-alternatives --quiet --install /usr/lib/jvm/jdk-8u92 jdk-8u92 ${JDK_HOME} 18092
+update-alternatives --quiet --install /usr/lib/jvm/jdk jdk ${JDK_HOME} 18102
+update-alternatives --quiet --install /usr/lib/jvm/jdk-8 jdk-8 ${JDK_HOME} 18102
+update-alternatives --quiet --install /usr/lib/jvm/jdk-8u92 jdk-8u92 ${JDK_HOME} 18102
 
-update-alternatives --quiet --install /usr/lib/jvm/jre jre ${JRE_HOME} 118092
-update-alternatives --quiet --install /usr/lib/jvm/jre-8 jre-8 ${JRE_HOME} 118092
-update-alternatives --quiet --install /usr/lib/jvm/jre-8u92 jre-8u92 ${JRE_HOME} 118092
+update-alternatives --quiet --install /usr/lib/jvm/jre jre ${JRE_HOME} 118102
+update-alternatives --quiet --install /usr/lib/jvm/jre-8 jre-8 ${JRE_HOME} 118102
+update-alternatives --quiet --install /usr/lib/jvm/jre-8u92 jre-8u92 ${JRE_HOME} 118102
