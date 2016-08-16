@@ -31,6 +31,6 @@ RUN \
 		/build/cacerts-deb \
 		/build/cacerts-root \
 		/control/cacerts \
-		/packages/cacerts_201603240-0_all.deb && \
+		/packages/cacerts_20160810-0_all.deb && \
 	cd / && \
 	rm -rf /build /control /download
