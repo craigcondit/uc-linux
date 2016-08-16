@@ -51,8 +51,8 @@ update-alternatives --quiet --install /usr/bin/java java ${JRE_HOME}/bin/java 11
 
 update-alternatives --quiet --install /usr/lib/jvm/jdk jdk ${JDK_HOME} 18102
 update-alternatives --quiet --install /usr/lib/jvm/jdk-8 jdk-8 ${JDK_HOME} 18102
-update-alternatives --quiet --install /usr/lib/jvm/jdk-8u92 jdk-8u92 ${JDK_HOME} 18102
+update-alternatives --quiet --install /usr/lib/jvm/jdk-8u102 jdk-8u102 ${JDK_HOME} 18102
 
 update-alternatives --quiet --install /usr/lib/jvm/jre jre ${JRE_HOME} 118102
 update-alternatives --quiet --install /usr/lib/jvm/jre-8 jre-8 ${JRE_HOME} 118102
-update-alternatives --quiet --install /usr/lib/jvm/jre-8u92 jre-8u92 ${JRE_HOME} 118102
+update-alternatives --quiet --install /usr/lib/jvm/jre-8u102 jre-8u102 ${JRE_HOME} 118102

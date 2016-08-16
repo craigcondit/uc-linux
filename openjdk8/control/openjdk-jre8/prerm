@@ -6,4 +6,4 @@ JRE_HOME=/usr/lib/jvm/jre-8-openjdk-amd64
 update-alternatives --quiet --remove java ${JRE_HOME}/bin/java
 update-alternatives --quiet --remove jre ${JRE_HOME}
 update-alternatives --quiet --remove jre-8 ${JRE_HOME}
-update-alternatives --quiet --remove jre-8u92 ${JRE_HOME}
+update-alternatives --quiet --remove jre-8u102 ${JRE_HOME}

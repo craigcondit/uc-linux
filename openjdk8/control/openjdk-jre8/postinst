@@ -18,4 +18,4 @@ update-alternatives --quiet --install /usr/bin/java java ${JRE_HOME}/bin/java 21
 
 update-alternatives --quiet --install /usr/lib/jvm/jre jre ${JRE_HOME} 218102
 update-alternatives --quiet --install /usr/lib/jvm/jre-8 jre-8 ${JRE_HOME} 218102
-update-alternatives --quiet --install /usr/lib/jvm/jre-8u92 jre-8u92 ${JRE_HOME} 218102
+update-alternatives --quiet --install /usr/lib/jvm/jre-8u102 jre-8u102 ${JRE_HOME} 218102
