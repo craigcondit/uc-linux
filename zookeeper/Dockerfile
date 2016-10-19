@@ -4,11 +4,11 @@ MAINTAINER ccondit@randomcoder.com
 ADD control /control
 RUN \
 	mkdir -p /build /control /download /packages && \
-	wget -O /download/zookeeper-3.4.6.tar.gz \
-		http://apache.mirrors.tds.net/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz && \
+	wget -O /download/zookeeper-3.4.9.tar.gz \
+		http://apache.mirrors.tds.net/zookeeper/zookeeper-3.4.9/zookeeper-3.4.9.tar.gz && \
 	cd /build && \
-	tar xf /download/zookeeper-3.4.6.tar.gz && \
-	cd zookeeper-3.4.6 && \
+	tar xf /download/zookeeper-3.4.9.tar.gz && \
+	cd zookeeper-3.4.9 && \
 	chown -R root:root . && \
 	pre-root /build/zookeeper-root && \
 	mkdir -p /build/zookeeper-root/usr/share/zookeeper && \
@@ -36,5 +36,5 @@ RUN \
 		/build/zookeeper-deb \
 		/build/zookeeper-root \
 		/control/zookeeper \
-		/packages/zookeeper_3.4.6-0_all.deb
+		/packages/zookeeper_3.4.9-0_all.deb
 
