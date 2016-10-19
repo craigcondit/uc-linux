@@ -4,7 +4,7 @@ set -e
 JRE_HOME=/usr/lib/jvm/jre-8-openjdk-amd64
 
 # java
-update-alternatives --quiet --install /usr/bin/java java ${JRE_HOME}/bin/java 218102 \
+update-alternatives --quiet --install /usr/bin/java java ${JRE_HOME}/bin/java 218112 \
 	--slave /usr/bin/jjs jjs ${JRE_HOME}/bin/jjs \
 	--slave /usr/bin/keytool keytool ${JRE_HOME}/bin/keytool \
 	--slave /usr/bin/orbd orbd ${JRE_HOME}/bin/orbd \
@@ -16,6 +16,6 @@ update-alternatives --quiet --install /usr/bin/java java ${JRE_HOME}/bin/java 21
 	--slave /usr/bin/tnameserv tnameserv ${JRE_HOME}/bin/tnameserv \
 	--slave /usr/bin/unpack200 unpack200 ${JRE_HOME}/bin/unpack200
 
-update-alternatives --quiet --install /usr/lib/jvm/jre jre ${JRE_HOME} 218102
-update-alternatives --quiet --install /usr/lib/jvm/jre-8 jre-8 ${JRE_HOME} 218102
-update-alternatives --quiet --install /usr/lib/jvm/jre-8u102 jre-8u102 ${JRE_HOME} 218102
+update-alternatives --quiet --install /usr/lib/jvm/jre jre ${JRE_HOME} 218112
+update-alternatives --quiet --install /usr/lib/jvm/jre-8 jre-8 ${JRE_HOME} 218112
+update-alternatives --quiet --install /usr/lib/jvm/jre-8u112 jre-8u112 ${JRE_HOME} 218112
