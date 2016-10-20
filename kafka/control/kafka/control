@@ -1,5 +1,5 @@
 Package: kafka
-Version: 0.10.0.1-0
+Version: 0.10.1.0-0
 Source: kafka
 Priority: optional
 Depends: libc, jre8, bash
