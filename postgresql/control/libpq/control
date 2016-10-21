@@ -1,5 +1,5 @@
 Package: libpq
-Version: 9.5.3-2
+Version: 9.6.0-0
 Source: postgresql
 Priority: optional
 Depends: libc, libssl
