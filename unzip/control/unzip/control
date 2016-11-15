@@ -1,5 +1,5 @@
 Package: unzip
-Version: 6.0-0
+Version: 6.0-1
 Source: unzip
 Priority: optional
 Depends: libc, update-alternatives

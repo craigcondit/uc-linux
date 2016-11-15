@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -27,6 +27,5 @@ RUN \
 		/build/unzip-deb \
 		/build/unzip-root \
 		/control/unzip \
-		/packages/unzip_6.0-0_amd64.deb && \
-	cd / && \
-	rm -rf /build /control /download
+		/packages/unzip_6.0-1_amd64.deb
+
