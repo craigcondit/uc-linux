@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -32,7 +32,7 @@ RUN \
 		/build/libffi-deb \
 		/build/libffi-root \
 		/control/libffi \
-		/packages/libffi_3.2.1-0_amd64.deb && \
+		/packages/libffi_3.2.1-1_amd64.deb && \
 
 	cp -a /build/libffi-base-root /build/libffi-devel-root && \
 	cd /build/libffi-devel-root && \
@@ -41,9 +41,4 @@ RUN \
 		/build/libffi-devel-deb \
 		/build/libffi-devel-root \
 		/control/libffi-devel \
-		/packages/libffi-devel_3.2.1-0_amd64.deb && \
-
-	cd / && \
-	rm -rf /build /control /download && \
-	opkg --autoremove remove gcc make file linux-devel && \
-	opkg clean
+		/packages/libffi-devel_3.2.1-1_amd64.deb
