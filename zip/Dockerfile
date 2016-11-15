@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -26,6 +26,5 @@ RUN \
 		/build/zip-deb \
 		/build/zip-root \
 		/control/zip \
-		/packages/zip_3.0-0_amd64.deb && \
-	cd / && \
-	rm -rf /build /control /download
+		/packages/zip_3.0-1_amd64.deb
+

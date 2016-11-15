@@ -1,5 +1,5 @@
 Package: zip
-Version: 3.0-0
+Version: 3.0-1
 Source: zip
 Priority: optional
 Depends: libc, libbz2, update-alternatives
