@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -40,7 +40,7 @@ RUN \
 		/build/ncurses-utils-deb \
 		/build/ncurses-utils-root \
 		/control/ncurses-utils \
-		/packages/ncurses-utils_6.0-0_amd64.deb && \
+		/packages/ncurses-utils_6.0-1_amd64.deb && \
 
 	cp -a /build/ncurses-orig-root /build/ncurses-base-root && \
 	cd /build/ncurses-base-root && \
@@ -65,7 +65,7 @@ RUN \
 		/build/ncurses-base-deb \
 		/build/ncurses-base-root \
 		/control/ncurses-base \
-		/packages/ncurses-base_6.0-0_all.deb && \
+		/packages/ncurses-base_6.0-1_all.deb && \
 
 	cp -a /build/ncurses-orig-root /build/ncurses-term-root && \
 	cd /build/ncurses-term-root && \
@@ -84,7 +84,7 @@ RUN \
 		/build/ncurses-term-deb \
 		/build/ncurses-term-root \
 		/control/ncurses-term \
-		/packages/ncurses-term_6.0-0_all.deb && \
+		/packages/ncurses-term_6.0-1_all.deb && \
 		
 	cp -a /build/ncurses-orig-root /build/libncurses-root && \
 	cd /build/libncurses-root && \
@@ -94,7 +94,7 @@ RUN \
 		/build/libncurses-deb \
 		/build/libncurses-root \
 		/control/libncurses \
-		/packages/libncurses_6.0-0_amd64.deb && \
+		/packages/libncurses_6.0-1_amd64.deb && \
 
 	cp -a /build/ncurses-orig-root /build/libncurses-devel-root && \
 	cd /build/libncurses-devel-root && \
@@ -104,5 +104,5 @@ RUN \
 		/build/libncurses-devel-deb \
 		/build/libncurses-devel-root \
 		/control/libncurses-devel \
-		/packages/libncurses-devel_6.0-0_amd64.deb
+		/packages/libncurses-devel_6.0-1_amd64.deb
 
