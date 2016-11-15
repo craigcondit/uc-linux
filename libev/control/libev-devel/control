@@ -1,8 +1,8 @@
 Package: libev-devel
-Version: 4.20-0
+Version: 4.22-1
 Source: libev
 Priority: extra
-Depends: libc-devel, libev (>= 4.20-0)
+Depends: libc-devel, libev (>= 4.22-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: high-performance event loop library modelled after libevent (headers)
 Architecture: amd64

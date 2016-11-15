@@ -1,4 +1,4 @@
-FROM insideo/uc-linux-bootstrap:buggy
+FROM insideo/uc-linux-bootstrap:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,11 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel && \
-	wget -O /download/libev-4.20.tar.gz \
-		http://dist.schmorp.de/libev/Attic/libev-4.20.tar.gz && \
+	wget -O /download/libev-4.22.tar.gz \
+		http://dist.schmorp.de/libev/Attic/libev-4.22.tar.gz && \
 	cd /build && \
-	tar xf /download/libev-4.20.tar.gz && \
-	cd libev-4.20 && \
+	tar xf /download/libev-4.22.tar.gz && \
+	cd libev-4.22 && \
 	./configure --prefix=/usr --build=$(gcc -dumpmachine) --disable-static && \
 	MAKE="make -j4" make && \
 	pre-root /build/libev-base-root && \
@@ -28,7 +28,7 @@ RUN \
 		/build/libev-deb \
 		/build/libev-root \
 		/control/libev \
-		/packages/libev_4.20-0_amd64.deb && \
+		/packages/libev_4.22-1_amd64.deb && \
 
 	cp -a /build/libev-base-root /build/libev-devel-root && \
 	cd /build/libev-devel-root && \
@@ -37,4 +37,4 @@ RUN \
 		/build/libev-devel-deb \
 		/build/libev-devel-root \
 		/control/libev-devel \
-		/packages/libev-devel_4.20-0_amd64.deb
+		/packages/libev-devel_4.22-1_amd64.deb
