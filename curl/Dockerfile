@@ -1,4 +1,4 @@
-FROM insideo/uc-linux-bootstrap:buggy
+FROM insideo/uc-linux-bootstrap:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -10,11 +10,11 @@ RUN \
 		libevent-devel libxml2-devel libev-devel libspdylay-devel \
 		libjansson-devel libjemalloc-devel bison ruby libnghttp2-devel && \
 	opkg clean && \
-	wget -O /download/curl-7.47.0.tar.bz2 \
-		https://github.com/bagder/curl/releases/download/curl-7_47_0/curl-7.47.0.tar.bz2 && \
+	wget -O /download/curl-7.51.0.tar.bz2 \
+		https://curl.haxx.se/download/curl-7.51.0.tar.bz2 && \
 	cd /build && \
-	tar xf /download/curl-7.47.0.tar.bz2 && \
-	cd curl-7.47.0 && \
+	tar xf /download/curl-7.51.0.tar.bz2 && \
+	cd curl-7.51.0 && \
 	./configure --prefix=/usr --disable-static --build=$(gcc -dumpmachine) && \
 	MAKE="make -j4" make && \
 	pre-root /build/curl-base-root && \
@@ -30,7 +30,7 @@ RUN \
 		/build/curl-deb \
 		/build/curl-root \
 		/control/curl \
-		/packages/curl_7.47.0-1_amd64.deb && \
+		/packages/curl_7.51.0-1_amd64.deb && \
 
 	cp -a /build/curl-base-root /build/libcurl-root && \
 	cd /build/libcurl-root && \
@@ -40,7 +40,7 @@ RUN \
 		/build/libcurl-deb \
 		/build/libcurl-root \
 		/control/libcurl \
-		/packages/libcurl_7.47.0-1_amd64.deb && \
+		/packages/libcurl_7.51.0-1_amd64.deb && \
 
 	cp -a /build/curl-base-root /build/libcurl-devel-root && \
 	cd /build/libcurl-devel-root && \
@@ -50,5 +50,5 @@ RUN \
 		/build/libcurl-devel-deb \
 		/build/libcurl-devel-root \
 		/control/libcurl-devel \
-		/packages/libcurl-devel_7.47.0-1_amd64.deb
+		/packages/libcurl-devel_7.51.0-1_amd64.deb
 
