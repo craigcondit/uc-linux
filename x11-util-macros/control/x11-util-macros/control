@@ -1,5 +1,5 @@
 Package: x11-util-macros
-Version: 1.19.0-0
+Version: 1.19.0-1
 Source: util-macros
 Priority: optional
 Depends: libc

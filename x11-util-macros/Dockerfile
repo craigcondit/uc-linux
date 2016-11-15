@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -23,7 +23,5 @@ RUN \
 		/build/x11-util-macros-deb \
 		/build/x11-util-macros-root \
 		/control/x11-util-macros \
-		/packages/x11-util-macros_1.19.0-0_amd64.deb && \
+		/packages/x11-util-macros_1.19.0-0_amd64.deb
 
-	cd / && \
-	rm -rf /build /control /download /Manifest
