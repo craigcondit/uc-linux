@@ -1,4 +1,4 @@
-FROM insideo/uc-linux-bootstrap:buggy
+FROM insideo/uc-linux-bootstrap:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -44,7 +44,7 @@ RUN \
 		/build/xz-deb \
 		/build/xz-root \
 		/control/xz \
-		/packages/xz_5.2.2-0_amd64.deb && \
+		/packages/xz_5.2.2-1_amd64.deb && \
 		
 	cp -a /build/xz-base-root /build/liblzma-root && \
 	cd /build/liblzma-root && \
@@ -54,7 +54,7 @@ RUN \
 		/build/liblzma-deb \
 		/build/liblzma-root \
 		/control/liblzma \
-		/packages/liblzma_5.2.2-0_amd64.deb && \
+		/packages/liblzma_5.2.2-1_amd64.deb && \
 		
 	cp -a /build/xz-base-root /build/liblzma-devel-root && \
 	cd /build/liblzma-devel-root && \
@@ -64,7 +64,7 @@ RUN \
 		/build/liblzma-devel-deb \
 		/build/liblzma-devel-root \
 		/control/liblzma-devel \
-		/packages/liblzma-devel_5.2.2-0_amd64.deb && \
+		/packages/liblzma-devel_5.2.2-1_amd64.deb && \
 		
 	cd / && \
 	rm -rf /build/* /download/* /control/* && \
