@@ -1,8 +1,8 @@
 Package: alsa-utils
-Version: 1.0.29-0
+Version: 1.1.2-1
 Source: alsalib
 Priority: extra
-Depends: libc, libalsa (>= 1.0.29-0)
+Depends: libc, libalsa (>= 1.1.2-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: utilities for ALSA applications
 Architecture: amd64

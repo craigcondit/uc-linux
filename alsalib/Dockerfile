@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,11 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel && \
-	wget -O /download/alsa-lib-1.0.29.tar.bz2 \
-		ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.0.29.tar.bz2 && \
+	wget -O /download/alsa-lib-1.1.2.tar.bz2 \
+		ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.1.2.tar.bz2 && \
 	cd build && \
-	tar xf /download/alsa-lib-1.0.29.tar.bz2 && \
-	cd alsa-lib-1.0.29 && \
+	tar xf /download/alsa-lib-1.1.2.tar.bz2 && \
+	cd alsa-lib-1.1.2 && \
 	./configure --prefix=/usr --build=$(gcc -dumpmachine) --disable-static && \
 	MAKE="make -j4" make && \
 	pre-root /build/alsa-lib-base-root && \
@@ -25,7 +25,7 @@ RUN \
 		/build/alsa-utils-deb \
 		/build/alsa-utils-root \
 		/control/alsa-utils \
-		/packages/alsa-utils_1.0.29-0_amd64.deb && \
+		/packages/alsa-utils_1.1.2-1_amd64.deb && \
 
 	cp -a /build/alsa-lib-base-root /build/libalsa-root && \
 	cd /build/libalsa-root && \
@@ -35,7 +35,7 @@ RUN \
 		/build/libalsa-deb \
 		/build/libalsa-root \
 		/control/libalsa \
-		/packages/libalsa_1.0.29-0_amd64.deb && \
+		/packages/libalsa_1.1.2-1_amd64.deb && \
 
 	cp -a /build/alsa-lib-base-root /build/libalsa-devel-root && \
 	cd /build/libalsa-devel-root && \
@@ -45,7 +45,5 @@ RUN \
 		/build/libalsa-devel-deb \
 		/build/libalsa-devel-root \
 		/control/libalsa-devel \
-		/packages/libalsa-devel_1.0.29-0_amd64.deb && \
+		/packages/libalsa-devel_1.1.2-1_amd64.deb
 
-	cd / && \
-	rm -rf /build /control /download
