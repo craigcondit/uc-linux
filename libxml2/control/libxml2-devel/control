@@ -1,8 +1,8 @@
 Package: libxml2-devel
-Version: 2.9.2-0
+Version: 2.9.4-1
 Source: libxml2
 Priority: extra
-Depends: libc-devel, libxml2 (>= 2.9.2-0)
+Depends: libc-devel, libxml2 (>= 2.9.4-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: GNOME XML library (headers)
 Architecture: amd64

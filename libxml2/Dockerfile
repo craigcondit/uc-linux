@@ -1,4 +1,4 @@
-FROM insideo/uc-linux-bootstrap:buggy
+FROM insideo/uc-linux-bootstrap:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,11 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel && \
-	wget -O /download/libxml2-2.9.2.tar.gz \
-		ftp://xmlsoft.org/libxml2/libxml2-2.9.2.tar.gz && \
+	wget -O /download/libxml2-2.9.4.tar.gz \
+		ftp://xmlsoft.org/libxml2/libxml2-2.9.4.tar.gz && \
 	cd build && \
-	tar xf /download/libxml2-2.9.2.tar.gz && \
-	cd libxml2-2.9.2 && \
+	tar xf /download/libxml2-2.9.4.tar.gz && \
+	cd libxml2-2.9.4 && \
 	./configure --prefix=/usr --build=$(gcc -dumpmachine) --disable-static && \
 	MAKE="make -j4" make && \
 	pre-root /build/libxml2-base-root && \
@@ -27,7 +27,7 @@ RUN \
 		/build/xml2-utils-deb \
 		/build/xml2-utils-root \
 		/control/xml2-utils \
-		/packages/xml2-utils_2.9.2-0_amd64.deb && \
+		/packages/xml2-utils_2.9.4-1_amd64.deb && \
 
 	cp -a /build/libxml2-base-root /build/libxml2-root && \
 	cd /build/libxml2-root && \
@@ -37,7 +37,7 @@ RUN \
 		/build/libxml2-deb \
 		/build/libxml2-root \
 		/control/libxml2 \
-		/packages/libxml2_2.9.2-0_amd64.deb && \
+		/packages/libxml2_2.9.4-1_amd64.deb && \
 
 	cp -a /build/libxml2-base-root /build/libxml2-devel-root && \
 	cd /build/libxml2-devel-root && \
@@ -48,9 +48,5 @@ RUN \
 		/build/libxml2-devel-deb \
 		/build/libxml2-devel-root \
 		/control/libxml2-devel \
-		/packages/libxml2-devel_2.9.2-0_amd64.deb && \
+		/packages/libxml2-devel_2.9.4-1_amd64.deb
 
-	cd / && \
-	rm -rf /build /control /download && \
-	opkg --autoremove remove gcc make file linux-devel && \
-	opkg clean
