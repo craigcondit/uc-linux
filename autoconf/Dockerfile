@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -22,8 +22,4 @@ RUN \
 		/build/autoconf-deb \
 		/build/autoconf-root \
 		/control/autoconf \
-		/packages/autoconf_2.69-0_all.deb && \
-	cd / && \
-	rm -rf /build /control /download && \
-	opkg --autoremove remove gcc make file linux-devel m4 perl && \
-	opkg clean
+		/packages/autoconf_2.69-1_all.deb
