@@ -1,5 +1,5 @@
 Package: automake
-Version: 1.15-0
+Version: 1.15-1
 Source: automake
 Priority: optional
 Depends: perl, m4

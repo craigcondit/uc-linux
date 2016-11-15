@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -25,8 +25,4 @@ RUN \
 		/build/automake-deb \
 		/build/automake-root \
 		/control/automake \
-		/packages/automake_1.15-0_all.deb && \
-	cd / && \
-	rm -rf /build /control /download && \
-	opkg --autoremove remove gcc make file linux-devel autoconf && \
-	opkg clean
+		/packages/automake_1.15-1_all.deb
