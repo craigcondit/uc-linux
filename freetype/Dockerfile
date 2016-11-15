@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,16 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel libbz2-devel libpng-devel && \
-	wget -O /download/freetype-2.6.tar.bz2 \
-		http://downloads.sourceforge.net/freetype/freetype-2.6.tar.bz2 && \
+	wget -O /download/freetype-2.7.tar.bz2 \
+		http://downloads.sourceforge.net/freetype/freetype-2.7.tar.bz2 && \
 	cd /build && \
-	tar xf /download/freetype-2.6.tar.bz2 && \
-	cd freetype-2.6 && \
-	sed -i  -e "/AUX.*.gxvalid/s@^# @@" \
-		-e "/AUX.*.otvalid/s@^# @@" \
-		modules.cfg && \
-	sed -ri -e 's:.*(#.*SUBPIXEL.*) .*:\1:' \
-		include/config/ftoption.h && \
+	tar xf /download/freetype-2.7.tar.bz2 && \
+	cd freetype-2.7 && \
 	./configure --prefix=/usr --build=$(gcc -dumpmachine) --disable-static && \
 	MAKE="make -j4" make && \
 	pre-root /build/freetype-base-root && \
@@ -33,7 +28,7 @@ RUN \
 		/build/libfreetype-deb \
 		/build/libfreetype-root \
 		/control/libfreetype \
-		/packages/libfreetype_2.6-0_amd64.deb && \
+		/packages/libfreetype_2.7.0-1_amd64.deb && \
 
 	cp -a /build/freetype-base-root /build/libfreetype-devel-root && \
 	cd /build/libfreetype-devel-root && \
@@ -42,7 +37,4 @@ RUN \
 		/build/libfreetype-devel-deb \
 		/build/libfreetype-devel-root \
 		/control/libfreetype-devel \
-		/packages/libfreetype-devel_2.6-0_amd64.deb && \
-
-	cd / && \
-	rm -rf /build /control /download
+		/packages/libfreetype-devel_2.7.0-1_amd64.deb

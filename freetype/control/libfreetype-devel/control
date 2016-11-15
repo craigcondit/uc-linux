@@ -1,8 +1,8 @@
 Package: libfreetype-devel
-Version: 2.6-0
+Version: 2.7.0-1
 Source: freetype
 Priority: optional
-Depends: libc-devel, libbz2-devel, libpng-devel, libfreetype (>= 2.6-0)
+Depends: libc-devel, libbz2-devel, libpng-devel, libfreetype (>= 2.7.0-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: FreeType 2 font engine (development files)
 Architecture: amd64

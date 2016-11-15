@@ -1,5 +1,5 @@
 Package: libfreetype
-Version: 2.6-0
+Version: 2.7.0-1
 Source: freetype
 Priority: optional
 Depends: libc, libbz2, libpng
