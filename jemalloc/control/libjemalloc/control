@@ -1,5 +1,5 @@
 Package: libjemalloc
-Version: 4.0.3-0
+Version: 4.3.1-1
 Source: jemalloc
 Priority: extra
 Depends: libc

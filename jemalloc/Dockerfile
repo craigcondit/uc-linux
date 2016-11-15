@@ -1,4 +1,4 @@
-FROM insideo/uc-linux-bootstrap:buggy
+FROM insideo/uc-linux-bootstrap:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,11 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel && \
-	wget -O /download/jemalloc-4.0.3.tar.bz2 \
-		https://github.com/jemalloc/jemalloc/releases/download/4.0.3/jemalloc-4.0.3.tar.bz2 && \
+	wget -O /download/jemalloc-4.3.1.tar.bz2 \
+		https://github.com/jemalloc/jemalloc/releases/download/4.3.1/jemalloc-4.3.1.tar.bz2 && \
 	cd build && \
-	tar xf /download/jemalloc-4.0.3.tar.bz2 && \
-	cd jemalloc-4.0.3 && \
+	tar xf /download/jemalloc-4.3.1.tar.bz2 && \
+	cd jemalloc-4.3.1 && \
 	./configure --prefix=/usr --build=$(gcc -dumpmachine) --disable-static && \
 	MAKE="make -j4" make && \
 	pre-root /build/jemalloc-base-root && \
@@ -29,7 +29,7 @@ RUN \
 		/build/libjemalloc-deb \
 		/build/libjemalloc-root \
 		/control/libjemalloc \
-		/packages/libjemalloc_4.0.3-0_amd64.deb && \
+		/packages/libjemalloc_4.3.1-1_amd64.deb && \
 
 	cp -a /build/jemalloc-base-root /build/libjemalloc-devel-root && \
 	cd /build/libjemalloc-devel-root && \
@@ -38,9 +38,4 @@ RUN \
 		/build/libjemalloc-devel-deb \
 		/build/libjemalloc-devel-root \
 		/control/libjemalloc-devel \
-		/packages/libjemalloc-devel_4.0.3-0_amd64.deb && \
-
-	cd / && \
-	rm -rf /build /control /download && \
-	opkg --autoremove remove gcc make file linux-devel && \
-	opkg clean
+		/packages/libjemalloc-devel_4.3.1-1_amd64.deb
