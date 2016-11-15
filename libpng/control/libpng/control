@@ -1,5 +1,5 @@
 Package: libpng
-Version: 1.6.18-0
+Version: 1.6.26-1
 Source: libpng
 Priority: optional
 Depends: libc
