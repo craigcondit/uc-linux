@@ -1,6 +1,6 @@
 Package: libassuan
 Source: libassuan
-Version: 2.4.2-0
+Version: 2.4.3-1
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Architecture: amd64
 Depends: libc, libgpg-error

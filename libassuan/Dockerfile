@@ -1,4 +1,4 @@
-FROM insideo/uc-linux-bootstrap:buggy
+FROM insideo/uc-linux-bootstrap:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control control
@@ -8,11 +8,11 @@ RUN \
 	opkg upgrade && \
 	opkg install gcc make linux-devel libgpg-error-devel && \
 	opkg clean && \
-	wget -O /download/libassuan-2.4.2.tar.bz2 \
-		https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-2.4.2.tar.bz2 && \
+	wget -O /download/libassuan-2.4.3.tar.bz2 \
+		https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-2.4.3.tar.bz2 && \
 	cd /build && \
-	tar xf /download/libassuan-2.4.2.tar.bz2 && \
-	cd libassuan-2.4.2 && \
+	tar xf /download/libassuan-2.4.3.tar.bz2 && \
+	cd libassuan-2.4.3 && \
 	./configure --disable-static --prefix=/usr --build=$(gcc -dumpmachine) && \
 	MAKE="make -j4" make && \
 	pre-root /build/libassuan-base-root && \
@@ -29,7 +29,7 @@ RUN \
 		/build/libassuan-deb \
 		/build/libassuan-root \
 		/control/libassuan \
-		/packages/libassuan_2.4.2-0_amd64.deb && \
+		/packages/libassuan_2.4.3-1_amd64.deb && \
 
 	cp -a /build/libassuan-base-root /build/libassuan-devel-root && \
 	cd /build/libassuan-devel-root && \
@@ -38,7 +38,7 @@ RUN \
 		/build/libassuan-devel-deb \
 		/build/libassuan-devel-root \
 		/control/libassuan-devel \
-		/packages/libassuan-devel_2.4.2-0_amd64.deb && \
+		/packages/libassuan-devel_2.4.3-1_amd64.deb && \
 	
 	cd / && \
 	rm -rf /build/* /download/* /control/* && \

@@ -1,9 +1,9 @@
 Package: libassuan-devel
 Source: libassuan
-Version: 2.4.2-0
+Version: 2.4.3-1
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Architecture: amd64
-Depends: libc-devel, libgpg-error-devel, libassuan (>= 0.2.4.2-0)
+Depends: libc-devel, libgpg-error-devel, libassuan (>= 0.2.4.3-1)
 Description: IPC library for the GnuPG components (headers)
 Homepage: http://www.gnupg.org/(en)/related_software/libassuan/index.html
 Section: devel
