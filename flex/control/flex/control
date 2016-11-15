@@ -1,5 +1,5 @@
 Package: flex
-Version: 2.5.39-0
+Version: 2.6.0-1
 Source: flex
 Priority: optional
 Depends: libc
