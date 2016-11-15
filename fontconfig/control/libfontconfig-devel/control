@@ -1,8 +1,8 @@
 Package: libfontconfig-devel
-Version: 2.11.1-0
+Version: 2.12.1-1
 Source: fontconfig
 Priority: optional
-Depends: libc-devel, libxml2-devel, libfreetype-devel, libfontconfig (>= 2.11.1-0)
+Depends: libc-devel, libxml2-devel, libfreetype-devel, libfontconfig (>= 2.12.1-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: generic font configuration library (development files)
 Architecture: amd64

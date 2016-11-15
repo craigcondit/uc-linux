@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,14 +6,14 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel libfreetype-devel pkg-config libxml2-devel && \
-	wget -O /download/fontconfig-2.11.1.tar.bz2 \
-		http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.1.tar.bz2 && \
+	wget -O /download/fontconfig-2.12.1.tar.bz2 \
+		http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.12.1.tar.bz2 && \
 	cd /build && \
-	tar xf /download/fontconfig-2.11.1.tar.bz2 && \
-	cd fontconfig-2.11.1 && \
+	tar xf /download/fontconfig-2.12.1.tar.bz2 && \
+	cd fontconfig-2.12.1 && \
 	./configure \
 		--prefix=/usr --sysconfdir=/etc --localstatedir=/var \
-		--disable-docs --docdir=/usr/share/doc/fontconfig-=2.11.1 \
+		--disable-docs --docdir=/usr/share/doc/fontconfig-=2.12.1 \
 		--host=$(gcc -dumpmachine) --target=$(gcc -dumpmachine) \
 		--build=$(gcc -dumpmachine) --disable-static \
 		--enable-libxml2 && \
@@ -30,7 +30,7 @@ RUN \
 		/build/fontconfig-utils-deb \
 		/build/fontconfig-utils-root \
 		/control/fontconfig-utils \
-		/packages/fontconfig-utils_2.11.1-0_amd64.deb && \
+		/packages/fontconfig-utils_2.12.1-1_amd64.deb && \
 
 	cp -a /build/fontconfig-base-root /build/libfontconfig-root && \
 	cd /build/libfontconfig-root && \
@@ -40,7 +40,7 @@ RUN \
 		/build/libfontconfig-deb \
 		/build/libfontconfig-root \
 		/control/libfontconfig \
-		/packages/libfontconfig_2.11.1-0_amd64.deb && \
+		/packages/libfontconfig_2.12.1-1_amd64.deb && \
 
 	cp -a /build/fontconfig-base-root /build/libfontconfig-devel-root && \
 	cd /build/libfontconfig-devel-root && \
@@ -50,7 +50,5 @@ RUN \
 		/build/libfontconfig-devel-deb \
 		/build/libfontconfig-devel-root \
 		/control/libfontconfig-devel \
-		/packages/libfontconfig-devel_2.11.1-0_amd64.deb && \
+		/packages/libfontconfig-devel_2.12.1-1_amd64.deb
 
-	cd / && \
-	rm -rf /build /control /download

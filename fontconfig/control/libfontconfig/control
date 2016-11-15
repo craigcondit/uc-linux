@@ -1,5 +1,5 @@
 Package: libfontconfig
-Version: 2.11.1-0
+Version: 2.12.1-1
 Source: fontconfig
 Priority: optional
 Depends: libc, libfreetype, libxml2
