@@ -1,8 +1,8 @@
 Package: nghttp2
-Version: 1.9.2-0
+Version: 1.16.1-1
 Source: nghttp2
 Priority: extra
-Depends: libc, libgcc, libstdcxx, libjansson, libssl, libev, libxml2, libspdylay, libjemalloc, libnghttp2 (>= 1.9.2-0)
+Depends: libc, libgcc, libstdcxx, libjansson, libssl, libev, libxml2, libspdylay, libjemalloc, libnghttp2 (>= 1.16.1-1)
 Recommends: python27
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: HTTP/2 protocol implementation in C (programs)
