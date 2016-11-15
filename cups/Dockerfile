@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,11 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel libz-devel && \
-	wget -O /download/cups-2.1.0-source.tar.bz2 \
-		https://www.cups.org/software/2.1.0/cups-2.1.0-source.tar.bz2 && \
+	wget -O /download/cups-2.2.1-source.tar.gz \
+		https://github.com/apple/cups/releases/download/v2.2.1/cups-2.2.1-source.tar.gz && \
 	cd build && \
-	tar xf /download/cups-2.1.0-source.tar.bz2 && \
-	cd cups-2.1.0 && \
+	tar xf /download/cups-2.2.1-source.tar.gz && \
+	cd cups-2.2.1 && \
 	./configure \
 		--prefix=/usr --build=$(gcc -dumpmachine) \
 		--sysconfdir=/etc --localstatedir=/var --disable-static && \
@@ -35,7 +35,7 @@ RUN \
 		/build/cups-deb \
 		/build/cups-root \
 		/control/cups \
-		/packages/cups_2.1.0-0_amd64.deb && \
+		/packages/cups_2.2.1-1_amd64.deb && \
 
 	cp -a /build/cups-base-root /build/libcups-root && \
 	cd /build/libcups-root && \
@@ -44,7 +44,7 @@ RUN \
 		/build/libcups-deb \
 		/build/libcups-root \
 		/control/libcups \
-		/packages/libcups_2.1.0-0_amd64.deb && \
+		/packages/libcups_2.2.1-1_amd64.deb && \
 
 	cp -a /build/cups-base-root /build/libcups-devel-root && \
 	cd /build/libcups-devel-root && \
@@ -53,7 +53,4 @@ RUN \
 		/build/libcups-devel-deb \
 		/build/libcups-devel-root \
 		/control/libcups-devel \
-		/packages/libcups-devel_2.1.0-0_amd64.deb && \
-
-	cd / && \
-	rm -rf /build /control /download
+		/packages/libcups-devel_2.2.1-1_amd64.deb
