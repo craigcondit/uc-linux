@@ -1,8 +1,8 @@
 Package: python27-devel
-Version: 2.7.10-0
+Version: 2.7.12-1
 Source: python27
 Priority: standard
-Depends: libc-devel, python27 (>= 2.7.10-0)
+Depends: libc-devel, python27 (>= 2.7.12-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: Interactive high-level object-oriented language (development files)
 Architecture: amd64

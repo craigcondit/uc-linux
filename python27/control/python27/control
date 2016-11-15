@@ -1,5 +1,5 @@
 Package: python27
-Version: 2.7.10-0
+Version: 2.7.12-1
 Source: python27
 Priority: standard
 Depends: libc

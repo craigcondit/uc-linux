@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,11 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install libz-devel libbz2-devel libssl-devel gcc make file linux-devel && \
-	wget -O /download/Python-2.7.10.tar.xz \
-		https://www.python.org/ftp/python/2.7.10/Python-2.7.10.tar.xz && \
+	wget -O /download/Python-2.7.12.tar.xz \
+		https://www.python.org/ftp/python/2.7.12/Python-2.7.12.tar.xz && \
 	cd /build && \
-	tar xf /download/Python-2.7.10.tar.xz && \
-	cd Python-2.7.10 && \
+	tar xf /download/Python-2.7.12.tar.xz && \
+	cd Python-2.7.12 && \
 	./configure \
 		--prefix=/usr --build=$(gcc -dumpmachine) --disable-static \
 		--enable-shared --enable-unicode=ucs4 && \
@@ -32,7 +32,7 @@ RUN \
 		/build/python27-deb \
 		/build/python27-root \
 		/control/python27 \
-		/packages/python27_2.7.10-0_amd64.deb && \
+		/packages/python27_2.7.12-1_amd64.deb && \
 
 	cp -a /build/python27-base-root /build/python27-devel-root && \
 	cd /build/python27-devel-root && \
@@ -43,4 +43,5 @@ RUN \
 		/build/python27-devel-deb \
 		/build/python27-devel-root \
 		/control/python27-devel \
-		/packages/python27-devel_2.7.10-0_amd64.deb
+		/packages/python27-devel_2.7.12-1_amd64.deb
+
