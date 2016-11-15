@@ -1,4 +1,4 @@
-FROM insideo/uc-linux-bootstrap:buggy
+FROM insideo/uc-linux-bootstrap:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,11 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make linux-devel && \
-        wget -O /download/busybox-1.24.1.tar.bz2 \
-		http://www.busybox.net/downloads/busybox-1.24.1.tar.bz2 && \
+        wget -O /download/busybox-1.25.1.tar.bz2 \
+		http://www.busybox.net/downloads/busybox-1.25.1.tar.bz2 && \
 	cd /build && \
-	tar xf /download/busybox-1.24.1.tar.bz2 && \
-	cd busybox-1.24.1 && \
+	tar xf /download/busybox-1.25.1.tar.bz2 && \
+	cd busybox-1.25.1 && \
 	confs=' \
 		CONFIG_INSTALL_NO_USR \
 		CONFIG_AR \
@@ -37,5 +37,5 @@ RUN \
 		/build/busybox-deb \
 		/build/busybox-root \
 		/control/busybox \
-		/packages/busybox_1.24.1-0_amd64.deb && \
-	opkg install /packages/busybox_1.24.1-0_amd64.deb
+		/packages/busybox_1.25.1-1_amd64.deb && \
+	opkg install /packages/busybox_1.25.1-1_amd64.deb
