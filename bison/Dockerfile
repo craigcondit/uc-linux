@@ -1,4 +1,4 @@
-FROM insideo/uc-linux-bootstrap:buggy
+FROM insideo/uc-linux-bootstrap:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -22,8 +22,4 @@ RUN \
 		/build/bison-deb \
 		/build/bison-root \
 		/control/bison \
-		/packages/bison_3.0.4-0_amd64.deb && \
-	cd / && \
-	rm -rf /build /control /download && \
-	opkg --autoremove remove gcc make file linux-devel m4 perl && \
-	opkg clean
+		/packages/bison_3.0.4-1_amd64.deb
