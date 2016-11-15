@@ -1,4 +1,4 @@
-FROM insideo/uc-linux-bootstrap:buggy
+FROM insideo/uc-linux-bootstrap:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,11 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel && \
-	wget -O /download/jansson-2.7.tar.gz \
-		http://www.digip.org/jansson/releases/jansson-2.7.tar.gz && \
+	wget -O /download/jansson-2.9.tar.gz \
+		http://www.digip.org/jansson/releases/jansson-2.9.tar.gz && \
 	cd build && \
-	tar xf /download/jansson-2.7.tar.gz && \
-	cd jansson-2.7 && \
+	tar xf /download/jansson-2.9.tar.gz && \
+	cd jansson-2.9 && \
 	./configure --prefix=/usr --build=$(gcc -dumpmachine) --disable-static && \
 	MAKE="make -j4" make && \
 	pre-root /build/jansson-base-root && \
@@ -26,7 +26,7 @@ RUN \
 		/build/libjansson-deb \
 		/build/libjansson-root \
 		/control/libjansson \
-		/packages/libjansson_2.7-0_amd64.deb && \
+		/packages/libjansson_2.9-1_amd64.deb && \
 
 	cp -a /build/jansson-base-root /build/libjansson-devel-root && \
 	cd /build/libjansson-devel-root && \
@@ -35,9 +35,4 @@ RUN \
 		/build/libjansson-devel-deb \
 		/build/libjansson-devel-root \
 		/control/libjansson-devel \
-		/packages/libjansson-devel_2.7-0_amd64.deb && \
-
-	cd / && \
-	rm -rf /build /control /download && \
-	opkg --autoremove remove gcc make file linux-devel && \
-	opkg clean
+		/packages/libjansson-devel_2.9-1_amd64.deb

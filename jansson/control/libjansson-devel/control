@@ -1,8 +1,8 @@
 Package: libjansson-devel
-Version: 2.7-0
+Version: 2.9-1
 Source: jansson
 Priority: optional
-Depends: libc-devel, libjansson (>= 2.7-0)
+Depends: libc-devel, libjansson (>= 2.9-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: C library for encoding, decoding and manipulating JSON data (development files)
 Architecture: amd64

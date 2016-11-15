@@ -1,5 +1,5 @@
 Package: libjansson
-Version: 2.7-0
+Version: 2.9-1
 Source: jansson
 Priority: optional
 Depends: libc
