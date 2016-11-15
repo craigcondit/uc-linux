@@ -226,12 +226,6 @@ repos:
       licenses: [ BSD ]
       vcs_url: http://www.info-zip.org/UnZip.html
 
-    - name: gcc-gcj
-      desc: GCJ byte code and native compiler for Java(TM)
-      website_url: https://gcc.gnu.org/
-      vcs_url: svn://gcc.gnu.org/svn/gcc/
-      licenses: [ 'GPL-2.0', 'GPL-3.0' ]
-
     - name: libgif
       desc: library for GIF images (library)
       website_url: http://giflib.sourceforge.net/

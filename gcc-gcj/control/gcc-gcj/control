@@ -1,9 +1,0 @@
-Package: gcc-gcj
-Version: 6.2.0-1
-Source: gcc
-Priority: standard
-Depends: libc, libgcc
-Maintainer: Craig Condit <ccondit@randomcoder.org>
-Description: GCJ byte code and native compiler for Java(TM)
-Architecture: amd64
-Section: java

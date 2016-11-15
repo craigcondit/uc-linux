@@ -12,7 +12,6 @@ giflib
 ncurses
 readline
 bash
-gcc-gcj
 alsalib
 cups
 libpng
