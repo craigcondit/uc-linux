@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -22,8 +22,5 @@ RUN \
 		/build/libtool-deb \
 		/build/libtool-root \
 		/control/libtool \
-		/packages/libtool_2.4.6-0_amd64.deb && \
-	cd / && \
-	rm -rf /build /control /download && \
-	opkg --autoremove remove gcc make file linux-devel autoconf automake && \
-	opkg clean
+		/packages/libtool_2.4.6-1_amd64.deb
+
