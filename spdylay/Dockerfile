@@ -1,4 +1,4 @@
-FROM insideo/uc-linux-bootstrap:buggy
+FROM insideo/uc-linux-bootstrap:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,11 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel pkg-config openssl libssl-devel libevent-devel libxml2-devel && \
-	wget -O /download/spdylay-1.3.2.tar.bz2 \
-		https://github.com/tatsuhiro-t/spdylay/releases/download/v1.3.2/spdylay-1.3.2.tar.bz2 && \
+	wget -O /download/spdylay-1.4.0.tar.bz2 \
+		https://github.com/tatsuhiro-t/spdylay/releases/download/v1.4.0/spdylay-1.4.0.tar.bz2 && \
 	cd build && \
-	tar xf /download/spdylay-1.3.2.tar.bz2 && \
-	cd spdylay-1.3.2 && \
+	tar xf /download/spdylay-1.4.0.tar.bz2 && \
+	cd spdylay-1.4.0 && \
 	./configure --prefix=/usr --build=$(gcc -dumpmachine) --disable-static && \
 	MAKE="make -j4" make && \
 	pre-root /build/spdylay-base-root && \
@@ -26,7 +26,7 @@ RUN \
 		/build/spdylay-deb \
 		/build/spdylay-root \
 		/control/spdylay \
-		/packages/spdylay_1.3.2-0_amd64.deb && \
+		/packages/spdylay_1.4.0-1_amd64.deb && \
 
 	cp -a /build/spdylay-base-root /build/libspdylay-root && \
 	cd /build/libspdylay-root && \
@@ -36,7 +36,7 @@ RUN \
 		/build/libspdylay-deb \
 		/build/libspdylay-root \
 		/control/libspdylay \
-		/packages/libspdylay_1.3.2-0_amd64.deb && \
+		/packages/libspdylay_1.4.0-1_amd64.deb && \
 
 	cp -a /build/spdylay-base-root /build/libspdylay-devel-root && \
 	cd /build/libspdylay-devel-root && \
@@ -46,5 +46,5 @@ RUN \
 		/build/libspdylay-devel-deb \
 		/build/libspdylay-devel-root \
 		/control/libspdylay-devel \
-		/packages/libspdylay-devel_1.3.2-0_amd64.deb
+		/packages/libspdylay-devel_1.4.0-1_amd64.deb
 
