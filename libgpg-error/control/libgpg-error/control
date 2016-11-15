@@ -1,6 +1,6 @@
 Package: libgpg-error
 Source: libgpg-error
-Version: 1.21-0
+Version: 1.22-1
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Architecture: amd64
 Depends: libc

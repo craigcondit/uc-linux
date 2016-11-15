@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control control
@@ -7,11 +7,11 @@ RUN \
 	opkg update && \
 	opkg upgrade && \
 	opkg install gcc make file linux-devel libassuan-devel && \
-	wget -O /download/libgpg-error-1.21.tar.bz2 \
-		https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.21.tar.bz2 && \
+	wget -O /download/libgpg-error-1.22.tar.bz2 \
+		https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.22.tar.bz2 && \
 	cd /build && \
-	tar xf /download/libgpg-error-1.21.tar.bz2 && \
-	cd libgpg-error-1.21 && \
+	tar xf /download/libgpg-error-1.22.tar.bz2 && \
+	cd libgpg-error-1.22 && \
 	./configure --disable-static --prefix=/usr --build=$(gcc -dumpmachine) && \
 	MAKE="make -j4" make && \
 	pre-root /build/libgpg-error-base-root && \
@@ -28,7 +28,7 @@ RUN \
 		/build/gpg-error-deb \
 		/build/gpg-error-root \
 		/control/gpg-error \
-		/packages/gpg-error_1.21-0_amd64.deb && \
+		/packages/gpg-error_1.22-1_amd64.deb && \
 	
 	cp -a /build/libgpg-error-base-root /build/libgpg-error-root && \
 	cd /build/libgpg-error-root && \
@@ -38,7 +38,7 @@ RUN \
 		/build/libgpg-error-deb \
 		/build/libgpg-error-root \
 		/control/libgpg-error \
-		/packages/libgpg-error_1.21-0_amd64.deb && \
+		/packages/libgpg-error_1.22-1_amd64.deb && \
 	
 	cp -a /build/libgpg-error-base-root /build/libgpg-error-devel-root && \
 	cd /build/libgpg-error-devel-root && \
@@ -47,7 +47,7 @@ RUN \
 		/build/libgpg-error-devel-deb \
 		/build/libgpg-error-devel-root \
 		/control/libgpg-error-devel \
-		/packages/libgpg-error-devel_1.21-0_amd64.deb && \
+		/packages/libgpg-error-devel_1.22-1_amd64.deb && \
 
 	cd / && \
 	rm -rf /build/* /download/* /control/* && \
