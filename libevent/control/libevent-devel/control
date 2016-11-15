@@ -1,8 +1,8 @@
 Package: libevent-devel
-Version: 2.0.22-0
+Version: 2.0.22-1
 Source: libevent
 Priority: standard
-Depends: libc-devel, libevent (>= 2.0.22-0), libevent-core (>= 2.0.22-0), libevent-extra (>= 2.0.22-0), libevent-pthreads (>= 2.0.22-0), libevent-openssl (>= 2.0.22-0), libssl-devel
+Depends: libc-devel, libevent (>= 2.0.22-1), libevent-core (>= 2.0.22-1), libevent-extra (>= 2.0.22-1), libevent-pthreads (>= 2.0.22-1), libevent-openssl (>= 2.0.22-1), libssl-devel
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: Asynchronous event notification library (development files)
 Architecture: amd64

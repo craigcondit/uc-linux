@@ -1,4 +1,4 @@
-FROM insideo/uc-linux-bootstrap:buggy
+FROM insideo/uc-linux-bootstrap:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -7,7 +7,7 @@ RUN \
 	opkg update && \
 	opkg install gcc make file linux-devel libssl-devel && \
 	wget -O /download/libevent-2.0.22-stable.tar.gz \
-		https://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz && \
+		'https://github.com/libevent/libevent/releases/download/release-2.0.22-stable/libevent-2.0.22-stable.tar.gz' && \
 	cd build && \
 	tar xf /download/libevent-2.0.22-stable.tar.gz && \
 	cd libevent-2.0.22-stable && \
@@ -26,7 +26,7 @@ RUN \
 		/build/libevent-deb \
 		/build/libevent-root \
 		/control/libevent \
-		/packages/libevent_2.0.22-0_amd64.deb && \
+		/packages/libevent_2.0.22-1_amd64.deb && \
 
 	cp -a /build/libevent-base-root /build/libevent-core-root && \
 	cd /build/libevent-core-root && \
@@ -37,7 +37,7 @@ RUN \
 		/build/libevent-core-deb \
 		/build/libevent-core-root \
 		/control/libevent-core \
-		/packages/libevent-core_2.0.22-0_amd64.deb && \
+		/packages/libevent-core_2.0.22-1_amd64.deb && \
 
 	cp -a /build/libevent-base-root /build/libevent-extra-root && \
 	cd /build/libevent-extra-root && \
@@ -48,7 +48,7 @@ RUN \
 		/build/libevent-extra-deb \
 		/build/libevent-extra-root \
 		/control/libevent-extra \
-		/packages/libevent-extra_2.0.22-0_amd64.deb && \
+		/packages/libevent-extra_2.0.22-1_amd64.deb && \
 
 	cp -a /build/libevent-base-root /build/libevent-pthreads-root && \
 	cd /build/libevent-pthreads-root && \
@@ -59,7 +59,7 @@ RUN \
 		/build/libevent-pthreads-deb \
 		/build/libevent-pthreads-root \
 		/control/libevent-pthreads \
-		/packages/libevent-pthreads_2.0.22-0_amd64.deb && \
+		/packages/libevent-pthreads_2.0.22-1_amd64.deb && \
 
 	cp -a /build/libevent-base-root /build/libevent-openssl-root && \
 	cd /build/libevent-openssl-root && \
@@ -70,7 +70,7 @@ RUN \
 		/build/libevent-openssl-deb \
 		/build/libevent-openssl-root \
 		/control/libevent-openssl \
-		/packages/libevent-openssl_2.0.22-0_amd64.deb && \
+		/packages/libevent-openssl_2.0.22-1_amd64.deb && \
 
 	cp -a /build/libevent-base-root /build/libevent-devel-root && \
 	cd /build/libevent-devel-root && \
@@ -79,4 +79,4 @@ RUN \
 		/build/libevent-devel-deb \
 		/build/libevent-devel-root \
 		/control/libevent-devel \
-		/packages/libevent-devel_2.0.22-0_amd64.deb
+		/packages/libevent-devel_2.0.22-1_amd64.deb
