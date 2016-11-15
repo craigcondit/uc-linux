@@ -27,4 +27,4 @@ fi
 echo "Uploading main packages for ${PKG_DIR}..."
 find ${PKG_DIR} -type f -name "*.deb" \
 	-exec ./upload-package.py -u "${BINTRAY_USER}" -o "${BINTRAY_ORG}" ${ARGS} \
-	-a "${BINTRAY_API_KEY_FILE}" -r uc-linux-main-buggy -c main -d buggy "{}" \;
+	-a "${BINTRAY_API_KEY_FILE}" -r uc-linux-main-hydrogen -c main -d hydrogen "{}" \;

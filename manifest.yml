@@ -2,7 +2,7 @@
 
 repos: 
 
-  uc-linux-main-buggy:
+  uc-linux-main-hydrogen:
 
     - name: curl
       desc: command line tool for transferring data with URL syntax

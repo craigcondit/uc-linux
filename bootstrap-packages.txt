@@ -1,10 +1,10 @@
-flex
-bison
-jansson
-libev
 libevent
 libxml2
+libev
 spdylay
+bison
+flex
+jansson
 jemalloc
 ruby
 nghttp2
