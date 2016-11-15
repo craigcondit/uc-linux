@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,11 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel && \
-	wget -O /download/giflib-5.1.1.tar.bz2 \
-		http://downloads.sourceforge.net/giflib/giflib-5.1.1.tar.bz2 && \
+	wget -O /download/giflib-5.1.4.tar.bz2 \
+		http://downloads.sourceforge.net/giflib/giflib-5.1.4.tar.bz2 && \
 	cd /build && \
-	tar xf /download/giflib-5.1.1.tar.bz2 && \
-	cd giflib-5.1.1 && \
+	tar xf /download/giflib-5.1.4.tar.bz2 && \
+	cd giflib-5.1.4 && \
 	./configure --prefix=/usr --build=$(gcc -dumpmachine) --disable-static && \
 	MAKE="make -j4" make && \
 	pre-root /build/giflib-base-root && \
@@ -25,7 +25,7 @@ RUN \
 		/build/gif-utils-deb \
 		/build/gif-utils-root \
 		/control/gif-utils \
-		/packages/gif-utils_5.1.1-0_amd64.deb && \
+		/packages/gif-utils_5.1.4-1_amd64.deb && \
 
 	cp -a /build/giflib-base-root /build/libgif-root && \
 	cd /build/libgif-root && \
@@ -35,7 +35,7 @@ RUN \
 		/build/libgif-deb \
 		/build/libgif-root \
 		/control/libgif \
-		/packages/libgif_5.1.1-0_amd64.deb && \
+		/packages/libgif_5.1.4-1_amd64.deb && \
 
 	cp -a /build/giflib-base-root /build/libgif-devel-root && \
 	cd /build/libgif-devel-root && \
@@ -45,7 +45,4 @@ RUN \
 		/build/libgif-devel-deb \
 		/build/libgif-devel-root \
 		/control/libgif-devel \
-		/packages/libgif-devel_5.1.1-0_amd64.deb && \
-
-	cd / && \
-	rm -rf /build /control /download
+		/packages/libgif-devel_5.1.4-1_amd64.deb

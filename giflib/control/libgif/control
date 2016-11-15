@@ -1,5 +1,5 @@
 Package: libgif
-Version: 5.1.1-0
+Version: 5.1.4-1
 Source: giflib
 Priority: optional
 Depends: libc
