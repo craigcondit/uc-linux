@@ -1,5 +1,5 @@
 Package: ruby
-Version: 2.2.3-0
+Version: 2.3.2-1
 Source: ruby
 Priority: optional
 Depends: libc, libgmp, libssl

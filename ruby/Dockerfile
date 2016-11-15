@@ -1,4 +1,4 @@
-FROM insideo/uc-linux-bootstrap:buggy
+FROM insideo/uc-linux-bootstrap:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,11 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel openssl libssl-devel && \
-	wget -O /download/ruby-2.2.3.tar.gz \
-		https://cache.ruby-lang.org/pub/ruby/2.2/ruby-2.2.3.tar.gz && \
+	wget -O /download/ruby-2.3.2.tar.gz \
+		https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.2.tar.gz && \
 	cd build && \
-	tar xf /download/ruby-2.2.3.tar.gz && \
-	cd ruby-2.2.3 && \
+	tar xf /download/ruby-2.3.2.tar.gz && \
+	cd ruby-2.3.2 && \
 	./configure --prefix=/usr --build=$(gcc -dumpmachine) --disable-static && \
 	MAKE="make -j4" make && \
 	pre-root /build/ruby-root && \
@@ -25,8 +25,4 @@ RUN \
 		/build/ruby-deb \
 		/build/ruby-root \
 		/control/ruby \
-		/packages/ruby_2.2.3-0_amd64.deb && \
-	cd / && \
-	rm -rf /build /control /download && \
-	opkg --autoremove remove gcc make file linux-devel libssl-devel openssl  && \
-	opkg clean
+		/packages/ruby_2.3.2-1_amd64.deb
