@@ -1,5 +1,5 @@
 Package: libx11-xfixes
-Version: 5.0.1-0
+Version: 5.0.3-1
 Source: libXfixes
 Priority: optional
 Depends: libc, libx11, libx11-xcb, libx11-xau

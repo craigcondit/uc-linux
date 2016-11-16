@@ -1,5 +1,5 @@
 Package: libx11-sm
-Version: 1.2.2-0
+Version: 1.2.2-1
 Source: libSM
 Priority: optional
 Depends: libc, libx11-ice

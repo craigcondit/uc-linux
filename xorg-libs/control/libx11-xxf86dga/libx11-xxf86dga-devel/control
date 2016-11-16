@@ -1,5 +1,5 @@
 Package: libx11-xxf86dga-devel
-Version: 1.1.4-0
+Version: 1.1.4-1
 Source: libXxf86dga
 Priority: optional
 Depends: libc-devel, libx11-xext-devel, libx11-devel, libx11-xcb-devel, libx11-xau-devel, libx11-xxf86dga (>= 1.1.4)

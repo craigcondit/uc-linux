@@ -1,5 +1,5 @@
 Package: libx11-xv
-Version: 1.0.10-0
+Version: 1.0.11-1
 Source: libXv
 Priority: optional
 Depends: libc, libx11-xext, libx11, libx11-xcb, libx11-xau

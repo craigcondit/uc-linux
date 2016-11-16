@@ -1,5 +1,5 @@
 Package: gettext-common
-Version: 0.19.8.1-1
+Version: 0.19.8.1-2
 Source: gettext
 Priority: standard
 Depends: libc

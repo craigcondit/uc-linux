@@ -1,8 +1,8 @@
 Package: libx11-xinerama-devel
-Version: 1.1.3-0
+Version: 1.1.3-1
 Source: libXinerama
 Priority: optional
-Depends: libc-devel, libx11-xext-devel, libx11-devel, libx11-xcb-devel, libx11-xau-devel, libx11-xinerama (>= 1.1.3-0)
+Depends: libc-devel, libx11-xext-devel, libx11-devel, libx11-xcb-devel, libx11-xau-devel, libx11-xinerama (>= 1.1.3-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: X11 Xinerama extension library (development files)
 Architecture: amd64

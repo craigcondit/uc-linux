@@ -1,5 +1,5 @@
 Package: libx11-xft
-Version: 2.3.2-0
+Version: 2.3.2-1
 Source: libXft
 Priority: optional
 Depends: libc, libfontconfig, libxml2, libfreetype, libbz2, libpng, libx11-xrender, libx11, libx11-xcb, libx11-xau

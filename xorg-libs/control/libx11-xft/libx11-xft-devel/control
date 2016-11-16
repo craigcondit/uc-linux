@@ -1,8 +1,8 @@
 Package: libx11-xft-devel
-Version: 2.3.2-0
+Version: 2.3.2-1
 Source: libXft
 Priority: optional
-Depends: libc-devel, libfontconfig-devel, libxml2-devel, libfreetype-devel, libbz2-devel, libpng-devel, libx11-xrender-devel, libx11-devel, libx11-xcb-devel, libx11-xau-devel, libx11-xft (>= 2.3.2-0)
+Depends: libc-devel, libfontconfig-devel, libxml2-devel, libfreetype-devel, libbz2-devel, libpng-devel, libx11-xrender-devel, libx11-devel, libx11-xcb-devel, libx11-xau-devel, libx11-xft (>= 2.3.2-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: FreeType-based font drawing library for X (development files)
 Architecture: amd64

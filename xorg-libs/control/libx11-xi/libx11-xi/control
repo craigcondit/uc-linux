@@ -1,5 +1,5 @@
 Package: libx11-xi
-Version: 1.7.4-0
+Version: 1.7.8-1
 Source: libXi
 Priority: optional
 Depends: libc, libx11-xext, libx11, libx11-xcb, libx11-xau

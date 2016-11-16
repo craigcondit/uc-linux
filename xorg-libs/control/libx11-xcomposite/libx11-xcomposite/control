@@ -1,5 +1,5 @@
 Package: libx11-xcomposite
-Version: 0.4.4-0
+Version: 0.4.4-1
 Source: libXcomposite
 Priority: optional
 Depends: libc, libx11, libx11-xcb, libx11-xau

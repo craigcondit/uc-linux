@@ -1,5 +1,5 @@
 Package: libx11-xaw
-Version: 1.0.13-0
+Version: 1.0.13-1
 Source: libXaw
 Priority: optional
 Depends: libc, libx11-xmu, libx11-xext, libx11-xt, libx11-sm, libx11-ice, libx11-xpm, libx11, libx11-xcb, libx11-xau

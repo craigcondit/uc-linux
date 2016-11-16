@@ -1,8 +1,8 @@
 Package: libx11-xrandr-devel
-Version: 1.5.0-0
+Version: 1.5.1-1
 Source: libXrandr
 Priority: optional
-Depends: libc-devel, libx11-xext-devel, libx11-xrender-devel, libx11-devel, libx11-xcb-devel, libx11-xau-devel, libx11-xrandr (>= 1.5.0-0)
+Depends: libc-devel, libx11-xext-devel, libx11-xrender-devel, libx11-devel, libx11-xcb-devel, libx11-xau-devel, libx11-xrandr (>= 1.5.1-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: X11 RandR extension library (development files)
 Architecture: amd64

@@ -1,5 +1,5 @@
 Package: libx11-xdamage-devel
-Version: 1.1.4-0
+Version: 1.1.4-1
 Source: libXdamage
 Priority: optional
 Depends: libc-devel, libx11-xfixes-devel, libx11-devel, libx11-xcb-devel, libx11-xau-devel

@@ -1,5 +1,5 @@
 Package: libx11-fs
-Version: 1.0.7-0
+Version: 1.0.7-1
 Source: libFS
 Priority: optional
 Depends: libc

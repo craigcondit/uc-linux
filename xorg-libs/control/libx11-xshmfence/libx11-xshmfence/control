@@ -1,5 +1,5 @@
 Package: libx11-xshmfence
-Version: 1.2-0
+Version: 1.2-1
 Source: libxshmfence
 Priority: optional
 Depends: libc

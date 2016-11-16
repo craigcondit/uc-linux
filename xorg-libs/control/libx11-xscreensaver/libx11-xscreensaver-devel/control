@@ -1,5 +1,5 @@
 Package: libx11-xscreensaver-devel
-Version: 1.2.2-0
+Version: 1.2.2-1
 Source: libXScrnSaver
 Priority: optional
 Depends: libc-devel, libx11-xext-devel, libx11-devel, libx11-xcb-devel, libx11-xau-devel, libx11-xscreensaver (>= 1.2.2)

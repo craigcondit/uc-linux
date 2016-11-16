@@ -1,5 +1,5 @@
 Package: libx11-xfont
-Version: 1.5.1-0
+Version: 1.5.2-1
 Source: libXfont
 Priority: optional
 Depends: libc, libfreetype, libbz2, libpng, libx11-fontenc

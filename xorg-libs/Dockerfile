@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD scripts /scripts
@@ -41,7 +41,7 @@ RUN \
 		/build/libx11-xtrans-devel-deb \
 		/build/libx11-xtrans-devel-root \
 		/control/xtrans/libx11-xtrans-devel \
-		/packages/libx11-xtrans-devel_1.3.5-0_all.deb && \
+		/packages/libx11-xtrans-devel_1.3.5-1_all.deb && \
 	opkg install /packages/libx11-xtrans-devel_*.deb
 
 # libx11
@@ -51,7 +51,7 @@ RUN \
 	export XORG_PREFIX=/usr && \
 	export XORG_CONFIG="--prefix=$XORG_PREFIX --sysconfdir=/etc --localstatedir=/var --disable-static --build=$(gcc -dumpmachine)" && \
 	cd /build && \	
-	cd libX11-1.6.3 && \
+	cd libX11-1.6.4 && \
 	./configure $XORG_CONFIG && \
 	MAKE="make -j4" make && \	
 	pre-root /build/libx11-base-root && \
@@ -68,7 +68,7 @@ RUN \
 		/build/libx11-deb \
 		/build/libx11-root \
 		/control/libx11/libx11 \
-		/packages/libx11_1.6.3-0_amd64.deb && \
+		/packages/libx11_1.6.4-1_amd64.deb && \
 
 	cp -a /build/libx11-base-root /build/libx11-devel-root && \
 	cd /build/libx11-devel-root && \
@@ -77,7 +77,7 @@ RUN \
 		/build/libx11-devel-deb \
 		/build/libx11-devel-root \
 		/control/libx11/libx11-devel \
-		/packages/libx11-devel_1.6.3-0_amd64.deb && \
+		/packages/libx11-devel_1.6.4-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11_*.deb /packages/libx11-devel_*.deb
@@ -106,7 +106,7 @@ RUN \
 		/build/libx11-xext-deb \
 		/build/libx11-xext-root \
 		/control/libx11-xext/libx11-xext \
-		/packages/libx11-xext_1.3.3-0_amd64.deb && \
+		/packages/libx11-xext_1.3.3-1_amd64.deb && \
 
 	cp -a /build/libx11-xext-base-root /build/libx11-xext-devel-root && \
 	cd /build/libx11-xext-devel-root && \
@@ -115,7 +115,7 @@ RUN \
 		/build/libx11-xext-devel-deb \
 		/build/libx11-xext-devel-root \
 		/control/libx11-xext/libx11-xext-devel \
-		/packages/libx11-xext-devel_1.3.3-0_amd64.deb && \
+		/packages/libx11-xext-devel_1.3.3-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xext_*.deb /packages/libx11-xext-devel_*.deb
@@ -144,7 +144,7 @@ RUN \
 		/build/libx11-fs-deb \
 		/build/libx11-fs-root \
 		/control/libx11-fs/libx11-fs \
-		/packages/libx11-fs_1.0.7-0_amd64.deb && \
+		/packages/libx11-fs_1.0.7-1_amd64.deb && \
 
 	cp -a /build/libx11-fs-base-root /build/libx11-fs-devel-root && \
 	cd /build/libx11-fs-devel-root && \
@@ -153,7 +153,7 @@ RUN \
 		/build/libx11-fs-devel-deb \
 		/build/libx11-fs-devel-root \
 		/control/libx11-fs/libx11-fs-devel \
-		/packages/libx11-fs-devel_1.0.7-0_amd64.deb && \
+		/packages/libx11-fs-devel_1.0.7-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-fs_*.deb /packages/libx11-fs-devel_*.deb
@@ -182,7 +182,7 @@ RUN \
 		/build/libx11-ice-deb \
 		/build/libx11-ice-root \
 		/control/libx11-ice/libx11-ice \
-		/packages/libx11-ice_1.0.9-0_amd64.deb && \
+		/packages/libx11-ice_1.0.9-1_amd64.deb && \
 
 	cp -a /build/libx11-ice-base-root /build/libx11-ice-devel-root && \
 	cd /build/libx11-ice-devel-root && \
@@ -191,7 +191,7 @@ RUN \
 		/build/libx11-ice-devel-deb \
 		/build/libx11-ice-devel-root \
 		/control/libx11-ice/libx11-ice-devel \
-		/packages/libx11-ice-devel_1.0.9-0_amd64.deb && \
+		/packages/libx11-ice-devel_1.0.9-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-ice_*.deb /packages/libx11-ice-devel_*.deb
@@ -220,7 +220,7 @@ RUN \
 		/build/libx11-sm-deb \
 		/build/libx11-sm-root \
 		/control/libx11-sm/libx11-sm \
-		/packages/libx11-sm_1.2.2-0_amd64.deb && \
+		/packages/libx11-sm_1.2.2-1_amd64.deb && \
 
 	cp -a /build/libx11-sm-base-root /build/libx11-sm-devel-root && \
 	cd /build/libx11-sm-devel-root && \
@@ -229,7 +229,7 @@ RUN \
 		/build/libx11-sm-devel-deb \
 		/build/libx11-sm-devel-root \
 		/control/libx11-sm/libx11-sm-devel \
-		/packages/libx11-sm-devel_1.2.2-0_amd64.deb && \
+		/packages/libx11-sm-devel_1.2.2-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-sm_*.deb /packages/libx11-sm-devel_*.deb
@@ -258,7 +258,7 @@ RUN \
 		/build/libx11-xscreensaver-deb \
 		/build/libx11-xscreensaver-root \
 		/control/libx11-xscreensaver/libx11-xscreensaver \
-		/packages/libx11-xscreensaver_1.2.2-0_amd64.deb && \
+		/packages/libx11-xscreensaver_1.2.2-1_amd64.deb && \
 
 	cp -a /build/libx11-xscreensaver-base-root /build/libx11-xscreensaver-devel-root && \
 	cd /build/libx11-xscreensaver-devel-root && \
@@ -267,7 +267,7 @@ RUN \
 		/build/libx11-xscreensaver-devel-deb \
 		/build/libx11-xscreensaver-devel-root \
 		/control/libx11-xscreensaver/libx11-xscreensaver-devel \
-		/packages/libx11-xscreensaver-devel_1.2.2-0_amd64.deb && \
+		/packages/libx11-xscreensaver-devel_1.2.2-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xscreensaver_*.deb /packages/libx11-xscreensaver-devel_*.deb
@@ -298,7 +298,7 @@ RUN \
 		/build/libx11-xt-deb \
 		/build/libx11-xt-root \
 		/control/libx11-xt/libx11-xt \
-		/packages/libx11-xt_1.1.5-0_amd64.deb && \
+		/packages/libx11-xt_1.1.5-1_amd64.deb && \
 
 	cp -a /build/libx11-xt-base-root /build/libx11-xt-devel-root && \
 	cd /build/libx11-xt-devel-root && \
@@ -307,7 +307,7 @@ RUN \
 		/build/libx11-xt-devel-deb \
 		/build/libx11-xt-devel-root \
 		/control/libx11-xt/libx11-xt-devel \
-		/packages/libx11-xt-devel_1.1.5-0_amd64.deb && \
+		/packages/libx11-xt-devel_1.1.5-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xt_*.deb /packages/libx11-xt-devel_*.deb
@@ -337,7 +337,7 @@ RUN \
 		/build/libx11-xmu-deb \
 		/build/libx11-xmu-root \
 		/control/libx11-xmu/libx11-xmu \
-		/packages/libx11-xmu_1.1.2-0_amd64.deb && \
+		/packages/libx11-xmu_1.1.2-1_amd64.deb && \
 
 	cp -a /build/libx11-xmu-base-root /build/libx11-xmu-devel-root && \
 	cd /build/libx11-xmu-devel-root && \
@@ -346,7 +346,7 @@ RUN \
 		/build/libx11-xmu-devel-deb \
 		/build/libx11-xmu-devel-root \
 		/control/libx11-xmu/libx11-xmu-devel \
-		/packages/libx11-xmu-devel_1.1.2-0_amd64.deb && \
+		/packages/libx11-xmu-devel_1.1.2-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xmu_*.deb /packages/libx11-xmu-devel_*.deb
@@ -375,7 +375,7 @@ RUN \
 		/build/xpm-utils-deb \
 		/build/xpm-utils-root \
 		/control/libx11-xpm/xpm-utils \
-		/packages/xpm-utils_3.5.11-0_amd64.deb && \
+		/packages/xpm-utils_3.5.11-1_amd64.deb && \
 
 	cp -a /build/libx11-xpm-base-root /build/libx11-xpm-root && \
 	cd /build/libx11-xpm-root && \
@@ -385,7 +385,7 @@ RUN \
 		/build/libx11-xpm-deb \
 		/build/libx11-xpm-root \
 		/control/libx11-xpm/libx11-xpm \
-		/packages/libx11-xpm_3.5.11-0_amd64.deb && \
+		/packages/libx11-xpm_3.5.11-1_amd64.deb && \
 
 	cp -a /build/libx11-xpm-base-root /build/libx11-xpm-devel-root && \
 	cd /build/libx11-xpm-devel-root && \
@@ -395,7 +395,7 @@ RUN \
 		/build/libx11-xpm-devel-deb \
 		/build/libx11-xpm-devel-root \
 		/control/libx11-xpm/libx11-xpm-devel \
-		/packages/libx11-xpm-devel_3.5.11-0_amd64.deb && \
+		/packages/libx11-xpm-devel_3.5.11-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xpm_*.deb \
@@ -427,7 +427,7 @@ RUN \
 		/build/libx11-xaw-deb \
 		/build/libx11-xaw-root \
 		/control/libx11-xaw/libx11-xaw \
-		/packages/libx11-xaw_1.0.13-0_amd64.deb && \
+		/packages/libx11-xaw_1.0.13-1_amd64.deb && \
 
 	cp -a /build/libx11-xaw-base-root /build/libx11-xaw-devel-root && \
 	cd /build/libx11-xaw-devel-root && \
@@ -436,7 +436,7 @@ RUN \
 		/build/libx11-xaw-devel-deb \
 		/build/libx11-xaw-devel-root \
 		/control/libx11-xaw/libx11-xaw-devel \
-		/packages/libx11-xaw-devel_1.0.13-0_amd64.deb && \
+		/packages/libx11-xaw-devel_1.0.13-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xaw_*.deb /packages/libx11-xaw-devel_*.deb
@@ -448,7 +448,7 @@ RUN \
 	export XORG_PREFIX=/usr && \
 	export XORG_CONFIG="--prefix=$XORG_PREFIX --sysconfdir=/etc  --localstatedir=/var --disable-static --build=$(gcc -dumpmachine)" && \
 	cd /build && \
-	cd libXfixes-5.0.1 && \
+	cd libXfixes-5.0.3 && \
 	./configure $XORG_CONFIG && \
 	MAKE="make -j4" make && \
 	pre-root /build/libx11-xfixes-base-root && \
@@ -465,7 +465,7 @@ RUN \
 		/build/libx11-xfixes-deb \
 		/build/libx11-xfixes-root \
 		/control/libx11-xfixes/libx11-xfixes \
-		/packages/libx11-xfixes_5.0.1-0_amd64.deb && \
+		/packages/libx11-xfixes_5.0.3-1_amd64.deb && \
 
 	cp -a /build/libx11-xfixes-base-root /build/libx11-xfixes-devel-root && \
 	cd /build/libx11-xfixes-devel-root && \
@@ -474,7 +474,7 @@ RUN \
 		/build/libx11-xfixes-devel-deb \
 		/build/libx11-xfixes-devel-root \
 		/control/libx11-xfixes/libx11-xfixes-devel \
-		/packages/libx11-xfixes-devel_5.0.1-0_amd64.deb && \
+		/packages/libx11-xfixes-devel_5.0.3-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xfixes_*.deb /packages/libx11-xfixes-devel_*.deb
@@ -507,7 +507,7 @@ RUN \
 		/build/libx11-xcomposite-deb \
 		/build/libx11-xcomposite-root \
 		/control/libx11-xcomposite/libx11-xcomposite \
-		/packages/libx11-xcomposite_0.4.4-0_amd64.deb && \
+		/packages/libx11-xcomposite_0.4.4-1_amd64.deb && \
 
 	cp -a /build/libx11-xcomposite-base-root /build/libx11-xcomposite-devel-root && \
 	cd /build/libx11-xcomposite-devel-root && \
@@ -516,7 +516,7 @@ RUN \
 		/build/libx11-xcomposite-devel-deb \
 		/build/libx11-xcomposite-devel-root \
 		/control/libx11-xcomposite/libx11-xcomposite-devel \
-		/packages/libx11-xcomposite-devel_0.4.4-0_amd64.deb && \
+		/packages/libx11-xcomposite-devel_0.4.4-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xcomposite_*.deb /packages/libx11-xcomposite-devel_*.deb
@@ -532,7 +532,7 @@ RUN \
 	XORG_CONFIG="${XORG_CONFIG} --build=$(gcc -dumpmachine)" && \
 	export XORG_PREFIX XORG_CONFIG && \
 	cd /build && \
-	cd libXrender-0.9.9 && \
+	cd libXrender-0.9.10 && \
 	./configure $XORG_CONFIG && \
 	MAKE="make -j4" make && \
 	pre-root /build/libx11-xrender-base-root && \
@@ -549,7 +549,7 @@ RUN \
 		/build/libx11-xrender-deb \
 		/build/libx11-xrender-root \
 		/control/libx11-xrender/libx11-xrender \
-		/packages/libx11-xrender_0.9.9-0_amd64.deb && \
+		/packages/libx11-xrender_0.9.10-1_amd64.deb && \
 
 	cp -a /build/libx11-xrender-base-root /build/libx11-xrender-devel-root && \
 	cd /build/libx11-xrender-devel-root && \
@@ -558,7 +558,7 @@ RUN \
 		/build/libx11-xrender-devel-deb \
 		/build/libx11-xrender-devel-root \
 		/control/libx11-xrender/libx11-xrender-devel \
-		/packages/libx11-xrender-devel_0.9.9-0_amd64.deb && \
+		/packages/libx11-xrender-devel_0.9.10-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xrender_*.deb /packages/libx11-xrender-devel_*.deb
@@ -591,7 +591,7 @@ RUN \
 		/build/libx11-xcursor-deb \
 		/build/libx11-xcursor-root \
 		/control/libx11-xcursor/libx11-xcursor \
-		/packages/libx11-xcursor_1.1.14-0_amd64.deb && \
+		/packages/libx11-xcursor_1.1.14-1_amd64.deb && \
 
 	cp -a /build/libx11-xcursor-base-root /build/libx11-xcursor-devel-root && \
 	cd /build/libx11-xcursor-devel-root && \
@@ -600,7 +600,7 @@ RUN \
 		/build/libx11-xcursor-devel-deb \
 		/build/libx11-xcursor-devel-root \
 		/control/libx11-xcursor/libx11-xcursor-devel \
-		/packages/libx11-xcursor-devel_1.1.14-0_amd64.deb && \
+		/packages/libx11-xcursor-devel_1.1.14-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xcursor_*.deb /packages/libx11-xcursor-devel_*.deb
@@ -633,7 +633,7 @@ RUN \
 		/build/libx11-xdamage-deb \
 		/build/libx11-xdamage-root \
 		/control/libx11-xdamage/libx11-xdamage \
-		/packages/libx11-xdamage_1.1.4-0_amd64.deb && \
+		/packages/libx11-xdamage_1.1.4-1_amd64.deb && \
 
 	cp -a /build/libx11-xdamage-base-root /build/libx11-xdamage-devel-root && \
 	cd /build/libx11-xdamage-devel-root && \
@@ -642,7 +642,7 @@ RUN \
 		/build/libx11-xdamage-devel-deb \
 		/build/libx11-xdamage-devel-root \
 		/control/libx11-xdamage/libx11-xdamage-devel \
-		/packages/libx11-xdamage-devel_1.1.4-0_amd64.deb && \
+		/packages/libx11-xdamage-devel_1.1.4-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xdamage_*.deb /packages/libx11-xdamage-devel_*.deb
@@ -675,7 +675,7 @@ RUN \
 		/build/libx11-fontenc-deb \
 		/build/libx11-fontenc-root \
 		/control/libx11-fontenc/libx11-fontenc \
-		/packages/libx11-fontenc_1.1.3-0_amd64.deb && \
+		/packages/libx11-fontenc_1.1.3-1_amd64.deb && \
 
 	cp -a /build/libx11-fontenc-base-root /build/libx11-fontenc-devel-root && \
 	cd /build/libx11-fontenc-devel-root && \
@@ -684,7 +684,7 @@ RUN \
 		/build/libx11-fontenc-devel-deb \
 		/build/libx11-fontenc-devel-root \
 		/control/libx11-fontenc/libx11-fontenc-devel \
-		/packages/libx11-fontenc-devel_1.1.3-0_amd64.deb && \
+		/packages/libx11-fontenc-devel_1.1.3-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-fontenc_*.deb /packages/libx11-fontenc-devel_*.deb
@@ -700,7 +700,7 @@ RUN \
 	XORG_CONFIG="${XORG_CONFIG} --build=$(gcc -dumpmachine)" && \
 	export XORG_PREFIX XORG_CONFIG && \
 	cd /build && \
-	cd libXfont-1.5.1 && \
+	cd libXfont-1.5.2 && \
 	./configure $XORG_CONFIG --disable-devel-docs && \
 	MAKE="make -j4" make && \
 	pre-root /build/libx11-xfont-base-root && \
@@ -717,7 +717,7 @@ RUN \
 		/build/libx11-xfont-deb \
 		/build/libx11-xfont-root \
 		/control/libx11-xfont/libx11-xfont \
-		/packages/libx11-xfont_1.5.1-0_amd64.deb && \
+		/packages/libx11-xfont_1.5.2-1_amd64.deb && \
 
 	cp -a /build/libx11-xfont-base-root /build/libx11-xfont-devel-root && \
 	cd /build/libx11-xfont-devel-root && \
@@ -726,7 +726,7 @@ RUN \
 		/build/libx11-xfont-devel-deb \
 		/build/libx11-xfont-devel-root \
 		/control/libx11-xfont/libx11-xfont-devel \
-		/packages/libx11-xfont-devel_1.5.1-0_amd64.deb && \
+		/packages/libx11-xfont-devel_1.5.2-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xfont_*.deb /packages/libx11-xfont-devel_*.deb
@@ -759,7 +759,7 @@ RUN \
 		/build/libx11-xft-deb \
 		/build/libx11-xft-root \
 		/control/libx11-xft/libx11-xft \
-		/packages/libx11-xft_2.3.2-0_amd64.deb && \
+		/packages/libx11-xft_2.3.2-1_amd64.deb && \
 
 	cp -a /build/libx11-xft-base-root /build/libx11-xft-devel-root && \
 	cd /build/libx11-xft-devel-root && \
@@ -768,7 +768,7 @@ RUN \
 		/build/libx11-xft-devel-deb \
 		/build/libx11-xft-devel-root \
 		/control/libx11-xft/libx11-xft-devel \
-		/packages/libx11-xft-devel_2.3.2-0_amd64.deb && \
+		/packages/libx11-xft-devel_2.3.2-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xft_*.deb /packages/libx11-xft-devel_*.deb
@@ -784,7 +784,7 @@ RUN \
 	XORG_CONFIG="${XORG_CONFIG} --build=$(gcc -dumpmachine)" && \
 	export XORG_PREFIX XORG_CONFIG && \
 	cd /build && \
-	cd libXi-1.7.4 && \
+	cd libXi-1.7.8 && \
 	./configure $XORG_CONFIG --disable-devel-docs && \
 	MAKE="make -j4" make && \
 	pre-root /build/libx11-xi-base-root && \
@@ -801,7 +801,7 @@ RUN \
 		/build/libx11-xi-deb \
 		/build/libx11-xi-root \
 		/control/libx11-xi/libx11-xi \
-		/packages/libx11-xi_1.7.4-0_amd64.deb && \
+		/packages/libx11-xi_1.7.8-1_amd64.deb && \
 
 	cp -a /build/libx11-xi-base-root /build/libx11-xi-devel-root && \
 	cd /build/libx11-xi-devel-root && \
@@ -810,7 +810,7 @@ RUN \
 		/build/libx11-xi-devel-deb \
 		/build/libx11-xi-devel-root \
 		/control/libx11-xi/libx11-xi-devel \
-		/packages/libx11-xi-devel_1.7.4-0_amd64.deb && \
+		/packages/libx11-xi-devel_1.7.8-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xi_*.deb /packages/libx11-xi-devel_*.deb
@@ -843,7 +843,7 @@ RUN \
 		/build/libx11-xinerama-deb \
 		/build/libx11-xinerama-root \
 		/control/libx11-xinerama/libx11-xinerama \
-		/packages/libx11-xinerama_1.1.3-0_amd64.deb && \
+		/packages/libx11-xinerama_1.1.3-1_amd64.deb && \
 
 	cp -a /build/libx11-xinerama-base-root /build/libx11-xinerama-devel-root && \
 	cd /build/libx11-xinerama-devel-root && \
@@ -852,7 +852,7 @@ RUN \
 		/build/libx11-xinerama-devel-deb \
 		/build/libx11-xinerama-devel-root \
 		/control/libx11-xinerama/libx11-xinerama-devel \
-		/packages/libx11-xinerama-devel_1.1.3-0_amd64.deb && \
+		/packages/libx11-xinerama-devel_1.1.3-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xinerama_*.deb /packages/libx11-xinerama-devel_*.deb
@@ -868,7 +868,7 @@ RUN \
 	XORG_CONFIG="${XORG_CONFIG} --build=$(gcc -dumpmachine)" && \
 	export XORG_PREFIX XORG_CONFIG && \
 	cd /build && \
-	cd libXrandr-1.5.0 && \
+	cd libXrandr-1.5.1 && \
 	./configure $XORG_CONFIG --disable-devel-docs && \
 	MAKE="make -j4" make && \
 	pre-root /build/libx11-xrandr-base-root && \
@@ -885,7 +885,7 @@ RUN \
 		/build/libx11-xrandr-deb \
 		/build/libx11-xrandr-root \
 		/control/libx11-xrandr/libx11-xrandr \
-		/packages/libx11-xrandr_1.5.0-0_amd64.deb && \
+		/packages/libx11-xrandr_1.5.1-1_amd64.deb && \
 
 	cp -a /build/libx11-xrandr-base-root /build/libx11-xrandr-devel-root && \
 	cd /build/libx11-xrandr-devel-root && \
@@ -894,7 +894,7 @@ RUN \
 		/build/libx11-xrandr-devel-deb \
 		/build/libx11-xrandr-devel-root \
 		/control/libx11-xrandr/libx11-xrandr-devel \
-		/packages/libx11-xrandr-devel_1.5.0-0_amd64.deb && \
+		/packages/libx11-xrandr-devel_1.5.1-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xrandr_*.deb /packages/libx11-xrandr-devel_*.deb
@@ -927,7 +927,7 @@ RUN \
 		/build/libx11-xres-deb \
 		/build/libx11-xres-root \
 		/control/libx11-xres/libx11-xres \
-		/packages/libx11-xres_1.0.7-0_amd64.deb && \
+		/packages/libx11-xres_1.0.7-1_amd64.deb && \
 
 	cp -a /build/libx11-xres-base-root /build/libx11-xres-devel-root && \
 	cd /build/libx11-xres-devel-root && \
@@ -936,7 +936,7 @@ RUN \
 		/build/libx11-xres-devel-deb \
 		/build/libx11-xres-devel-root \
 		/control/libx11-xres/libx11-xres-devel \
-		/packages/libx11-xres-devel_1.0.7-0_amd64.deb && \
+		/packages/libx11-xres-devel_1.0.7-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xres_*.deb /packages/libx11-xres-devel_*.deb
@@ -952,7 +952,7 @@ RUN \
 	XORG_CONFIG="${XORG_CONFIG} --build=$(gcc -dumpmachine)" && \
 	export XORG_PREFIX XORG_CONFIG && \
 	cd /build && \
-	cd libXtst-1.2.2 && \
+	cd libXtst-1.2.3 && \
 	./configure $XORG_CONFIG --disable-devel-docs && \
 	MAKE="make -j4" make && \
 	pre-root /build/libx11-xtst-base-root && \
@@ -969,7 +969,7 @@ RUN \
 		/build/libx11-xtst-deb \
 		/build/libx11-xtst-root \
 		/control/libx11-xtst/libx11-xtst \
-		/packages/libx11-xtst_1.2.2-0_amd64.deb && \
+		/packages/libx11-xtst_1.2.3-1_amd64.deb && \
 
 	cp -a /build/libx11-xtst-base-root /build/libx11-xtst-devel-root && \
 	cd /build/libx11-xtst-devel-root && \
@@ -978,7 +978,7 @@ RUN \
 		/build/libx11-xtst-devel-deb \
 		/build/libx11-xtst-devel-root \
 		/control/libx11-xtst/libx11-xtst-devel \
-		/packages/libx11-xtst-devel_1.2.2-0_amd64.deb && \
+		/packages/libx11-xtst-devel_1.2.3-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xtst_*.deb /packages/libx11-xtst-devel_*.deb
@@ -994,7 +994,7 @@ RUN \
 	XORG_CONFIG="${XORG_CONFIG} --build=$(gcc -dumpmachine)" && \
 	export XORG_PREFIX XORG_CONFIG && \
 	cd /build && \
-	cd libXv-1.0.10 && \
+	cd libXv-1.0.11 && \
 	./configure $XORG_CONFIG --disable-devel-docs && \
 	MAKE="make -j4" make && \
 	pre-root /build/libx11-xv-base-root && \
@@ -1011,7 +1011,7 @@ RUN \
 		/build/libx11-xv-deb \
 		/build/libx11-xv-root \
 		/control/libx11-xv/libx11-xv \
-		/packages/libx11-xv_1.0.10-0_amd64.deb && \
+		/packages/libx11-xv_1.0.11-1_amd64.deb && \
 
 	cp -a /build/libx11-xv-base-root /build/libx11-xv-devel-root && \
 	cd /build/libx11-xv-devel-root && \
@@ -1020,7 +1020,7 @@ RUN \
 		/build/libx11-xv-devel-deb \
 		/build/libx11-xv-devel-root \
 		/control/libx11-xv/libx11-xv-devel \
-		/packages/libx11-xv-devel_1.0.10-0_amd64.deb && \
+		/packages/libx11-xv-devel_1.0.11-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xv_*.deb /packages/libx11-xv-devel_*.deb
@@ -1036,7 +1036,7 @@ RUN \
 	XORG_CONFIG="${XORG_CONFIG} --build=$(gcc -dumpmachine)" && \
 	export XORG_PREFIX XORG_CONFIG && \
 	cd /build && \
-	cd libXvMC-1.0.9 && \
+	cd libXvMC-1.0.10 && \
 	./configure $XORG_CONFIG --disable-devel-docs && \
 	MAKE="make -j4" make && \
 	pre-root /build/libx11-xvmc-base-root && \
@@ -1053,7 +1053,7 @@ RUN \
 		/build/libx11-xvmc-deb \
 		/build/libx11-xvmc-root \
 		/control/libx11-xvmc/libx11-xvmc \
-		/packages/libx11-xvmc_1.0.9-0_amd64.deb && \
+		/packages/libx11-xvmc_1.0.10-1_amd64.deb && \
 
 	cp -a /build/libx11-xvmc-base-root /build/libx11-xvmc-devel-root && \
 	cd /build/libx11-xvmc-devel-root && \
@@ -1062,7 +1062,7 @@ RUN \
 		/build/libx11-xvmc-devel-deb \
 		/build/libx11-xvmc-devel-root \
 		/control/libx11-xvmc/libx11-xvmc-devel \
-		/packages/libx11-xvmc-devel_1.0.9-0_amd64.deb && \
+		/packages/libx11-xvmc-devel_1.0.10-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xvmc_*.deb /packages/libx11-xvmc-devel_*.deb
@@ -1095,7 +1095,7 @@ RUN \
 		/build/libx11-xxf86dga-deb \
 		/build/libx11-xxf86dga-root \
 		/control/libx11-xxf86dga/libx11-xxf86dga \
-		/packages/libx11-xxf86dga_1.1.4-0_amd64.deb && \
+		/packages/libx11-xxf86dga_1.1.4-1_amd64.deb && \
 
 	cp -a /build/libx11-xxf86dga-base-root /build/libx11-xxf86dga-devel-root && \
 	cd /build/libx11-xxf86dga-devel-root && \
@@ -1104,7 +1104,7 @@ RUN \
 		/build/libx11-xxf86dga-devel-deb \
 		/build/libx11-xxf86dga-devel-root \
 		/control/libx11-xxf86dga/libx11-xxf86dga-devel \
-		/packages/libx11-xxf86dga-devel_1.1.4-0_amd64.deb && \
+		/packages/libx11-xxf86dga-devel_1.1.4-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xxf86dga_*.deb /packages/libx11-xxf86dga-devel_*.deb
@@ -1137,7 +1137,7 @@ RUN \
 		/build/libx11-xxf86vm-deb \
 		/build/libx11-xxf86vm-root \
 		/control/libx11-xxf86vm/libx11-xxf86vm \
-		/packages/libx11-xxf86vm_1.1.4-0_amd64.deb && \
+		/packages/libx11-xxf86vm_1.1.4-1_amd64.deb && \
 
 	cp -a /build/libx11-xxf86vm-base-root /build/libx11-xxf86vm-devel-root && \
 	cd /build/libx11-xxf86vm-devel-root && \
@@ -1146,7 +1146,7 @@ RUN \
 		/build/libx11-xxf86vm-devel-deb \
 		/build/libx11-xxf86vm-devel-root \
 		/control/libx11-xxf86vm/libx11-xxf86vm-devel \
-		/packages/libx11-xxf86vm-devel_1.1.4-0_amd64.deb && \
+		/packages/libx11-xxf86vm-devel_1.1.4-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xxf86vm_*.deb /packages/libx11-xxf86vm-devel_*.deb
@@ -1179,7 +1179,7 @@ RUN \
 		/build/libx11-dmx-deb \
 		/build/libx11-dmx-root \
 		/control/libx11-dmx/libx11-dmx \
-		/packages/libx11-dmx_1.1.3-0_amd64.deb && \
+		/packages/libx11-dmx_1.1.3-1_amd64.deb && \
 
 	cp -a /build/libx11-dmx-base-root /build/libx11-dmx-devel-root && \
 	cd /build/libx11-dmx-devel-root && \
@@ -1188,7 +1188,7 @@ RUN \
 		/build/libx11-dmx-devel-deb \
 		/build/libx11-dmx-devel-root \
 		/control/libx11-dmx/libx11-dmx-devel \
-		/packages/libx11-dmx-devel_1.1.3-0_amd64.deb && \
+		/packages/libx11-dmx-devel_1.1.3-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-dmx_*.deb /packages/libx11-dmx-devel_*.deb
@@ -1221,7 +1221,7 @@ RUN \
 		/build/libpciaccess-deb \
 		/build/libpciaccess-root \
 		/control/libpciaccess/libpciaccess \
-		/packages/libpciaccess_0.13.4-0_amd64.deb && \
+		/packages/libpciaccess_0.13.4-1_amd64.deb && \
 
 	cp -a /build/libpciaccess-base-root /build/libpciaccess-devel-root && \
 	cd /build/libpciaccess-devel-root && \
@@ -1230,7 +1230,7 @@ RUN \
 		/build/libpciaccess-devel-deb \
 		/build/libpciaccess-devel-root \
 		/control/libpciaccess/libpciaccess-devel \
-		/packages/libpciaccess-devel_0.13.4-0_amd64.deb && \
+		/packages/libpciaccess-devel_0.13.4-1_amd64.deb && \
 
 	opkg install \
 		/packages/libpciaccess_*.deb /packages/libpciaccess-devel_*.deb
@@ -1263,7 +1263,7 @@ RUN \
 		/build/libx11-xkbfile-deb \
 		/build/libx11-xkbfile-root \
 		/control/libx11-xkbfile/libx11-xkbfile \
-		/packages/libx11-xkbfile_1.0.9-0_amd64.deb && \
+		/packages/libx11-xkbfile_1.0.9-1_amd64.deb && \
 
 	cp -a /build/libx11-xkbfile-base-root /build/libx11-xkbfile-devel-root && \
 	cd /build/libx11-xkbfile-devel-root && \
@@ -1272,7 +1272,7 @@ RUN \
 		/build/libx11-xkbfile-devel-deb \
 		/build/libx11-xkbfile-devel-root \
 		/control/libx11-xkbfile/libx11-xkbfile-devel \
-		/packages/libx11-xkbfile-devel_1.0.9-0_amd64.deb && \
+		/packages/libx11-xkbfile-devel_1.0.9-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xkbfile_*.deb /packages/libx11-xkbfile-devel_*.deb
@@ -1305,7 +1305,7 @@ RUN \
 		/build/libx11-xshmfence-deb \
 		/build/libx11-xshmfence-root \
 		/control/libx11-xshmfence/libx11-xshmfence \
-		/packages/libx11-xshmfence_1.2-0_amd64.deb && \
+		/packages/libx11-xshmfence_1.2-1_amd64.deb && \
 
 	cp -a /build/libx11-xshmfence-base-root /build/libx11-xshmfence-devel-root && \
 	cd /build/libx11-xshmfence-devel-root && \
@@ -1314,7 +1314,7 @@ RUN \
 		/build/libx11-xshmfence-devel-deb \
 		/build/libx11-xshmfence-devel-root \
 		/control/libx11-xshmfence/libx11-xshmfence-devel \
-		/packages/libx11-xshmfence-devel_1.2-0_amd64.deb && \
+		/packages/libx11-xshmfence-devel_1.2-1_amd64.deb && \
 
 	opkg install \
 		/packages/libx11-xshmfence_*.deb /packages/libx11-xshmfence-devel_*.deb
@@ -1328,12 +1328,12 @@ RUN \
 		/build/libx11-all-deb \
 		/build/libx11-all-root \
 		/control/libx11-all/libx11-all \
-		/packages/libx11-all_7.7-0_all.deb && \
+		/packages/libx11-all_7.7-1_all.deb && \
 	make-deb \
 		/build/libx11-all-devel-deb \
 		/build/libx11-all-devel-root \
 		/control/libx11-all/libx11-all-devel \
-		/packages/libx11-all-devel_7.7-0_all.deb && \
+		/packages/libx11-all-devel_7.7-1_all.deb && \
 
 	opkg install \
 		/packages/libx11-all_*.deb /packages/libx11-all-devel_*.deb

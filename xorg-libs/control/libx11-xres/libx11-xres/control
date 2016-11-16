@@ -1,5 +1,5 @@
 Package: libx11-xres
-Version: 1.0.7-0
+Version: 1.0.7-1
 Source: libXres
 Priority: optional
 Depends: libc, libx11-xext, libx11, libx11-xcb, libx11-xau

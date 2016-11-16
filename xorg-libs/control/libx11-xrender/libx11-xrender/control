@@ -1,5 +1,5 @@
 Package: libx11-xrender
-Version: 0.9.9-0
+Version: 0.9.10-1
 Source: libXrender
 Priority: optional
 Depends: libc, libx11, libx11-xcb, libx11-xau

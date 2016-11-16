@@ -1,5 +1,5 @@
 Package: libx11-xmu
-Version: 1.1.2-0
+Version: 1.1.2-1
 Source: libXmu
 Priority: optional
 Depends: libc, libx11-xt, libx11-sm, libx11-xext, libx11, libx11-xcb, libx11-xau

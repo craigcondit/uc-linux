@@ -32,7 +32,7 @@ RUN \
 		/build/gettext-common-deb \
 		/build/gettext-common-root \
 		/control/gettext-common \
-		/packages/gettext-common_0.19.8.1-1_amd64.deb && \
+		/packages/gettext-common_0.19.8.1-2_amd64.deb && \
 
 	cp -a /build/gettext-base-root /build/gettext-utils-root && \
 	cd /build/gettext-utils-root && \
@@ -42,7 +42,7 @@ RUN \
 		/build/gettext-utils-deb \
 		/build/gettext-utils-root \
 		/control/gettext-utils \
-		/packages/gettext-utils_0.19.8.1-1_amd64.deb && \
+		/packages/gettext-utils_0.19.8.1-2_amd64.deb && \
 
 	cp -a /build/gettext-base-root /build/libgettext-root && \
 	cd /build/libgettext-root && \
@@ -52,15 +52,15 @@ RUN \
 		/build/libgettext-deb \
 		/build/libgettext-root \
 		/control/libgettext \
-		/packages/libgettext_0.19.8.1-1_amd64.deb && \
+		/packages/libgettext_0.19.8.1-2_amd64.deb && \
 
 	cp -a /build/gettext-base-root /build/libgettext-devel-root && \
 	cd /build/libgettext-devel-root && \
-	rm -rf usr/bin usr/lib/gettext usr/share/gettext && \
+	rm -rf usr/bin usr/lib/gettext usr/share/gettext usr/share/gettext-* && \
 	rm -f usr/lib/*.so* && \
 	make-deb \
 		/build/libgettext-devel-deb \
 		/build/libgettext-devel-root \
 		/control/libgettext-devel \
-		/packages/libgettext-devel_0.19.8.1-1_amd64.deb
+		/packages/libgettext-devel_0.19.8.1-2_amd64.deb
 

@@ -1,5 +1,5 @@
 Package: libx11-xpm
-Version: 3.5.11-0
+Version: 3.5.11-1
 Source: libXpm
 Priority: optional
 Depends: libc, libx11, libx11-xcb, libx11-xau

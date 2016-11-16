@@ -1,5 +1,5 @@
 Package: libx11-xcursor
-Version: 1.1.14-0
+Version: 1.1.14-1
 Source: libXcursor
 Priority: optional
 Depends: libc, libx11-xrender, libx11-xfixes, libx11, libx11-xcb, libx11-xau
