@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,14 +6,14 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel patch sed && \
-	wget -O /download/coreutils-8.24.tar.xz \
-		http://ftp.gnu.org/gnu/coreutils/coreutils-8.24.tar.xz && \
-	wget -O /download/coreutils-8.24-i18n-1.patch \
-		http://www.linuxfromscratch.org/patches/lfs/systemd/coreutils-8.24-i18n-1.patch && \
+	wget -O /download/coreutils-8.25.tar.xz \
+		http://ftp.gnu.org/gnu/coreutils/coreutils-8.25.tar.xz && \
+	wget -O /download/coreutils-8.25-i18n-2.patch \
+		http://www.linuxfromscratch.org/patches/lfs/7.10/coreutils-8.25-i18n-2.patch && \
 	cd build && \
-	tar xf /download/coreutils-8.24.tar.xz && \
-	cd coreutils-8.24 && \
-	patch -Np1 -i /download/coreutils-8.24-i18n-1.patch && \
+	tar xf /download/coreutils-8.25.tar.xz && \
+	cd coreutils-8.25 && \
+	patch -Np1 -i /download/coreutils-8.25-i18n-2.patch && \
 	sed -i '/tests\/misc\/sort.pl/ d' Makefile.in && \
 	FORCE_UNSAFE_CONFIGURE=1 ./configure \
 		--prefix=/usr --build=$(gcc -dumpmachine) && \
@@ -41,4 +41,4 @@ RUN \
 		/build/coreutils-deb \
 		/build/coreutils-root \
 		/control/coreutils \
-		/packages/coreutils_8.24-0_amd64.deb
+		/packages/coreutils_8.25-1_amd64.deb
