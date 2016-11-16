@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 # setup required build environment
@@ -54,8 +54,10 @@ RUN \
 		--with-giflib=system \
 		--with-stdc++lib=dynamic \
 		--with-cacerts-file=/build/cacerts \
+		--with-extra-cflags="-std=c++98 -Wno-error -fno-delete-null-pointer-checks -fno-lifetime-dse" \
+		--with-extra-cxxflags="-std=c++98 -fno-delete-null-pointer-checks -fno-lifetime-dse" \
 		--build="$(gcc -dumpmachine)" && \
-	make DEBUG_BINARIES=false all
+	make DEBUG_BINARIES=false SCTP_WERROR= all
 
 # stage install files
 RUN \
@@ -118,11 +120,11 @@ RUN \
 		/build/openjdk-jdk8-deb \
 		/build/jdk-root \
 		/control/openjdk-jdk8 \
-		/packages/openjdk-jdk8_1.8.0.112-1_amd64.deb && \
+		/packages/openjdk-jdk8_1.8.0.112-2_amd64.deb && \
 
 	make-deb \
 		/build/openjdk-jre8-deb \
 		/build/jre-root \
 		/control/openjdk-jre8 \
-		/packages/openjdk-jre8_1.8.0.112-1_amd64.deb
+		/packages/openjdk-jre8_1.8.0.112-2_amd64.deb
 
