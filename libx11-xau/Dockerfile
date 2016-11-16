@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -30,7 +30,7 @@ RUN \
 		/build/libx11-xau-deb \
 		/build/libx11-xau-root \
 		/control/libx11-xau \
-		/packages/libx11-xau_1.0.8-0_amd64.deb && \
+		/packages/libx11-xau_1.0.8-1_amd64.deb && \
 
 	cp -a /build/libx11-xau-base-root /build/libx11-xau-devel-root && \
 	cd /build/libx11-xau-devel-root && \
@@ -39,7 +39,5 @@ RUN \
 		/build/libx11-xau-devel-deb \
 		/build/libx11-xau-devel-root \
 		/control/libx11-xau-devel \
-		/packages/libx11-xau-devel_1.0.8-0_amd64.deb && \
+		/packages/libx11-xau-devel_1.0.8-1_amd64.deb
 
-	cd / && \
-	rm -rf /build /control /download

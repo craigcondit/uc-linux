@@ -1,5 +1,5 @@
 Package: libx11-xau
-Version: 1.0.8-0
+Version: 1.0.8-1
 Source: libXau
 Priority: optional
 Depends: libc
