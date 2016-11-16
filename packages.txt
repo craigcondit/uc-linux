@@ -40,10 +40,10 @@ attr
 libcap
 util-linux
 maven
+runas
 postgresql
 git
 gcc-go
-runas
 erlang
 sgml-common
 docbook-xml
