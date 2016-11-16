@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -31,6 +31,6 @@ RUN \
 		/build/cacerts-deb \
 		/build/cacerts-root \
 		/control/cacerts \
-		/packages/cacerts_20160810-0_all.deb && \
+		/packages/cacerts_20161104-1_all.deb && \
 	cd / && \
 	rm -rf /build /control /download
