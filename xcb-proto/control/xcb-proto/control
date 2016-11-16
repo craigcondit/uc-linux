@@ -1,5 +1,5 @@
 Package: xcb-proto
-Version: 1.11-0
+Version: 1.12-1
 Source: xcb-proto
 Priority: optional
 Depends: libc, python27
