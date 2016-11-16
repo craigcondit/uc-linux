@@ -1,5 +1,5 @@
 Package: rsync
-Version: 3.1.2-0
+Version: 3.1.2-1
 Source: rsync
 Priority: optional
 Depends: libc, libattr

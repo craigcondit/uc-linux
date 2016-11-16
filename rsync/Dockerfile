@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -23,7 +23,5 @@ RUN \
 		/build/rsync-deb \
 		/build/rsync-root \
 		/control/rsync \
-		/packages/rsync-3.1.2-0_amd64.deb && \
-	cd / && \
-	rm -rf /build /control /download
+		/packages/rsync-3.1.2-1_amd64.deb
 
