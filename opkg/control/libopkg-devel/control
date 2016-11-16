@@ -1,9 +1,9 @@
 Package: libopkg-devel
 Source: opkg
-Version: 0.3.1-0
+Version: 0.3.3-1
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Architecture: amd64
-Depends: libc-devel, libarchive-devel, liblzma-devel, libbz2-devel, libcurl-devel, libgpgme-devel, libassuan-devel, libgpg-error-devel, libssl-devel, libopkg (>= 0.3.1-0)
+Depends: libc-devel, libarchive-devel, liblzma-devel, libbz2-devel, libcurl-devel, libgpgme-devel, libassuan-devel, libgpg-error-devel, libssl-devel, libopkg (>= 0.3.3-1)
 Description: lightweight package management system (headers)
 Homepage: https://code.google.com/p/opkg/
 Section: devel

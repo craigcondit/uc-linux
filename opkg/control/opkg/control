@@ -1,9 +1,9 @@
 Package: opkg
 Source: opkg
-Version: 0.3.1-0
+Version: 0.3.3-1
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Architecture: amd64
-Depends: libc, libarchive, liblzma, libbz2, libcurl, libgpgme, libassuan, libgpg-error, libssl, libopkg (>= 0.3.1-0)
+Depends: libc, libarchive, liblzma, libbz2, libcurl, libgpgme, libassuan, libgpg-error, libssl, libopkg (>= 0.3.3-1)
 Description: lightweight package management system
 Homepage: https://code.google.com/p/opkg/
 Section: util

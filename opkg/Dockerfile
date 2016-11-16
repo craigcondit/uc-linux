@@ -1,4 +1,4 @@
-FROM insideo/uc-linux-bootstrap:buggy
+FROM insideo/uc-linux-bootstrap:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -12,11 +12,11 @@ RUN \
 		libgpg-error-devel libassuan-devel libgpgme-devel m4 \
 		autoconf automake libtool && \
 	opkg clean && \
-	wget -O /download/opkg-0.3.1.tar.gz \
-		http://downloads.yoctoproject.org/releases/opkg/opkg-0.3.1.tar.gz && \
+	wget -O /download/opkg-0.3.3.tar.gz \
+		http://downloads.yoctoproject.org/releases/opkg/opkg-0.3.3.tar.gz && \
 	cd /build && \
-	tar xf /download/opkg-0.3.1.tar.gz && \
-	cd opkg-0.3.1 && \
+	tar xf /download/opkg-0.3.3.tar.gz && \
+	cd opkg-0.3.3 && \
 	./autogen.sh && \
 	./configure --prefix=/usr --build=$(gcc -dumpmachine) --disable-static &&\
 	MAKE="make -j4" make && \
@@ -33,7 +33,7 @@ RUN \
 		/build/opkg-deb \
 		/build/opkg-root \
 		/control/opkg \
-		/packages/opkg_0.3.1-0_amd64.deb && \
+		/packages/opkg_0.3.3-1_amd64.deb && \
 
 	cp -a /build/opkg-base-root /build/libopkg-root && \
 	cd /build/libopkg-root && \
@@ -43,7 +43,7 @@ RUN \
 		/build/libopkg-deb \
 		/build/libopkg-root \
 		/control/libopkg \
-		/packages/libopkg_0.3.1-0_amd64.deb && \
+		/packages/libopkg_0.3.3-1_amd64.deb && \
 
 	cp -a /build/opkg-base-root /build/libopkg-devel-root && \
 	cd /build/libopkg-devel-root && \
@@ -53,10 +53,5 @@ RUN \
 		/build/libopkg-devel-deb \
 		/build/libopkg-devel-root \
 		/control/libopkg-devel \
-		/packages/libopkg-devel_0.3.1-0_amd64.deb && \
-
-	cd / && \
-	rm -rf /build/* /download/* /control/* && \
-	opkg install \
-		/packages/libopkg_*.deb /packages/libopkg-devel_*.deb /packages/opkg_*.deb
+		/packages/libopkg-devel_0.3.3-1_amd64.deb
 
