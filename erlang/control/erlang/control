@@ -1,5 +1,5 @@
 Package: erlang
-Version: 18.2.1-0
+Version: 19.1.0-1
 Source: erlang
 Priority: optional
 Depends: libc, libz, libssl, libncurses
