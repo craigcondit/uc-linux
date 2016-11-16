@@ -2,16 +2,18 @@ FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
+ADD patches /patches
 RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
-	opkg install bash openjdk-jdk8 maven && \
+	opkg install bash findutils patch openjdk-jdk8 maven && \
 	export JAVA_HOME=/usr/lib/jvm/jdk-8-openjdk-amd64 && \
 	wget -O /download/hbase-1.2.4-src.tar.gz \
-		http://mirrors.ibiblio.org/apache/hbase/hbase-1.2.4/hbase-1.2.4-src.tar.gz && \
+		http://mirrors.ibiblio.org/apache/hbase/1.2.4/hbase-1.2.4-src.tar.gz && \
 	cd /build && \
 	tar xf /download/hbase-1.2.4-src.tar.gz && \
 	cd hbase-1.2.4 && \
+	patch -p1 < /patches/hbase-bash-4.4-fix.patch && \
 	mvn -DskipTests clean install assembly:single
 
 RUN \

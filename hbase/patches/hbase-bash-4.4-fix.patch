@@ -1,0 +1,51 @@
+--- hbase-1.2.4.orig/hbase-assembly/pom.xml
++++ hbase-1.2.4/hbase-assembly/pom.xml
+@@ -121,33 +121,6 @@
+           </execution>
+         </executions>
+       </plugin>
+-      <plugin>
+-        <groupId>org.codehaus.mojo</groupId>
+-        <artifactId>exec-maven-plugin</artifactId>
+-        <version>1.4.0</version>
+-        <executions>
+-          <execution>
+-            <id>concat-NOTICE-files</id>
+-            <phase>package</phase>
+-            <goals>
+-              <goal>exec</goal>
+-            </goals>
+-            <configuration>
+-              <executable>env</executable>
+-              <arguments>
+-                <argument>bash</argument>
+-                <argument>-c</argument>
+-                <argument>cat maven-shared-archive-resources/META-INF/NOTICE \
+-                  `find ${project.build.directory}/dependency -iname NOTICE -or -iname NOTICE.txt` \
+-                </argument>
+-              </arguments>
+-              <outputFile>${project.build.directory}/NOTICE.aggregate</outputFile>
+-              <workingDirectory>${project.build.directory}</workingDirectory>
+-            </configuration>
+-          </execution>
+-        </executions>
+-      </plugin>
+-      <!-- /end building aggregation of NOTICE files -->
+     </plugins>
+   </build>
+   <dependencies>
+--- hbase-1.2.4.orig/hbase-assembly/src/main/assembly/hadoop-two-compat.xml
++++ hbase-1.2.4/hbase-assembly/src/main/assembly/hadoop-two-compat.xml
+@@ -67,12 +67,6 @@
+       <lineEnding>unix</lineEnding>
+     </file>
+     <file>
+-      <source>${project.build.directory}/NOTICE.aggregate</source>
+-      <outputDirectory>.</outputDirectory>
+-      <destName>NOTICE.txt</destName>
+-      <lineEnding>unix</lineEnding>
+-    </file>
+-    <file>
+       <source>${basedir}/src/main/resources/META-INF/LEGAL</source>
+       <outputDirectory>.</outputDirectory>
+       <destName>LEGAL</destName>
