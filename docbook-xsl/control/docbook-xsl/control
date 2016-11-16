@@ -1,5 +1,5 @@
 Package: docbook-xsl
-Version: 1.78.1-0
+Version: 1.79.1-1
 Source: docbook-xsl
 Priority: optional
 Depends: sgml-common, xml2-utils
