@@ -1,5 +1,5 @@
 Package: maven
-Version: 3.3.3-0
+Version: 3.3.9-1
 Source: maven
 Priority: optional
 Depends: libc, jdk
