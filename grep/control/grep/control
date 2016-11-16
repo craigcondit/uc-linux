@@ -1,5 +1,5 @@
 Package: grep
-Version: 2.22-0
+Version: 2.26-1
 Source: grep
 Priority: optional
 Depends: libc, libpcre, update-alternatives

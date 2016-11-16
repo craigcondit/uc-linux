@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,11 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel libpcre-devel pkg-config && \
-	wget -O /download/grep-2.22.tar.xz \
-		http://ftp.gnu.org/gnu/grep/grep-2.22.tar.xz && \
+	wget -O /download/grep-2.26.tar.xz \
+		http://ftp.gnu.org/gnu/grep/grep-2.26.tar.xz && \
 	cd /build && \
-	tar xf /download/grep-2.22.tar.xz && \
-	cd grep-2.22 && \
+	tar xf /download/grep-2.26.tar.xz && \
+	cd grep-2.26 && \
 	./configure --prefix=/usr --build=$(gcc -dumpmachine) && \
 	MAKE="make -j4" make && \
 	pre-root /build/grep-root && \
@@ -26,7 +26,7 @@ RUN \
 		/build/grep-deb \
 		/build/grep-root \
 		/control/grep \
-		/packages/grep-2.22-0_amd64.deb && \
+		/packages/grep-2.26-1_amd64.deb && \
 	cd / && \
 	rm -rf /build /control /download
 

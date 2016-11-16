@@ -43,6 +43,7 @@ maven
 runas
 postgresql
 git
+grep
 gcc-go
 erlang
 sgml-common
