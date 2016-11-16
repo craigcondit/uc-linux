@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,11 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel perl libattr-devel && \
-	wget -O /download/libcap-2.24.tar.xz \
-		https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.24.tar.xz && \
+	wget -O /download/libcap-2.25.tar.xz \
+		https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.25.tar.xz && \
 	cd /build && \
-	tar xf /download/libcap-2.24.tar.xz && \
-	cd libcap-2.24 && \
+	tar xf /download/libcap-2.25.tar.xz && \
+	cd libcap-2.25 && \
 	sed -i '/install.*STALIBNAME/d' libcap/Makefile && \
 	MAKE="make -j4" make && \
 	pre-root /build/libcap-base-root && \
@@ -28,7 +28,7 @@ RUN \
 		/build/cap-utils-deb \
 		/build/cap-utils-root \
 		/control/cap-utils \
-		/packages/cap-utils_2.24-0_amd64.deb && \
+		/packages/cap-utils_2.25-1_amd64.deb && \
 
 	cp -a /build/libcap-base-root /build/libcap-root && \
 	cd /build/libcap-root && \
@@ -38,7 +38,7 @@ RUN \
 		/build/libcap-deb \
 		/build/libcap-root \
 		/control/libcap \
-		/packages/libcap_2.24-0_amd64.deb && \
+		/packages/libcap_2.25-1_amd64.deb && \
 
 	cp -a /build/libcap-base-root /build/libcap-devel-root && \
 	cd /build/libcap-devel-root && \
@@ -48,5 +48,5 @@ RUN \
 		/build/libcap-devel-deb \
 		/build/libcap-devel-root \
 		/control/libcap-devel \
-		/packages/libcap-devel_2.24-0_amd64.deb
+		/packages/libcap-devel_2.25-1_amd64.deb
 

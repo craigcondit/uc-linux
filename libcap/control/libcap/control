@@ -1,5 +1,5 @@
 Package: libcap
-Version: 2.24-0
+Version: 2.25-1
 Source: libcap
 Priority: standard 
 Depends: libc, libattr

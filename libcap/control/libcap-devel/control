@@ -1,8 +1,8 @@
 Package: libcap-devel
-Version: 2.24-0
+Version: 2.25-1
 Source: libcap
 Priority: optional 
-Depends: libc-devel, libattr-devel, libcap (>= 2.24-0)
+Depends: libc-devel, libattr-devel, libcap (>= 2.25-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: POSIX 1003.1e capabilities (development files)
 Architecture: amd64
