@@ -1,8 +1,8 @@
 Package: libx11-xcb-devel
-Version: 1.11.1-0
+Version: 1.12.0-1
 Source: libxcb
 Priority: optional
-Depends: libc-devel, libx11-xau-devel, libx11-xcb (>= 1.11.1-0)
+Depends: libc-devel, libx11-xau-devel, libx11-xcb (>= 1.12.0-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: X Window System XCB protocol (development files)
 Architecture: amd64

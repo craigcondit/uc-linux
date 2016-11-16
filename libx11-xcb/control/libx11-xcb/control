@@ -1,5 +1,5 @@
 Package: libx11-xcb
-Version: 1.11.1-0
+Version: 1.12.0-1
 Source: libxcb
 Priority: optional
 Depends: libc, libx11-xau
