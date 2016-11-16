@@ -1,5 +1,5 @@
 Package: git
-Version: 2.6.0-0
+Version: 2.10.2-1
 Source: git
 Priority: optional
 Depends: libc, libssl, libz, libcurl, libpcre, libexpat

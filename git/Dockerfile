@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -7,11 +7,11 @@ RUN \
 	opkg update && \
 	opkg install gcc make file linux-devel perl python27-devel gettext-utils \
 		libz-devel libssl-devel libcurl-devel libpcre-devel libexpat-devel && \
-	wget -O /download/git-2.6.0.tar.xz \
-		https://www.kernel.org/pub/software/scm/git/git-2.6.0.tar.xz && \
+	wget -O /download/git-2.10.2.tar.xz \
+		https://www.kernel.org/pub/software/scm/git/git-2.10.2.tar.xz && \
 	cd /build && \
-	tar xf /download/git-2.6.0.tar.xz && \
-	cd git-2.6.0 && \
+	tar xf /download/git-2.10.2.tar.xz && \
+	cd git-2.10.2 && \
 	./configure \
 		--prefix=/usr --build=$(gcc -dumpmachine) \
 		--with-gitconfig=/etc/gitconfig \
@@ -29,5 +29,5 @@ RUN \
 		/build/git-deb \
 		/build/git-root \
 		/control/git \
-		/packages/git_2.6.0-0_amd64.deb
+		/packages/git_2.10.2-1_amd64.deb
 
