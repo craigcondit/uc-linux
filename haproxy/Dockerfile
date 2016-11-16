@@ -7,11 +7,11 @@ RUN \
 	opkg update && \
 	opkg install gcc make file pkg-config libc-devel libz-devel \
 		libssl-devel libpcre-devel && \
-	wget -O /download/haproxy-1.6.0.tar.gz \
-		http://www.haproxy.org/download/1.6/src/haproxy-1.6.0.tar.gz && \
+	wget -O /download/haproxy-1.6.9.tar.gz \
+		http://www.haproxy.org/download/1.6/src/haproxy-1.6.9.tar.gz && \
 	cd /build && \
-	tar xf /download/haproxy-1.6.0.tar.gz && \
-	cd haproxy-1.6.0 && \
+	tar xf /download/haproxy-1.6.9.tar.gz && \
+	cd haproxy-1.6.9 && \
 	MAKE="make -j4" make TARGET=linux2628 USE_PCRE=1 USE_OPENSSL=1 USE_ZLIB=1 USE_PCRE_JIT=1 && \
 	pre-root /build/haproxy-root && \
 	cp haproxy /build/haproxy-root/usr/sbin/ && \
@@ -23,5 +23,5 @@ RUN \
 		/build/haproxy-deb \
 		/build/haproxy-root \
 		/control/haproxy \
-		/packages/haproxy_1.6.0-0_amd64.deb
+		/packages/haproxy_1.6.9-1_amd64.deb
 
