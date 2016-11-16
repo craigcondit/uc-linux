@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -12,11 +12,11 @@ RUN \
 	opkg update && \
 	opkg install gcc make file pkg-config libc-devel libz-devel libssl-devel \
 		libpcre-devel libssl-devel && \
-	wget -O /download/nginx-1.9.5.tar.gz \
-		http://nginx.org/download/nginx-1.9.5.tar.gz && \
+	wget -O /download/nginx-1.11.6.tar.gz \
+		http://nginx.org/download/nginx-1.11.6.tar.gz && \
 	cd /build && \
-	tar xf /download/nginx-1.9.5.tar.gz && \
-	cd nginx-1.9.5 && \
+	tar xf /download/nginx-1.11.6.tar.gz && \
+	cd nginx-1.11.6 && \
 	./configure \
 		--build=$(gcc -dumpmachine) \
 		--prefix=/usr/share/nginx \
@@ -48,5 +48,5 @@ RUN \
 		/build/nginx-deb \
 		/build/nginx-root \
 		/control/nginx \
-		/packages/nginx_1.9.5-0_amd64.deb
+		/packages/nginx_1.11.6-1_amd64.deb
 

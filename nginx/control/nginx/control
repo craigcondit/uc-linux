@@ -1,5 +1,5 @@
 Package: nginx
-Version: 1.9.5-0
+Version: 1.11.6-1
 Source: nginx
 Priority: optional
 Depends: libc, libssl, libz, libpcre, busybox
