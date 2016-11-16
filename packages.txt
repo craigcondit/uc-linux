@@ -25,6 +25,7 @@ libx11-xau
 xcb-proto
 libx11-xcb
 xorg-libs
+locale-utils
 cacerts
 openjdk8
 pcre
@@ -44,7 +45,6 @@ postgresql
 git
 gcc-go
 runas
-locale-utils
 erlang
 sgml-common
 docbook-xml

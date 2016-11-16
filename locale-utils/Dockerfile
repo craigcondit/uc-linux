@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 RUN \
@@ -8,20 +8,17 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file pkg-config libc-devel libz-devel patch gawk && \
-	wget -O /download/glibc-2.22.tar.xz \
-		http://ftp.gnu.org/gnu/glibc/glibc-2.22.tar.xz && \
-	wget -O /download/glibc-2.22-fhs-1.patch \
-		http://www.linuxfromscratch.org/patches/lfs/systemd/glibc-2.22-fhs-1.patch && \
-	wget -O /download/glibc-2.22-upstream_i386_fix-1.patch \
-		http://www.linuxfromscratch.org/patches/lfs/systemd/glibc-2.22-upstream_i386_fix-1.patch && \
+	wget -O /download/glibc-2.24.tar.xz \
+		http://ftp.gnu.org/gnu/glibc/glibc-2.24.tar.xz && \
+	wget -O /download/glibc-2.24-fhs-1.patch \
+		http://www.linuxfromscratch.org/patches/lfs/7.10/glibc-2.24-fhs-1.patch && \
 	cd /build && \
-	tar xf /download/glibc-2.22.tar.xz && \
-	cd glibc-2.22 && \
-	patch -Np1 -i /download/glibc-2.22-fhs-1.patch && \
-	patch -Np1 -i /download/glibc-2.22-upstream_i386_fix-1.patch && \
+	tar xf /download/glibc-2.24.tar.xz && \
+	cd glibc-2.24 && \
+	patch -Np1 -i /download/glibc-2.24-fhs-1.patch && \
 	mkdir -p ../glibc-build && \
 	cd ../glibc-build && \
-	../glibc-2.22/configure \
+	../glibc-2.24/configure \
 		--prefix=/usr --disable-profile --enable-kernel=2.6.32\
 		--enable-obsolete-rpc && \
 	MAKE="make -j4" make && \
@@ -40,10 +37,10 @@ RUN \
 	cp -a /build/glibc-root/usr/bin/locale usr/bin/ && \
 	cp -a /build/glibc-root/usr/bin/localedef usr/bin/ && \
 	mkdir -p usr/share/locale && \
-	cat /build/glibc-2.22/localedata/SUPPORTED | grep -v ^# \
+	cat /build/glibc-2.24/localedata/SUPPORTED | grep -v ^# \
 		| grep -v ^SUPPORTED | sed 's/ \\//' | sed 's@/@ @' \
 		> usr/share/locale/SUPPORTED && \
-	cat /build/glibc-2.22/localedata/SUPPORTED | grep -v ^# \
+	cat /build/glibc-2.24/localedata/SUPPORTED | grep -v ^# \
 		| grep -v ^SUPPORTED | sed 's/ \\//' | sed 's/^/# /' | sed 's@/@ @' \
 		> etc/locale.gen && \
 	cp /support/locale-gen usr/sbin && \
@@ -62,7 +59,7 @@ RUN \
 		/build/locale-utils-deb \
 		/build/locale-utils-root \
 		/control/locale-utils \
-		/packages/locale-utils_2.22-0_amd64.deb && \
+		/packages/locale-utils_2.24-1_amd64.deb && \
 
 	cd /build/locale-data-root && \
 	rm -rf usr/bin usr/sbin etc && \
@@ -70,5 +67,5 @@ RUN \
 		/build/locale-data-deb \
 		/build/locale-data-root \
 		/control/locale-data \
-		/packages/locale-data_2.22-0_all.deb
+		/packages/locale-data_2.24-1_all.deb
 

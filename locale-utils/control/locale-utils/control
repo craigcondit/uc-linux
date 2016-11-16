@@ -1,5 +1,5 @@
 Package: locale-utils
-Version: 2.22-0
+Version: 2.24-1
 Source: libc
 Priority: important
 Depends: libc
