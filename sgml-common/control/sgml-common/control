@@ -1,5 +1,5 @@
 Package: sgml-common
-Version: 0.6.3-0
+Version: 0.6.3-1
 Source: sgml-common
 Priority: optional
 Depends: libc

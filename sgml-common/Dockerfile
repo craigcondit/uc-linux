@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -30,5 +30,5 @@ RUN \
 		/build/sgml-common-deb \
 		/build/sgml-common-root \
 		/control/sgml-common \
-		/packages/sgml-common_0.6.3-0_all.deb
+		/packages/sgml-common_0.6.3-1_all.deb
 
