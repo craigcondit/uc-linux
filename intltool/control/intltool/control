@@ -1,5 +1,5 @@
 Package: intltool
-Version: 0.51.0-0
+Version: 0.51.0-1
 Source: intltool
 Priority: optional
 Depends: libc, file, perl, libxml-parser-perl

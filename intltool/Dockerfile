@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -23,5 +23,5 @@ RUN \
 		/build/intltool-deb \
 		/build/intltool-root \
 		/control/intltool \
-		/packages/intltool_0.51.0-0_all.deb
+		/packages/intltool_0.51.0-1_all.deb
 
