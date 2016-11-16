@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -25,4 +25,4 @@ RUN \
 		/build/gperf-deb \
 		/build/gperf-root \
 		/control/gperf \
-		/packages/gperf_3.0.4-0_amd64.deb
+		/packages/gperf_3.0.4-1_amd64.deb
