@@ -1,9 +1,9 @@
 Package: liblzma-devel
 Source: xz
-Version: 5.2.2-0
+Version: 5.2.2-1
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Architecture: amd64
-Depends: libc-devel, liblzma (>= 5.2.2-0)
+Depends: libc-devel, liblzma (>= 5.2.2-1)
 Description: XZ-format development headers and libraries
 Homepage: http://tukaani.org/xz/
 Section: devel

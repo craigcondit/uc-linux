@@ -64,12 +64,4 @@ RUN \
 		/build/liblzma-devel-deb \
 		/build/liblzma-devel-root \
 		/control/liblzma-devel \
-		/packages/liblzma-devel_5.2.2-1_amd64.deb && \
-		
-	cd / && \
-	rm -rf /build/* /download/* /control/* && \
-	opkg install \
-		/packages/liblzma_*.deb \
-		/packages/liblzma-devel_*.deb \
-		/packages/xz_*.deb
-
+		/packages/liblzma-devel_5.2.2-1_amd64.deb

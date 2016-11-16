@@ -1,6 +1,6 @@
 Package: liblzma
 Source: xz
-Version: 5.2.2-0
+Version: 5.2.2-1
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Architecture: amd64
 Depends: libc
