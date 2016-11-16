@@ -1,4 +1,5 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
+
 MAINTAINER ccondit@randomcoder.com
 
 ADD scripts /scripts
@@ -32,7 +33,7 @@ RUN \
 		/build/x11-proto-devel-deb \
 		/build/x11-proto-devel-root \
 		/control/x11-proto-devel \
-		/packages/x11-proto-devel_7.7-0_amd64.deb && \
+		/packages/x11-proto-devel_7.7-1_amd64.deb && \
 
 	cd / && \
 	rm -rf /build /control /download /scripts
