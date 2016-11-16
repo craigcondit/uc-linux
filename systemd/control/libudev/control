@@ -1,9 +1,0 @@
-Package: libudev
-Version: 224-0
-Source: systemd
-Priority: important
-Depends: libc, libcap, libattr
-Maintainer: Craig Condit <ccondit@randomcoder.org>
-Description: libudev shared library
-Architecture: amd64
-Section: libs

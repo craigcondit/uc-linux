@@ -1,9 +1,0 @@
-Package: systemd
-Version: 224-0
-Source: systemd
-Priority: important
-Depends: libc, libcap, libattr, libblkid, libmount, libuuid, libsystemd (>= 224-0), libudev (>= 224-0), libnss-systemd (>= 224-0)
-Maintainer: Craig Condit <ccondit@randomcoder.org>
-Description: system and service manager
-Architecture: amd64
-Section: admin

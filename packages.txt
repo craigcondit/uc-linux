@@ -39,7 +39,6 @@ gperf
 attr
 libcap
 util-linux
-systemd
 maven
 postgresql
 git

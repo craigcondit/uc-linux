@@ -1018,48 +1018,6 @@ repos:
       licenses: [ GPL-2.0 ]
       vcs_url: git://git.kernel.org/pub/scm/utils/util-linux/util-linux.git
 
-    - name: systemd
-      desc: system and service manager
-      website_url: http://www.freedesktop.org/wiki/Software/systemd/
-      licenses: [ LGPL-2.1 ]
-      vcs_url: git@github.com:systemd/systemd.git
-
-    - name: libsystemd
-      desc: systemd utility library
-      website_url: http://www.freedesktop.org/wiki/Software/systemd/
-      licenses: [ LGPL-2.1 ]
-      vcs_url: git@github.com:systemd/systemd.git
-
-    - name: libsystemd-devel
-      desc: systemd utility library (development files)
-      website_url: http://www.freedesktop.org/wiki/Software/systemd/
-      licenses: [ LGPL-2.1 ]
-      vcs_url: git@github.com:systemd/systemd.git
-
-    - name: udev
-      desc: /dev/ and hotplug management daemon
-      website_url: http://www.freedesktop.org/wiki/Software/systemd/
-      licenses: [ LGPL-2.1 ]
-      vcs_url: git@github.com:systemd/systemd.git
-
-    - name: libudev
-      desc: libudev shared library 
-      website_url: http://www.freedesktop.org/wiki/Software/systemd/
-      licenses: [ LGPL-2.1 ]
-      vcs_url: git@github.com:systemd/systemd.git
-
-    - name: libudev-devel
-      desc: libudev shared library (development files)
-      website_url: http://www.freedesktop.org/wiki/Software/systemd/
-      licenses: [ LGPL-2.1 ]
-      vcs_url: git@github.com:systemd/systemd.git
-
-    - name: libnss-systemd
-      desc: Additional NSS libraries from systemd
-      website_url: http://www.freedesktop.org/wiki/Software/systemd/
-      licenses: [ LGPL-2.1 ]
-      vcs_url: git@github.com:systemd/systemd.git
-
     - name: maven
       desc: Java software project management and comprehension tool
       website_url: https://maven.apache.org/
