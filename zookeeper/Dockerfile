@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -36,5 +36,5 @@ RUN \
 		/build/zookeeper-deb \
 		/build/zookeeper-root \
 		/control/zookeeper \
-		/packages/zookeeper_3.4.9-0_all.deb
+		/packages/zookeeper_3.4.9-1_all.deb
 
