@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -23,5 +23,5 @@ RUN \
 		/build/haproxy-deb \
 		/build/haproxy-root \
 		/control/haproxy \
-		/packages/haproxy_1.6.9-1_amd64.deb
+		/packages/haproxy_1.6.9-2_amd64.deb
 
