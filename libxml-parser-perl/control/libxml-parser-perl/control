@@ -1,5 +1,5 @@
 Package: libxml-parser-perl
-Version: 2.44-0
+Version: 2.44.1-1
 Source: xml-parser
 Priority: optional
 Depends: libc, perl, libexpat
