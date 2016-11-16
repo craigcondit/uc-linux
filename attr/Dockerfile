@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -30,7 +30,7 @@ RUN \
 		/build/attr-deb \
 		/build/attr-root \
 		/control/attr \
-		/packages/attr_2.4.47-0_amd64.deb && \
+		/packages/attr_2.4.47-1_amd64.deb && \
 
 	cp -a /build/attr-base-root /build/libattr-root && \
 	cd /build/libattr-root && \
@@ -40,7 +40,7 @@ RUN \
 		/build/libattr-deb \
 		/build/libattr-root \
 		/control/libattr \
-		/packages/libattr_2.4.47-0_amd64.deb && \
+		/packages/libattr_2.4.47-1_amd64.deb && \
 
 	cp -a /build/attr-base-root /build/libattr-devel-root && \
 	cd /build/libattr-devel-root && \
@@ -50,5 +50,5 @@ RUN \
 		/build/libattr-devel-deb \
 		/build/libattr-devel-root \
 		/control/libattr-devel \
-		/packages/libattr-devel_2.4.47-0_amd64.deb
+		/packages/libattr-devel_2.4.47-1_amd64.deb
 

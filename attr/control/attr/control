@@ -1,8 +1,8 @@
 Package: attr
-Version: 2.4.47-0
+Version: 2.4.47-1
 Source: attr
 Priority: optional
-Depends: libc, libattr (>= 2.4.47-0)
+Depends: libc, libattr (>= 2.4.47-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: Utilities for manipulating filesystem extended attributes
 Architecture: amd64
