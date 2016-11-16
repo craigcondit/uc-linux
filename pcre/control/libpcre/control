@@ -1,5 +1,5 @@
 Package: libpcre
-Version: 8.37-0
+Version: 8.39-1
 Source: pcre
 Priority: required
 Depends: libc

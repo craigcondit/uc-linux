@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,11 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel pkg-config && \
-	wget -O /download/pcre-8.37.tar.bz2 \
-		ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.37.tar.bz2 && \
+	wget -O /download/pcre-8.39.tar.bz2 \
+		ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.39.tar.bz2 && \
 	cd build && \
-	tar xf /download/pcre-8.37.tar.bz2 && \
-	cd pcre-8.37 && \
+	tar xf /download/pcre-8.39.tar.bz2 && \
+	cd pcre-8.39 && \
 	./configure \
 		--prefix=/usr --build=$(gcc -dumpmachine) --disable-static -with-shared \
 		--enable-utf --enable-unicode-properties --enable-jit && \
@@ -29,7 +29,7 @@ RUN \
 		/build/pcre-utils-deb \
 		/build/pcre-utils-root \
 		/control/pcre-utils \
-		/packages/pcre-utils_8.37-0_amd64.deb && \
+		/packages/pcre-utils_8.39-1_amd64.deb && \
 
 	cp -a /build/pcre-orig-root /build/libpcre-root && \
 	cd /build/libpcre-root && \
@@ -39,7 +39,7 @@ RUN \
 		/build/libpcre-deb \
 		/build/libpcre-root \
 		/control/libpcre \
-		/packages/libpcre_8.37-0_amd64.deb && \
+		/packages/libpcre_8.39-1_amd64.deb && \
 
 	cp -a /build/pcre-orig-root /build/libpcre-devel-root && \
 	cd /build/libpcre-devel-root && \
@@ -49,5 +49,5 @@ RUN \
 		/build/libpcre-devel-deb \
 		/build/libpcre-devel-root \
 		/control/libpcre-devel \
-		/packages/libpcre-devel_8.37-0_amd64.deb
+		/packages/libpcre-devel_8.39-1_amd64.deb
 
