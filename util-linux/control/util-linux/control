@@ -1,8 +1,8 @@
 Package: util-linux
-Version: 2.27-0
+Version: 2.29-1
 Source: util-linux
 Priority: required
-Depends: libc, libblkid (>= 2.27-0), libfdisk (>= 2.27-0), libmount (>= 2.27-0), libsmartcols (>= 2.27-0), libuuid (>= 2.27-0)
+Depends: libc, libblkid (>= 2.29-1), libfdisk (>= 2.29-1), libmount (>= 2.29-1), libsmartcols (>= 2.29-1), libuuid (>= 2.29-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: Miscellaneous system utilities
 Architecture: amd64

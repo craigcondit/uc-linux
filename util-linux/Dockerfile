@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,14 +6,14 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel && \
-	wget -O /download/util-linux-2.27.tar.xz \
-		https://www.kernel.org/pub/linux/utils/util-linux/v2.27/util-linux-2.27.tar.xz && \
+	wget -O /download/util-linux-2.29.tar.xz \
+		https://www.kernel.org/pub/linux/utils/util-linux/v2.29/util-linux-2.29.tar.xz && \
 	cd /build && \
-	tar xf /download/util-linux-2.27.tar.xz && \
-	cd util-linux-2.27 && \
+	tar xf /download/util-linux-2.29.tar.xz && \
+	cd util-linux-2.29 && \
 	./configure \
 		ADJTIME_PATH=/var/lib/hwclock/adjtime \
-		--docdir=/usr/share/doc/util-linux-2.27 --disable-chfn-chsh \
+		--docdir=/usr/share/doc/util-linux-2.29 --disable-chfn-chsh \
 		--disable-login --disable-nologin --disable-su --disable-setpriv \
 		--disable-runuser --disable-pylibmount --disable-static --without-python \
 		--build=$(gcc -dumpmachine) && \
@@ -53,7 +53,7 @@ RUN \
 		/build/util-linux-deb \
 		/build/util-linux-root \
 		/control/util-linux \
-		/packages/util-linux_2.27-0_amd64.deb && \
+		/packages/util-linux_2.29-1_amd64.deb && \
 
 	cp -a /build/util-linux-base-root /build/libblkid-root && \
 	cd /build/libblkid-root && \
@@ -64,7 +64,7 @@ RUN \
 		/build/libblkid-deb \
 		/build/libblkid-root \
 		/control/libblkid \
-		/packages/libblkid_2.27-0_amd64.deb && \
+		/packages/libblkid_2.29-1_amd64.deb && \
 
 	cp -a /build/util-linux-base-root /build/libfdisk-root && \
 	cd /build/libfdisk-root && \
@@ -75,7 +75,7 @@ RUN \
 		/build/libfdisk-deb \
 		/build/libfdisk-root \
 		/control/libfdisk \
-		/packages/libfdisk_2.27-0_amd64.deb && \
+		/packages/libfdisk_2.29-1_amd64.deb && \
 
 	cp -a /build/util-linux-base-root /build/libmount-root && \
 	cd /build/libmount-root && \
@@ -86,7 +86,7 @@ RUN \
 		/build/libmount-deb \
 		/build/libmount-root \
 		/control/libmount \
-		/packages/libmount_2.27-0_amd64.deb && \
+		/packages/libmount_2.29-1_amd64.deb && \
 
 	cp -a /build/util-linux-base-root /build/libsmartcols-root && \
 	cd /build/libsmartcols-root && \
@@ -97,7 +97,7 @@ RUN \
 		/build/libsmartcols-deb \
 		/build/libsmartcols-root \
 		/control/libsmartcols \
-		/packages/libsmartcols_2.27-0_amd64.deb && \
+		/packages/libsmartcols_2.29-1_amd64.deb && \
 
 	cp -a /build/util-linux-base-root /build/libuuid-root && \
 	cd /build/libuuid-root && \
@@ -108,7 +108,7 @@ RUN \
 		/build/libuuid-deb \
 		/build/libuuid-root \
 		/control/libuuid \
-		/packages/libuuid_2.27-0_amd64.deb && \
+		/packages/libuuid_2.29-1_amd64.deb && \
 
 	cp -a /build/util-linux-base-root /build/libblkid-devel-root && \
 	cd /build/libblkid-devel-root && \
@@ -127,7 +127,7 @@ RUN \
 		/build/libblkid-devel-deb \
 		/build/libblkid-devel-root \
 		/control/libblkid-devel \
-		/packages/libblkid-devel_2.27-0_amd64.deb && \
+		/packages/libblkid-devel_2.29-1_amd64.deb && \
 
 	cp -a /build/util-linux-base-root /build/libfdisk-devel-root && \
 	cd /build/libfdisk-devel-root && \
@@ -146,7 +146,7 @@ RUN \
 		/build/libfdisk-devel-deb \
 		/build/libfdisk-devel-root \
 		/control/libfdisk-devel \
-		/packages/libfdisk-devel_2.27-0_amd64.deb && \
+		/packages/libfdisk-devel_2.29-1_amd64.deb && \
 
 	cp -a /build/util-linux-base-root /build/libmount-devel-root && \
 	cd /build/libmount-devel-root && \
@@ -165,7 +165,7 @@ RUN \
 		/build/libmount-devel-deb \
 		/build/libmount-devel-root \
 		/control/libmount-devel \
-		/packages/libmount-devel_2.27-0_amd64.deb && \
+		/packages/libmount-devel_2.29-1_amd64.deb && \
 
 	cp -a /build/util-linux-base-root /build/libsmartcols-devel-root && \
 	cd /build/libsmartcols-devel-root && \
@@ -184,7 +184,7 @@ RUN \
 		/build/libsmartcols-devel-deb \
 		/build/libsmartcols-devel-root \
 		/control/libsmartcols-devel \
-		/packages/libsmartcols-devel_2.27-0_amd64.deb && \
+		/packages/libsmartcols-devel_2.29-1_amd64.deb && \
 
 	cp -a /build/util-linux-base-root /build/libuuid-devel-root && \
 	cd /build/libuuid-devel-root && \
@@ -203,5 +203,5 @@ RUN \
 		/build/libuuid-devel-deb \
 		/build/libuuid-devel-root \
 		/control/libuuid-devel \
-		/packages/libuuid-devel_2.27-0_amd64.deb
+		/packages/libuuid-devel_2.29-1_amd64.deb
 

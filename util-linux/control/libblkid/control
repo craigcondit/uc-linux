@@ -1,5 +1,5 @@
 Package: libblkid
-Version: 2.27-0
+Version: 2.29-1
 Source: util-linux
 Priority: required
 Depends: libc, libuuid

@@ -1,8 +1,8 @@
 Package: libmount-devel
-Version: 2.27-0
+Version: 2.29-1
 Source: util-linux
 Priority: optional
-Depends: libc-devel, libblkid-devel, libuuid-devel, libmount (>= 2.27-0)
+Depends: libc-devel, libblkid-devel, libuuid-devel, libmount (>= 2.29-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: device mounting library (development files)
 Architecture: amd64
