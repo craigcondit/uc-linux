@@ -1,5 +1,5 @@
 Package: runas
-Version: 1.0.0-0
+Version: 1.0.0-1
 Source: runas
 Priority: optional
 Depends: libc

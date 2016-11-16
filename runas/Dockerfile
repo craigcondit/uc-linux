@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD source /source
@@ -23,4 +23,4 @@ RUN \
 		/build/runas-deb \
 		/build/runas-root \
 		/control/runas \
-		/packages/runas_1.0.0-0_amd64.deb
+		/packages/runas_1.0.0-1_amd64.deb
