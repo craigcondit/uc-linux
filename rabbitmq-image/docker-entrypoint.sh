@@ -48,6 +48,7 @@ declare_vhost = /
 vhost = /
 EOF
 		chmod 400 /root/.rabbitmqadmin.conf
+		sleep 5
 		rabbitmqctl add_user dockeradmin "${ADMIN_PASSWORD}"
 		rabbitmqctl set_user_tags dockeradmin administrator
 		rabbitmqctl set_permissions -p / dockeradmin ".*" ".*" ".*"
