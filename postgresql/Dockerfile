@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 RUN \
@@ -43,7 +43,7 @@ RUN \
 		/build/postgresql-server-deb \
 		/build/postgresql-server-root \
 		/control/postgresql-server \
-		/packages/postgresql-server_9.6.1-0_amd64.deb && \
+		/packages/postgresql-server_9.6.1-1_amd64.deb && \
 
 	cp -a /build/postgresql-orig-root /build/postgresql-client-root && \
 	cd /build/postgresql-client-root && \
@@ -55,7 +55,7 @@ RUN \
 		/build/postgresql-client-deb \
 		/build/postgresql-client-root \
 		/control/postgresql-client \
-		/packages/postgresql-client_9.6.1-0_amd64.deb && \
+		/packages/postgresql-client_9.6.1-1_amd64.deb && \
 
 	cp -a /build/postgresql-orig-root /build/libpq-root && \
 	cd /build/libpq-root && \
@@ -66,7 +66,7 @@ RUN \
 		/build/libpq-deb \
 		/build/libpq-root \
 		/control/libpq \
-		/packages/libpq_9.6.1-0_amd64.deb && \
+		/packages/libpq_9.6.1-1_amd64.deb && \
 
 	cp -a /build/postgresql-orig-root /build/libpgtypes-root && \
 	cd /build/libpgtypes-root && \
@@ -77,7 +77,7 @@ RUN \
 		/build/libpgtypes-deb \
 		/build/libpgtypes-root \
 		/control/libpgtypes \
-		/packages/libpgtypes_9.6.1-0_amd64.deb && \
+		/packages/libpgtypes_9.6.1-1_amd64.deb && \
 
 	cp -a /build/postgresql-orig-root /build/libecpg-root && \
 	cd /build/libecpg-root && \
@@ -88,7 +88,7 @@ RUN \
 		/build/libecpg-deb \
 		/build/libecpg-root \
 		/control/libecpg \
-		/packages/libecpg_9.6.1-0_amd64.deb && \
+		/packages/libecpg_9.6.1-1_amd64.deb && \
 
 	cp -a /build/postgresql-orig-root /build/postgresql-devel-root && \
 	cd /build/postgresql-devel-root && \
@@ -103,5 +103,5 @@ RUN \
 		/build/postgresql-devel-deb \
 		/build/postgresql-devel-root \
 		/control/postgresql-devel \
-		/packages/postgresql-devel_9.6.1-0_amd64.deb
+		/packages/postgresql-devel_9.6.1-1_amd64.deb
 
