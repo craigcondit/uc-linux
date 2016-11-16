@@ -1174,6 +1174,12 @@ repos:
       licenses: [ 'GPL-2.0', 'GPL-3.0' ]
       vcs_url: git://git.savannah.gnu.org/grep.git
 
+    - name: findutils
+      desc: Basic directory searching utilities
+      website_url: http://www.gnu.org/software/findutils/
+      licenses: [ 'GPL-3.0' ]
+      vcs_url: git://git.savannah.gnu.org/findutils.git
+
     - name: rsync
       desc: 'fast, versatile, remote (and local) file-copying tool'
       website_url: https://rsync.samba.org/

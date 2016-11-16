@@ -54,5 +54,6 @@ python-simplejson
 rsync
 rabbitmq-server
 zookeeper
+findutils
 hbase
 kafka

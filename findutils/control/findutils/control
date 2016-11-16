@@ -1,0 +1,10 @@
+Package: findutils
+Source: findutils
+Version: 4.6.0-1
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Depends: libc, update-alternatives
+Description: Basic directory searching utilities
+Homepage: https://www.gnu.org/software/findutils/
+Section: utils
+Priority: standard
