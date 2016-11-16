@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -22,4 +22,4 @@ RUN \
 		/build/docbook-xml-deb \
 		/build/docbook-xml-root \
 		/control/docbook-xml \
-		/packages/docbook-xml_4.5-0_all.deb
+		/packages/docbook-xml_4.5-1_all.deb
