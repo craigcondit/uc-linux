@@ -1,5 +1,5 @@
 Package: hbase
-Version: 1.0.3-0
+Version: 1.2.4-1
 Source: hbase
 Priority: optional
 Depends: libc, jre8, bash

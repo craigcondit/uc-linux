@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -7,19 +7,19 @@ RUN \
 	opkg update && \
 	opkg install bash openjdk-jdk8 maven && \
 	export JAVA_HOME=/usr/lib/jvm/jdk-8-openjdk-amd64 && \
-	wget -O /download/hbase-1.0.3-src.tar.gz \
-		http://mirrors.ibiblio.org/apache/hbase/hbase-1.0.3/hbase-1.0.3-src.tar.gz && \
+	wget -O /download/hbase-1.2.4-src.tar.gz \
+		http://mirrors.ibiblio.org/apache/hbase/hbase-1.2.4/hbase-1.2.4-src.tar.gz && \
 	cd /build && \
-	tar xf /download/hbase-1.0.3-src.tar.gz && \
-	cd hbase-1.0.3 && \
+	tar xf /download/hbase-1.2.4-src.tar.gz && \
+	cd hbase-1.2.4 && \
 	mvn -DskipTests clean install assembly:single
 
 RUN \
 	pre-root /build/hbase-root && \
 	mkdir -p /build/hbase-root/usr/share && \
 	cd /build/hbase-root/usr/share && \
-	tar xf /build/hbase-1.0.3/hbase-assembly/target/hbase-1.0.3-bin.tar.gz && \
-	mv -f hbase-1.0.3 hbase && \
+	tar xf /build/hbase-1.2.4/hbase-assembly/target/hbase-1.2.4-bin.tar.gz && \
+	mv -f hbase-1.2.4 hbase && \
 	cd hbase && \
 	chown -R root:root . && \
 	rm -f LEGAL *.txt && \
@@ -42,5 +42,5 @@ RUN \
 		/build/hbase-deb \
 		/build/hbase-root \
 		/control/hbase \
-		/packages/hbase_1.0.3-0_all.deb
+		/packages/hbase_1.2.4-1_all.deb
 
