@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,11 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel && \
-	wget -O /download/expat-2.1.0.tar.gz \
-		http://prdownloads.sourceforge.net/expat/expat-2.1.0.tar.gz && \
+	wget -O /download/expat-2.2.0.tar.bz2 \
+		http://prdownloads.sourceforge.net/expat/expat-2.2.0.tar.bz2 && \
 	cd /build && \
-	tar xf /download/expat-2.1.0.tar.gz && \
-	cd expat-2.1.0 && \
+	tar xf /download/expat-2.2.0.tar.bz2 && \
+	cd expat-2.2.0 && \
 	./configure --prefix=/usr --build=$(gcc -dumpmachine) --disable-static && \
 	MAKE="make -j4" make && \
 	pre-root /build/expat-base-root && \
@@ -28,7 +28,7 @@ RUN \
 		/build/expat-deb \
 		/build/expat-root \
 		/control/expat \
-		/packages/expat_2.1.0-0_amd64.deb && \
+		/packages/expat_2.2.0-1_amd64.deb && \
 
 	cp -a /build/expat-base-root /build/libexpat-root && \
 	cd /build/libexpat-root && \
@@ -38,7 +38,7 @@ RUN \
 		/build/libexpat-deb \
 		/build/libexpat-root \
 		/control/libexpat \
-		/packages/libexpat_2.1.0-0_amd64.deb && \
+		/packages/libexpat_2.2.0-1_amd64.deb && \
 
 	cp -a /build/expat-base-root /build/libexpat-devel-root && \
 	cd /build/libexpat-devel-root && \
@@ -48,5 +48,5 @@ RUN \
 		/build/libexpat-devel-deb \
 		/build/libexpat-devel-root \
 		/control/libexpat-devel \
-		/packages/libexpat-devel_2.1.0-0_amd64.deb
+		/packages/libexpat-devel_2.2.0-1_amd64.deb
 
