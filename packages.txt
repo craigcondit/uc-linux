@@ -51,6 +51,7 @@ docbook-xml
 docbook-xsl
 libxslt
 python-simplejson
+rsync
 rabbitmq-server
 zookeeper
 hbase
