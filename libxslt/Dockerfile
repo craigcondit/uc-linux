@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -6,11 +6,11 @@ RUN \
 	mkdir -p /build /control /download /packages && \
 	opkg update && \
 	opkg install gcc make file linux-devel libxml2-devel docbook-xml docbook-xsl && \
-	wget -O /download/libxslt-1.1.28.tar.gz \
-		http://xmlsoft.org/sources/libxslt-1.1.28.tar.gz && \
+	wget -O /download/libxslt-1.1.29.tar.gz \
+		http://xmlsoft.org/sources/libxslt-1.1.29.tar.gz && \
 	cd /build && \
-	tar xf /download/libxslt-1.1.28.tar.gz && \
-	cd libxslt-1.1.28 && \
+	tar xf /download/libxslt-1.1.29.tar.gz && \
+	cd libxslt-1.1.29 && \
 	./configure --prefix=/usr --build=$(gcc -dumpmachine) --disable-static && \
 	MAKE="make -j4" make && \
 	pre-root /build/libxslt-base-root && \
@@ -27,7 +27,7 @@ RUN \
 		/build/libxslt-deb \
 		/build/libxslt-root \
 		/control/libxslt \
-		/packages/libxslt_1.1.28-0_amd64.deb && \
+		/packages/libxslt_1.1.29-1_amd64.deb && \
 
 	cp -av /build/libxslt-base-root /build/libxslt-devel-root && \
 	cd /build/libxslt-devel-root && \
@@ -38,7 +38,7 @@ RUN \
 		/build/libxslt-devel-deb \
 		/build/libxslt-devel-root \
 		/control/libxslt-devel \
-		/packages/libxslt-devel_1.1.28-0_amd64.deb && \
+		/packages/libxslt-devel_1.1.29-1_amd64.deb && \
 
 	cp -av /build/libxslt-base-root /build/xslt-utils-root && \
 	cd /build/xslt-utils-root && \
@@ -48,5 +48,5 @@ RUN \
 		/build/xslt-utils-deb \
 		/build/xslt-utils-root \
 		/control/xslt-utils \
-		/packages/xslt-utils_1.1.28-0_amd64.deb 
+		/packages/xslt-utils_1.1.29-1_amd64.deb 
 

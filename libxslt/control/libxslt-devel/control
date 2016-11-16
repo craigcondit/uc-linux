@@ -1,8 +1,8 @@
 Package: libxslt-devel
-Version: 1.1.28-0
+Version: 1.1.29-1
 Source: libxslt
 Priority: optional
-Depends: libc-devel, libxml2-devel, docbook-xml, docbook-xsl, libxslt (>= 1.1.28-0)
+Depends: libc-devel, libxml2-devel, docbook-xml, docbook-xsl, libxslt (>= 1.1.29-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: XSLT 1.0 processing library - development files
 Architecture: amd64

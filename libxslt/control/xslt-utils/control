@@ -1,8 +1,8 @@
 Package: xslt-utils
-Version: 1.1.28-0
+Version: 1.1.29-1
 Source: libxslt
 Priority: optional
-Depends: libc, libxml2, docbook-xml, docbook-xsl, libxslt (>= 1.1.28-0)
+Depends: libc, libxml2, docbook-xml, docbook-xsl, libxslt (>= 1.1.29-1)
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: XSLT 1.0 processing utilities
 Architecture: amd64
