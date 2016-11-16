@@ -1,5 +1,5 @@
 Package: python-simplejson
-Version: 3.8.1-0
+Version: 3.10.0-1
 Source: python-simplejson
 Priority: optional
 Depends: libc, python27
