@@ -1,4 +1,4 @@
-FROM insideo/uc-linux-bootstrap:buggy
+FROM insideo/uc-linux-bootstrap:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -8,11 +8,11 @@ RUN \
 	opkg upgrade && \
 	opkg install gcc make file linux-devel libz-devel pkg-config perl && \
 	opkg clean && \
-	wget -O /download/openssl-1.0.2e.tar.gz \
-		https://www.openssl.org/source/openssl-1.0.2e.tar.gz && \
+	wget -O /download/openssl-1.0.2j.tar.gz \
+		https://www.openssl.org/source/openssl-1.0.2j.tar.gz && \
 	cd /build && \
-	tar xf /download/openssl-1.0.2e.tar.gz && \
-	cd openssl-1.0.2e && \
+	tar xf /download/openssl-1.0.2j.tar.gz && \
+	cd openssl-1.0.2j && \
 	./config --prefix=/usr --openssldir=/etc/ssl --libdir=lib shared zlib-dynamic && \
 	sed -i 's# libcrypto.a##;s# libssl.a##' Makefile && \
 	make && \
@@ -31,7 +31,7 @@ RUN \
 		/build/libssl-deb \
 		/build/libssl-root \
 		/control/libssl \
-		/packages/libssl_1.0.2e-0_amd64.deb && \
+		/packages/libssl_1.0.2j-1_amd64.deb && \
 
 	cp -a /build/openssl-base-root /build/libssl-devel-root && \
 	cd /build/libssl-devel-root && \
@@ -41,7 +41,7 @@ RUN \
 		/build/libssl-devel-deb \
 		/build/libssl-devel-root \
 		/control/libssl-devel \
-		/packages/libssl-devel_1.0.2e-0_amd64.deb && \
+		/packages/libssl-devel_1.0.2j-1_amd64.deb && \
 
 	cp -a /build/openssl-base-root /build/openssl-root && \
 	cd /build/openssl-root && \
@@ -50,12 +50,5 @@ RUN \
 		/build/openssl-deb \
 		/build/openssl-root \
 		/control/openssl \
-		/packages/openssl_1.0.2e-0_amd64.deb && \
-
-	cd / && \
-	rm -rf /build/* /download/* /control/* && \
-	opkg install \
-		/packages/libssl_*.deb \
-		/packages/libssl-devel_*.deb \
-		/packages/openssl_*.deb
+		/packages/openssl_1.0.2j-1_amd64.deb
 
