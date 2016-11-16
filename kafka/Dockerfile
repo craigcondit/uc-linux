@@ -1,4 +1,4 @@
-FROM insideo/uc-linux:buggy
+FROM insideo/uc-linux:hydrogen
 MAINTAINER ccondit@randomcoder.com
 
 ADD control /control
@@ -36,5 +36,5 @@ RUN \
 		/build/kafka-deb \
 		/build/kafka-root \
 		/control/kafka \
-		/packages/kafka_0.10.1.0-0_all.deb
+		/packages/kafka_0.10.1.0-1_all.deb
 
