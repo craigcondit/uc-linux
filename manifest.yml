@@ -1216,3 +1216,9 @@ repos:
       vcs_url: https://github.com/libuv/libuv
       licenses: [ BSD ]
 
+    - name: cmake
+      desc: cross-platform, open-source make system
+      website_url: https://cmake.org/
+      vcs_url: https://cmake.org/cmake.git
+      licenses: [ 'LGPL-2.1', 'LGPL-3.0' ]
+

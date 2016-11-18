@@ -1,0 +1,9 @@
+Package: cmake
+Version: 3.7.0-1
+Source: cmake
+Priority: optional
+Depends: libc, libexpat, libcurl, libuv, libstdcxx, libgcc, liblzma, libbz2, libnghttp2, libssl, libncurses
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: cross-platform, open-source make system
+Architecture: amd64
+Section: devel
