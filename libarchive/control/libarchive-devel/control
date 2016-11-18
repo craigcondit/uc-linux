@@ -1,0 +1,10 @@
+Package: libarchive-devel
+Source: libarchive
+Version: 3.2.2-2
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Depends: libc-devel, libbz2-devel, libz-devel, libarchive (>= 3.2.2-2)
+Description: Multi-format archive and compression library (headers and static library)
+Homepage: http://www.libarchive.org/
+Section: libs
+Priority: optional

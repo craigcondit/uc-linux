@@ -1,0 +1,10 @@
+Package: libarchive
+Source: libarchive
+Version: 3.2.2-2
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Depends: libc, libbz2, libz, liblzma, libssl
+Description: Multi-format archive and compression library (shared library)
+Homepage: http://www.libarchive.org/
+Section: libs
+Priority: optional
