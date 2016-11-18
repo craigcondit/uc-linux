@@ -58,3 +58,5 @@ findutils
 hbase
 kafka
 libuv
+cmake
+llvm

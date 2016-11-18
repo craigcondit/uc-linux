@@ -1,0 +1,10 @@
+Package: libclang
+Source: llvm
+Version: 3.9.0-4
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Depends: libc, libffi, libgcc, libstdcxx, libz
+Description: C interface to the clang library
+Homepage: http://llvm.org
+Section: devel
+Priority: optional

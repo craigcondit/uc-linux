@@ -1222,3 +1222,39 @@ repos:
       vcs_url: https://cmake.org/cmake.git
       licenses: [ 'LGPL-2.1', 'LGPL-3.0' ]
 
+    - name: clang
+      desc: C language family front-end for LLVM
+      website_url: http://llvm.org
+      vcs_url: http://llvm.org/svn/llvm-project/
+      licenses: [ 'UoI-NCSA' ]
+
+    - name: clang-analyzer
+      desc: Source code analysis framework
+      website_url: http://llvm.org
+      vcs_url: http://llvm.org/svn/llvm-project/
+      licenses: [ 'UoI-NCSA' ]
+
+    - name: compiler-rt
+      desc: LLVM compiler-rt runtime libraries
+      website_url: http://llvm.org
+      vcs_url: http://llvm.org/svn/llvm-project/
+      licenses: [ 'UoI-NCSA' ]
+
+    - name: libclang
+      desc: C interface to the clang library
+      website_url: http://llvm.org
+      vcs_url: http://llvm.org/svn/llvm-project/
+      licenses: [ 'UoI-NCSA' ]
+
+    - name: libllvm
+      desc: Modular compiler and toolchain technologies, runtime library
+      website_url: http://llvm.org
+      vcs_url: http://llvm.org/svn/llvm-project/
+      licenses: [ 'UoI-NCSA' ]
+
+    - name: llvm
+      desc: Low-Level Virtual Machine (LLVM)
+      website_url: http://llvm.org
+      vcs_url: http://llvm.org/svn/llvm-project/
+      licenses: [ 'UoI-NCSA' ]
+

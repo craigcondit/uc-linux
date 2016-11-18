@@ -1,0 +1,10 @@
+Package: libllvm
+Source: llvm
+Version: 3.9.0-4
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Depends: libc, libffi, libgcc, libstdcxx, libz, libncurses
+Description: Modular compiler and toolchain technologies, runtime library
+Homepage: http://llvm.org
+Section: libs
+Priority: optional

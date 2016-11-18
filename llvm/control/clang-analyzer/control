@@ -1,0 +1,10 @@
+Package: clang-analyzer
+Source: llvm
+Version: 3.9.0-4
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Depends: perl, python27, clang (>= 3.9.0-4)
+Description: Source code analysis framework
+Homepage: http://llvm.org
+Section: devel
+Priority: optional

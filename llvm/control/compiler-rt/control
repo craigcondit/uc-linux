@@ -1,0 +1,10 @@
+Package: compiler-rt
+Source: llvm
+Version: 3.9.0-4
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Depends: libstdcxx, libgcc
+Description: LLVM "compiler-rt" runtime libraries
+Homepage: http://llvm.org
+Section: devel
+Priority: optional

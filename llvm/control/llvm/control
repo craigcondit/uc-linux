@@ -1,0 +1,11 @@
+Package: llvm
+Source: llvm
+Version: 3.9.0-4
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Depends: libc-devel, libllvm (>= 3.9.0-4), libffi-devel, gcc, libz-devel, libncurses-devel, libz-devel
+Provides: libllvm-devel (= 3.9.0-4)
+Description: Low-Level Virtual Machine (LLVM)
+Homepage: http://llvm.org
+Section: devel
+Priority: optional

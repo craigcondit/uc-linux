@@ -1,0 +1,11 @@
+Package: clang
+Source: llvm
+Version: 3.9.0-4
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Depends: llvm (>= 3.9.0-4), libclang (>= 3.9.0-4), compiler-rt (>= 3.9.0-4), python27, libc-devel, libffi-devel, gcc, libz-devel, libncurses-devel
+Provides: clang-devel (= 3.9.0-4)
+Description: C language family front-end for LLVM
+Homepage: http://llvm.org
+Section: devel
+Priority: optional
