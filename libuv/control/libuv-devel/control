@@ -1,0 +1,10 @@
+Package: libuv-devel
+Source: libuv
+Version: 1.10.1-1
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Architecture: amd64
+Depends: libc-devel, libuv (>= 1.10.1-1)
+Description: asynchronous event notification library - development files
+Homepage: http://libuv.org/
+Section: libdevel
+Priority: optional

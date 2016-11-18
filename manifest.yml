@@ -1204,3 +1204,15 @@ repos:
       vcs_url: git://github.com/libarchive/libarchive
       licenses: [ BSD ]
 
+    - name: libuv
+      desc: asynchronous event notification library - runtime library
+      website_url: http://libuv.org/
+      vcs_url: https://github.com/libuv/libuv
+      licenses: [ BSD ]
+
+    - name: libuv-devel
+      desc: asynchronous event notification library - development files
+      website_url: http://libuv.org/
+      vcs_url: https://github.com/libuv/libuv
+      licenses: [ BSD ]
+

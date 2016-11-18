@@ -57,3 +57,4 @@ zookeeper
 findutils
 hbase
 kafka
+libuv
