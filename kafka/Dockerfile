@@ -4,11 +4,11 @@ MAINTAINER ccondit@randomcoder.com
 ADD control /control
 RUN \
 	mkdir -p /build /control /download /packages && \
-	wget -O /download/kafka_2.11-0.10.1.0.tgz \
-		http://apache.mirrors.tds.net/kafka/0.10.1.0/kafka_2.11-0.10.1.0.tgz && \
+	wget -O /download/kafka_2.11-0.10.1.1.tgz \
+		http://apache.mirrors.tds.net/kafka/0.10.1.1/kafka_2.11-0.10.1.1.tgz && \
 	cd /build && \
-	tar xf /download/kafka_2.11-0.10.1.0.tgz && \
-	cd kafka_2.11-0.10.1.0 && \
+	tar xf /download/kafka_2.11-0.10.1.1.tgz && \
+	cd kafka_2.11-0.10.1.1 && \
 	chown -R root:root . && \
 	pre-root /build/kafka-root && \
 	mkdir -p /build/kafka-root/usr/share/kafka && \
@@ -36,5 +36,5 @@ RUN \
 		/build/kafka-deb \
 		/build/kafka-root \
 		/control/kafka \
-		/packages/kafka_0.10.1.0-1_all.deb
+		/packages/kafka_0.10.1.1-1_all.deb
 
