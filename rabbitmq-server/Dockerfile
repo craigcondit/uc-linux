@@ -11,11 +11,11 @@ RUN \
 	opkg clean
 
 RUN \
-	wget -O /download/rabbitmq-server-3.6.5.tar.xz \
-		https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.5/rabbitmq-server-3.6.5.tar.xz && \
+	wget -O /download/rabbitmq-server-3.6.6.tar.xz \
+		https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.6/rabbitmq-server-3.6.6.tar.xz && \
 	cd /build && \
-	tar xf /download/rabbitmq-server-3.6.5.tar.xz && \
-	cd rabbitmq-server-3.6.5 && \
+	tar xf /download/rabbitmq-server-3.6.6.tar.xz && \
+	cd rabbitmq-server-3.6.6 && \
 	MAKE="make -j4" make PREFIX=/usr && \
 	pre-root /build/rabbitmq-server-root && \
 	make DESTDIR=/build/rabbitmq-server-root PREFIX=/usr install && \
@@ -25,7 +25,7 @@ RUN \
 	post-root /build/rabbitmq-server-root && \
 	cd /build/rabbitmq-server-root && \
 	mkdir -p usr/share && \
-	ln -sf /usr/lib/erlang/lib/rabbitmq_server-3.6.5 usr/share/rabbitmq && \
+	ln -sf /usr/lib/erlang/lib/rabbitmq_server-3.6.6 usr/share/rabbitmq && \
 	mkdir -p usr/sbin && \
 	for cmd in rabbitmq-defaults rabbitmq-env rabbitmq-plugins rabbitmq-server rabbitmqctl ; do \
 		ln -sf /usr/share/rabbitmq/sbin/${cmd} usr/sbin/${cmd} ; done && \
@@ -33,4 +33,4 @@ RUN \
 		/build/rabbitmq-server-deb \
 		/build/rabbitmq-server-root \
 		/control/rabbitmq-server \
-		/packages/rabbitmq-server_3.6.5-1_amd64.deb
+		/packages/rabbitmq-server_3.6.6-1_amd64.deb
