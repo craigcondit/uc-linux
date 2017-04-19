@@ -1,8 +1,8 @@
 Package: postgresql-devel
-Version: 9.6.1-1
+Version: 9.6.2-1
 Source: postgresql
 Priority: optional
-Depends: libc-devel, libssl-devel, libxml2-devel, libreadline-devel, libncurses-devel, postgresql-client (>= 9.6.1-1), libpq (>= 9.6.1-1), libpgtypes (>= 9.6.1-1), libecpg (>= 9.6.1-1)
+Depends: libc-devel, libssl-devel, libxml2-devel, libreadline-devel, libncurses-devel, postgresql-client (>= 9.6.2-1), libpq (>= 9.6.2-1), libpgtypes (>= 9.6.2-1), libecpg (>= 9.6.2-1)
 Recommends: perl, python27-devel
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: object-relational SQL database (development files)

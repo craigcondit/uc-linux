@@ -25,7 +25,7 @@ RUN \
 	post-root /build/rabbitmq-server-root && \
 	cd /build/rabbitmq-server-root && \
 	mkdir -p usr/share && \
-	ln -sf /usr/lib/erlang/lib/rabbitmq_server-3.6.6 usr/share/rabbitmq && \
+	ln -sf /usr/lib/erlang/lib/rabbitmq_server-0.0.0 usr/share/rabbitmq && \
 	mkdir -p usr/sbin && \
 	for cmd in rabbitmq-defaults rabbitmq-env rabbitmq-plugins rabbitmq-server rabbitmqctl ; do \
 		ln -sf /usr/share/rabbitmq/sbin/${cmd} usr/sbin/${cmd} ; done && \

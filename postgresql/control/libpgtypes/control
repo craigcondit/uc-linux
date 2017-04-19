@@ -1,5 +1,5 @@
 Package: libpgtypes
-Version: 9.6.1-1
+Version: 9.6.2-1
 Source: postgresql
 Priority: optional
 Depends: libc
