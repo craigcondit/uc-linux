@@ -11,11 +11,11 @@ RUN \
 	opkg clean
 
 RUN \
-	wget -O /download/rabbitmq-server-3.6.6.tar.xz \
-		https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.6/rabbitmq-server-3.6.6.tar.xz && \
+	wget -O /download/rabbitmq-server-3.6.9.tar.xz \
+		https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.9/rabbitmq-server-3.6.9.tar.xz && \
 	cd /build && \
-	tar xf /download/rabbitmq-server-3.6.6.tar.xz && \
-	cd rabbitmq-server-3.6.6 && \
+	tar xf /download/rabbitmq-server-3.6.9.tar.xz && \
+	cd rabbitmq-server-3.6.9 && \
 	MAKE="make -j4" make PREFIX=/usr && \
 	pre-root /build/rabbitmq-server-root && \
 	make DESTDIR=/build/rabbitmq-server-root PREFIX=/usr install && \
@@ -33,4 +33,4 @@ RUN \
 		/build/rabbitmq-server-deb \
 		/build/rabbitmq-server-root \
 		/control/rabbitmq-server \
-		/packages/rabbitmq-server_3.6.6-1_amd64.deb
+		/packages/rabbitmq-server_3.6.9-1_amd64.deb
