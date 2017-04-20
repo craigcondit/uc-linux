@@ -16,16 +16,16 @@ RUN \
 RUN \
 	curl -Lk https://bitbucket.org/alexkasko/openjdk-unofficial-builds/downloads/openjdk-1.7.0-u80-unofficial-linux-amd64-image.zip > \
 		/download/openjdk-1.7.0-u80-unofficial-linux-amd64-image.zip && \
-	wget -O /download/jdk8-u121-b13.tar.bz2 \
-		http://hg.openjdk.java.net/jdk8u/jdk8u/archive/jdk8u121-b13.tar.bz2 && \
+	wget -O /download/jdk8-u131-b11.tar.bz2 \
+		http://hg.openjdk.java.net/jdk8u/jdk8u/archive/jdk8u131-b11.tar.bz2 && \
 	for subproject in corba hotspot jaxp jaxws langtools jdk nashorn; do \
 		wget -O /download/${subproject}.tar.bz2 \
-			http://hg.openjdk.java.net/jdk8u/jdk8u/${subproject}/archive/jdk8u121-b13.tar.bz2 ; done && \
+			http://hg.openjdk.java.net/jdk8u/jdk8u/${subproject}/archive/jdk8u131-b11.tar.bz2 ; done && \
 	cd /build && \
 	unzip /download/openjdk-*.zip && \
 	mv openjdk-* openjdk-bootstrap && \
-	tar xf /download/jdk8-u121-b13.tar.bz2 && \
-	cd jdk8u-jdk8u121-b13 && \
+	tar xf /download/jdk8-u131-b11.tar.bz2 && \
+	cd jdk8u-jdk8u131-b11 && \
 	for subproject in corba hotspot jaxp jaxws langtools jdk nashorn; do \
 		tar xf /download/${subproject}.tar.bz2 && \
 		mv ${subproject}-* ${subproject} ; done
@@ -42,12 +42,12 @@ RUN \
 		-k /build/openjdk-bootstrap/bin/keytool \
 		-s /usr/bin/openssl \
 		-o /build/cacerts && \
-	cd /build/jdk8u-jdk8u121-b13 && \
+	cd /build/jdk8u-jdk8u131-b11 && \
 	patch -p0 < /patches/unpack200-zlib-fix.patch && \
 	unset JAVA_HOME && \
 	sh ./configure \
-		--with-update-version=121 \
-		--with-build-number=b13 \
+		--with-update-version=131 \
+		--with-build-number=b11 \
 		--with-milestone=uc \
 		--enable-unlimited-crypto \
 		--with-zlib=system \
@@ -61,7 +61,7 @@ RUN \
 
 # stage install files
 RUN \
-	cd /build/jdk8u-jdk8u121-b13 && \
+	cd /build/jdk8u-jdk8u131-b11 && \
 	pre-root /build/java-base-root && \
 	mkdir -p /build/java-base-root/usr/lib/jvm && \
 	cp -a build/*/images/j2sdk-image /build/java-base-root/usr/lib/jvm/jdk-8-openjdk-amd64 && \
@@ -120,11 +120,11 @@ RUN \
 		/build/openjdk-jdk8-deb \
 		/build/jdk-root \
 		/control/openjdk-jdk8 \
-		/packages/openjdk-jdk8_1.8.0.121-1_amd64.deb && \
+		/packages/openjdk-jdk8_1.8.0.131-1_amd64.deb && \
 
 	make-deb \
 		/build/openjdk-jre8-deb \
 		/build/jre-root \
 		/control/openjdk-jre8 \
-		/packages/openjdk-jre8_1.8.0.121-1_amd64.deb
+		/packages/openjdk-jre8_1.8.0.131-1_amd64.deb
 

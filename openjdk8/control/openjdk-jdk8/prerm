@@ -8,7 +8,7 @@ update-alternatives --quiet --remove javac ${JDK_HOME}/bin/javac
 update-alternatives --quiet --remove java ${JRE_HOME}/bin/java
 update-alternatives --quiet --remove jdk ${JDK_HOME}
 update-alternatives --quiet --remove jdk-8 ${JDK_HOME}
-update-alternatives --quiet --remove jdk-8u121 ${JDK_HOME}
+update-alternatives --quiet --remove jdk-8u131 ${JDK_HOME}
 update-alternatives --quiet --remove jre ${JRE_HOME}
 update-alternatives --quiet --remove jre-8 ${JRE_HOME}
-update-alternatives --quiet --remove jre-8u121 ${JRE_HOME}
+update-alternatives --quiet --remove jre-8u131 ${JRE_HOME}

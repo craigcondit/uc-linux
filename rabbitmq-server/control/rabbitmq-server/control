@@ -1,5 +1,5 @@
 Package: rabbitmq-server
-Version: 3.6.9-1
+Version: 3.6.9-2
 Source: rabbitmq-server
 Priority: extra
 Depends: libc, erlang
