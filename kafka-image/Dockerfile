@@ -9,6 +9,7 @@ RUN \
 	mkdir -p /var/lib/kafka && \
 	adduser -h /var/lib/kafka -g "Kafka user" -s /bin/sh -G kafka -S -D -u 103 kafka && \
 	chown -R kafka:kafka /var/lib/kafka && \
+	echo "" >> /etc/kafka/server.properties && \
 	echo "delete.topic.enable=true" >> /etc/kafka/server.properties
 
 COPY docker-entrypoint.sh /
