@@ -9,11 +9,11 @@ RUN \
 	opkg install locale-utils locale-data && \
 	echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
 	locale-gen && \
-	opkg remove locale-data && \
+	opkg remove locale-data locale-utils && \
 	export LC_ALL=en_US.UTF-8 && \
 	opkg install gcc make file linux-devel openssl libssl-devel gawk sed bash ncurses-base \
 		coreutils python27 erlang elixir xslt-utils zip unzip python-simplejson \
-		rsync grep && \
+		rsync grep glibc-bin && \
 	opkg clean
 
 RUN \
@@ -40,4 +40,4 @@ RUN \
 		/build/rabbitmq-server-deb \
 		/build/rabbitmq-server-root \
 		/control/rabbitmq-server \
-		/packages/rabbitmq-server_3.7.2-1_amd64.deb
+		/packages/rabbitmq-server_3.7.2-2_amd64.deb

@@ -1,8 +1,8 @@
 Package: rabbitmq-server
-Version: 3.7.2-1
+Version: 3.7.2-2
 Source: rabbitmq-server
 Priority: extra
-Depends: libc, erlang
+Depends: libc, erlang, glibc-bin
 Recommends: python27
 Maintainer: Craig Condit <ccondit@randomcoder.org>
 Description: AMQP server written in Erlang
