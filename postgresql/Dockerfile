@@ -8,14 +8,14 @@ RUN \
 	opkg install gcc make file pkg-config libc-devel libz-devel \
 		libssl-devel libxml2-devel perl python27 python27-devel libreadline-devel && \
 	opkg clean && \
-	wget -O /download/postgresql-9.6.2.tar.bz2 \
-		http://ftp.postgresql.org/pub/source/v9.6.2/postgresql-9.6.2.tar.bz2 && \
+	wget -O /download/postgresql-10.1.tar.bz2 \
+		http://ftp.postgresql.org/pub/source/v10.1/postgresql-10.1.tar.bz2 && \
 	cd /build && \
-	tar xf /download/postgresql-9.6.2.tar.bz2 && \
-	cd postgresql-9.6.2 && \
+	tar xf /download/postgresql-10.1.tar.bz2 && \
+	cd postgresql-10.1 && \
 	./configure \
 		--prefix=/usr --enable-thread-safety \
-		--docdir=/usr/share/doc/postgresql-9.6.2 \
+		--docdir=/usr/share/doc/postgresql-10.1 \
 		--build=$(gcc -dumpmachine) \
 		--with-perl --with-python --with-openssl --with-libxml && \
 	MAKE="make -j4" make && \
@@ -32,18 +32,18 @@ RUN \
 	rm -rf usr/include usr/lib/pkgconfig usr/lib/postgresql/pgxs && \
 	rm -f usr/lib/libecpg*.so* usr/lib/libecpg_compat.so* usr/lib/libpgtypes.so* usr/lib/libpq.so* && \
 	for cmd in \
-		initdb pg_controldata pg_ctl pg_resetxlog postgres postmaster \
+		initdb pg_controldata pg_ctl postgres postmaster \
 		; do mv -f usr/bin/${cmd} usr/ ; done && \
 	rm -rf usr/bin && \
 	mkdir -p usr/bin && \
 	for cmd in \
-		initdb pg_controldata pg_ctl pg_resetxlog postgres postmaster \
+		initdb pg_controldata pg_ctl postgres postmaster \
 		; do mv -f usr/${cmd} usr/bin/ ; done && \
 	make-deb \
 		/build/postgresql-server-deb \
 		/build/postgresql-server-root \
 		/control/postgresql-server \
-		/packages/postgresql-server_9.6.2-1_amd64.deb && \
+		/packages/postgresql-server_10.1-1_amd64.deb && \
 
 	cp -a /build/postgresql-orig-root /build/postgresql-client-root && \
 	cd /build/postgresql-client-root && \
@@ -55,7 +55,7 @@ RUN \
 		/build/postgresql-client-deb \
 		/build/postgresql-client-root \
 		/control/postgresql-client \
-		/packages/postgresql-client_9.6.2-1_amd64.deb && \
+		/packages/postgresql-client_10.1-1_amd64.deb && \
 
 	cp -a /build/postgresql-orig-root /build/libpq-root && \
 	cd /build/libpq-root && \
@@ -66,7 +66,7 @@ RUN \
 		/build/libpq-deb \
 		/build/libpq-root \
 		/control/libpq \
-		/packages/libpq_9.6.2-1_amd64.deb && \
+		/packages/libpq_10.1-1_amd64.deb && \
 
 	cp -a /build/postgresql-orig-root /build/libpgtypes-root && \
 	cd /build/libpgtypes-root && \
@@ -77,7 +77,7 @@ RUN \
 		/build/libpgtypes-deb \
 		/build/libpgtypes-root \
 		/control/libpgtypes \
-		/packages/libpgtypes_9.6.2-1_amd64.deb && \
+		/packages/libpgtypes_10.1-1_amd64.deb && \
 
 	cp -a /build/postgresql-orig-root /build/libecpg-root && \
 	cd /build/libecpg-root && \
@@ -88,7 +88,7 @@ RUN \
 		/build/libecpg-deb \
 		/build/libecpg-root \
 		/control/libecpg \
-		/packages/libecpg_9.6.2-1_amd64.deb && \
+		/packages/libecpg_10.1-1_amd64.deb && \
 
 	cp -a /build/postgresql-orig-root /build/postgresql-devel-root && \
 	cd /build/postgresql-devel-root && \
@@ -103,5 +103,5 @@ RUN \
 		/build/postgresql-devel-deb \
 		/build/postgresql-devel-root \
 		/control/postgresql-devel \
-		/packages/postgresql-devel_9.6.2-1_amd64.deb
+		/packages/postgresql-devel_10.1-1_amd64.deb
 
