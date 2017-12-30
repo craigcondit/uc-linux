@@ -6,7 +6,7 @@ RUN \
 	opkg install locale-utils locale-data && \
 	echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
 	locale-gen && \
-	opkg remove locale-data locale-tools && \
+	opkg remove locale-data locale-utils && \
 	export LC_ALL=en_US.UTF-8 && \
 	opkg install rabbitmq-server glibc-bin && \
 	opkg clean && \
