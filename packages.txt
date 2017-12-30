@@ -46,6 +46,7 @@ git
 grep
 gcc-go
 erlang
+elixer
 sgml-common
 docbook-xml
 docbook-xsl

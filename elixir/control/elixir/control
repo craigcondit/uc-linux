@@ -1,0 +1,9 @@
+Package: elixir
+Version: 1.5.3-1
+Source: elixir >= 18.0
+Priority: optional
+Depends: erlang
+Maintainer: Craig Condit <ccondit@randomcoder.org>
+Description: Dynamic, functional language designed for building scalable and maintainable applications.
+Architecture: amd64
+Section: development

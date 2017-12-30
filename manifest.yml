@@ -1102,6 +1102,12 @@ repos:
       licenses: [ Apache-2.0 ]
       vcs_url: https://github.com/erlang/otp/
 
+    - name: elixir
+      desc: Dynamic, functional language designed for building scalable and maintainable applications
+      website_url: http://elixir-lang.org/
+      licenses: [ Apache-2.0 ]
+      vcs_url: https://github.com/elixir-lang/elixir
+
     - name: sgml-common
       desc: Base ISO character entities and utilities for SGML
       website_url: http://www.iso.ch/cate/3524030.html
